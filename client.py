@@ -4,10 +4,9 @@ Provides a typed async/sync client for interacting with the
 data analysis environment server over HTTP/WebSocket.
 """
 
-from openenv.core.env_client import EnvClient
-from openenv.core.client_types import StepResult
-
 from models import DataAction, DataObservation, DataState
+from openenv.core.client_types import StepResult
+from openenv.core.env_client import EnvClient
 
 
 class DataAnalysisClient(EnvClient[DataAction, DataObservation, DataState]):

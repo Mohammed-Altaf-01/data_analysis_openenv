@@ -16,7 +16,6 @@ import sys
 import requests
 from openai import OpenAI
 
-
 SYSTEM_PROMPT = """You are a data analyst. You are given a dataset loaded as a pandas DataFrame called `df`.
 You can execute Python/pandas code to explore the dataset and answer the question.
 
@@ -87,10 +86,12 @@ def run_task(client: OpenAI, base_url: str, task_id: int, max_steps: int = 15) -
             action = json.loads(assistant_msg)
         except json.JSONDecodeError:
             messages.append({"role": "assistant", "content": assistant_msg})
-            messages.append({
-                "role": "user",
-                "content": "Invalid JSON. Please respond with valid JSON only.",
-            })
+            messages.append(
+                {
+                    "role": "user",
+                    "content": "Invalid JSON. Please respond with valid JSON only.",
+                }
+            )
             continue
 
         action_type = action.get("action", "")
@@ -135,10 +136,12 @@ def run_task(client: OpenAI, base_url: str, task_id: int, max_steps: int = 15) -
             return score
         else:
             messages.append({"role": "assistant", "content": assistant_msg})
-            messages.append({
-                "role": "user",
-                "content": f"Unknown action '{action_type}'. Use 'execute_code' or 'submit_answer'.",
-            })
+            messages.append(
+                {
+                    "role": "user",
+                    "content": f"Unknown action '{action_type}'. Use 'execute_code' or 'submit_answer'.",
+                }
+            )
 
     print("  Max steps reached without submitting an answer.")
     return 0.0

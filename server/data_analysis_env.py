@@ -14,9 +14,8 @@ from typing import Any, Optional
 import numpy as np
 import pandas as pd
 
-from openenv.core.env_server import Environment
-
 from models import DataAction, DataObservation, DataState
+from openenv.core.env_server import Environment
 from tasks import TASKS
 
 DATASET_PATH = Path(__file__).resolve().parent.parent / "datasets" / "sales.csv"
@@ -53,14 +52,19 @@ class DataAnalysisEnv(Environment):
         Returns:
             A dictionary to use as the globals for exec().
         """
-        safe_builtins = {
-            k: v for k, v in __builtins__.items()
-            if k not in ("open", "exec", "eval", "__import__", "compile", "exit", "quit")
-        } if isinstance(__builtins__, dict) else {
-            k: getattr(__builtins__, k) for k in dir(__builtins__)
-            if k not in ("open", "exec", "eval", "__import__", "compile", "exit", "quit")
-            and not k.startswith("_")
-        }
+        safe_builtins = (
+            {
+                k: v
+                for k, v in __builtins__.items()
+                if k not in ("open", "exec", "eval", "__import__", "compile", "exit", "quit")
+            }
+            if isinstance(__builtins__, dict)
+            else {
+                k: getattr(__builtins__, k)
+                for k in dir(__builtins__)
+                if k not in ("open", "exec", "eval", "__import__", "compile", "exit", "quit") and not k.startswith("_")
+            }
+        )
         return {
             "__builtins__": safe_builtins,
             "df": self._df.copy(),
