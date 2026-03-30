@@ -1,0 +1,18 @@
+[project]
+name = "openenv-data-analysis-env"
+version = "0.1.0"
+description = "RL environment for training data analysis agents on business datasets"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openenv-core>=0.2.3",
+    "fastapi>=0.115.0",
+    "pydantic>=2.0.0",
+    "uvicorn>=0.24.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "openai>=1.0.0",
+]
+
+[project.scripts]
+server = "server.app:main"

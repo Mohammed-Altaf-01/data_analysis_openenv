@@ -1,0 +1,2001 @@
+order_id,customer_id,product_name,category,quantity,unit_price,total_price,order_date,city,country
+ORD_00001,CUST_0130,Phone Case,Electronics,4,19.99,79.96,2024-11-03,Berlin,Germany
+ORD_00002,CUST_0293,Data Science Handbook,Books,1,39.99,39.99,2024-09-22,Paris,France
+ORD_00003,CUST_0252,History Book,Books,3,24.99,74.97,2024-06-15,Los Angeles,USA
+ORD_00004,CUST_0194,T-Shirt,Clothing,5,24.99,124.95,2024-05-24,Sydney,Australia
+ORD_00005,CUST_0028,Throw Pillow,Home & Garden,3,29.99,89.97,2024-07-25,Chicago,USA
+ORD_00006,CUST_0190,Power Bank,Electronics,5,34.99,174.95,2024-02-22,Chicago,USA
+ORD_00007,CUST_0134,Data Science Handbook,Books,1,39.99,39.99,2024-11-19,Mumbai,India
+ORD_00008,CUST_0141,History Book,Books,1,24.99,24.99,2024-06-02,London,UK
+ORD_00009,CUST_0277,Plant Pot,Home & Garden,4,18.99,75.96,2024-09-11,Tokyo,Japan
+ORD_00010,CUST_0112,Water Bottle,Sports,2,14.99,29.98,2024-01-14,Mumbai,India
+ORD_00011,CUST_0206,Python Cookbook,Books,3,44.99,134.97,2024-06-10,Los Angeles,USA
+ORD_00012,CUST_0132,Sneakers,Clothing,4,89.99,359.96,2024-02-24,Mumbai,India
+ORD_00013,CUST_0231,History Book,Books,1,24.99,24.99,2024-10-13,London,UK
+ORD_00014,CUST_0087,Dumbbell Set,Sports,2,59.99,119.98,2024-03-20,Toronto,Canada
+ORD_00015,CUST_0242,Python Cookbook,Books,5,44.99,224.95,2024-01-23,Los Angeles,USA
+ORD_00016,CUST_0212,History Book,Books,4,24.99,99.96,2024-04-22,Berlin,Germany
+ORD_00017,CUST_0012,Throw Pillow,Home & Garden,3,29.99,89.97,2024-02-07,Paris,France
+ORD_00018,CUST_0142,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-11-16,Tokyo,Japan
+ORD_00019,CUST_0170,Phone Case,Electronics,3,19.99,59.97,2024-07-03,Tokyo,Japan
+ORD_00020,CUST_0010,Garden Hose,Home & Garden,2,39.99,79.98,2024-05-13,Tokyo,Japan
+ORD_00021,CUST_0298,Resistance Bands,Sports,2,19.99,39.98,2024-11-01,Berlin,Germany
+ORD_00022,CUST_0085,Socks Pack,Clothing,1,14.99,14.99,2024-12-09,Toronto,Canada
+ORD_00023,CUST_0152,Garden Hose,Home & Garden,1,39.99,39.99,2024-10-28,Paris,France
+ORD_00024,CUST_0245,Fiction Novel,Books,3,14.99,44.97,2024-04-05,Berlin,Germany
+ORD_00025,CUST_0232,T-Shirt,Clothing,1,24.99,24.99,2024-09-20,New York,USA
+ORD_00026,CUST_0151,Garden Hose,Home & Garden,1,39.99,39.99,2024-12-05,Mumbai,India
+ORD_00027,CUST_0050,Garden Hose,Home & Garden,3,39.99,119.97,2024-05-07,Berlin,Germany
+ORD_00028,CUST_0109,Jacket,Clothing,4,119.99,479.96,2024-12-03,Tokyo,Japan
+ORD_00029,CUST_0110,T-Shirt,Clothing,2,24.99,49.98,2024-11-14,Mumbai,India
+ORD_00030,CUST_0291,Fiction Novel,Books,2,14.99,29.98,2024-04-22,Sydney,Australia
+ORD_00031,CUST_0222,Jacket,Clothing,4,119.99,479.96,2024-04-03,Berlin,Germany
+ORD_00032,CUST_0137,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-09-06,Los Angeles,USA
+ORD_00033,CUST_0165,Data Science Handbook,Books,5,39.99,199.95,2024-03-13,Paris,France
+ORD_00034,CUST_0216,Yoga Mat,Sports,4,29.99,119.96,2024-08-13,Berlin,Germany
+ORD_00035,CUST_0029,Jacket,Clothing,1,119.99,119.99,2024-08-18,Paris,France
+ORD_00036,CUST_0013,Phone Case,Electronics,3,19.99,59.97,2024-03-14,Sydney,Australia
+ORD_00037,CUST_0204,USB-C Cable,Electronics,4,12.99,51.96,2024-02-05,Los Angeles,USA
+ORD_00038,CUST_0278,Garden Hose,Home & Garden,1,39.99,39.99,2024-12-17,Chicago,USA
+ORD_00039,CUST_0089,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-01-05,Paris,France
+ORD_00040,CUST_0235,Water Bottle,Sports,3,14.99,44.97,2024-01-03,Berlin,Germany
+ORD_00041,CUST_0133,Sneakers,Clothing,4,89.99,359.96,2024-12-05,Berlin,Germany
+ORD_00042,CUST_0081,Throw Pillow,Home & Garden,3,29.99,89.97,2024-12-10,Toronto,Canada
+ORD_00043,CUST_0086,Throw Pillow,Home & Garden,5,29.99,149.95,2024-01-11,Berlin,Germany
+ORD_00044,CUST_0043,Yoga Mat,Sports,5,29.99,149.95,2024-04-16,Paris,France
+ORD_00045,CUST_0036,T-Shirt,Clothing,4,24.99,99.96,2024-04-07,Tokyo,Japan
+ORD_00046,CUST_0231,History Book,Books,4,24.99,99.96,2024-04-04,Mumbai,India
+ORD_00047,CUST_0071,Self-Help Guide,Books,5,19.99,99.95,2024-01-04,Chicago,USA
+ORD_00048,CUST_0249,Throw Pillow,Home & Garden,2,29.99,59.98,2024-06-23,London,UK
+ORD_00049,CUST_0191,Resistance Bands,Sports,2,19.99,39.98,2024-04-18,Mumbai,India
+ORD_00050,CUST_0281,Wall Clock,Home & Garden,2,34.99,69.98,2024-03-05,Mumbai,India
+ORD_00051,CUST_0291,Plant Pot,Home & Garden,2,18.99,37.98,2024-12-05,Berlin,Germany
+ORD_00052,CUST_0268,Yoga Mat,Sports,4,29.99,119.96,2024-03-26,Toronto,Canada
+ORD_00053,CUST_0007,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-10-10,London,UK
+ORD_00054,CUST_0029,Fiction Novel,Books,2,14.99,29.98,2024-09-21,Toronto,Canada
+ORD_00055,CUST_0285,Jeans,Clothing,1,49.99,49.99,2024-03-01,Mumbai,India
+ORD_00056,CUST_0046,Wireless Headphones,Electronics,5,59.99,299.95,2024-09-06,Toronto,Canada
+ORD_00057,CUST_0014,Sneakers,Clothing,4,89.99,359.96,2024-03-08,Toronto,Canada
+ORD_00058,CUST_0292,Socks Pack,Clothing,4,14.99,59.96,2024-06-15,London,UK
+ORD_00059,CUST_0053,Plant Pot,Home & Garden,5,18.99,94.95,2024-03-08,New York,USA
+ORD_00060,CUST_0037,Wireless Headphones,Electronics,4,59.99,239.96,2024-04-15,Mumbai,India
+ORD_00061,CUST_0126,Running Shoes,Sports,4,109.99,439.96,2024-03-25,Paris,France
+ORD_00062,CUST_0222,Yoga Mat,Sports,4,29.99,119.96,2024-10-04,New York,USA
+ORD_00063,CUST_0025,Plant Pot,Home & Garden,3,18.99,56.97,2024-05-28,Mumbai,India
+ORD_00064,CUST_0199,T-Shirt,Clothing,3,24.99,74.97,2024-04-27,Paris,France
+ORD_00065,CUST_0150,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-01-17,Mumbai,India
+ORD_00066,CUST_0032,Plant Pot,Home & Garden,4,18.99,75.96,2024-09-04,Toronto,Canada
+ORD_00067,CUST_0050,Fiction Novel,Books,1,14.99,14.99,2024-08-06,Mumbai,India
+ORD_00068,CUST_0141,Running Shoes,Sports,5,109.99,549.95,2024-08-22,Berlin,Germany
+ORD_00069,CUST_0087,Yoga Mat,Sports,4,29.99,119.96,2024-10-08,Los Angeles,USA
+ORD_00070,CUST_0160,Fiction Novel,Books,2,14.99,29.98,2024-10-17,London,UK
+ORD_00071,CUST_0087,Dumbbell Set,Sports,4,59.99,239.96,2024-05-04,Tokyo,Japan
+ORD_00072,CUST_0196,Socks Pack,Clothing,3,14.99,44.97,2024-12-25,Los Angeles,USA
+ORD_00073,CUST_0081,Sneakers,Clothing,3,89.99,269.97,2024-03-28,Chicago,USA
+ORD_00074,CUST_0032,Self-Help Guide,Books,5,19.99,99.95,2024-11-02,Mumbai,India
+ORD_00075,CUST_0058,Throw Pillow,Home & Garden,2,29.99,59.98,2024-10-09,Los Angeles,USA
+ORD_00076,CUST_0277,Socks Pack,Clothing,1,14.99,14.99,2024-08-05,Mumbai,India
+ORD_00077,CUST_0137,USB-C Cable,Electronics,3,12.99,38.97,2024-02-16,Los Angeles,USA
+ORD_00078,CUST_0053,Phone Case,Electronics,1,19.99,19.99,2024-10-02,Los Angeles,USA
+ORD_00079,CUST_0241,Throw Pillow,Home & Garden,3,29.99,89.97,2024-05-24,Tokyo,Japan
+ORD_00080,CUST_0263,Socks Pack,Clothing,3,14.99,44.97,2024-10-24,Sydney,Australia
+ORD_00081,CUST_0267,Plant Pot,Home & Garden,3,18.99,56.97,2024-03-07,Los Angeles,USA
+ORD_00082,CUST_0125,Jacket,Clothing,3,119.99,359.97,2024-04-02,Mumbai,India
+ORD_00083,CUST_0269,USB-C Cable,Electronics,5,12.99,64.95,2024-02-03,Paris,France
+ORD_00084,CUST_0278,Yoga Mat,Sports,1,29.99,29.99,2024-09-03,Berlin,Germany
+ORD_00085,CUST_0072,Dumbbell Set,Sports,5,59.99,299.95,2024-12-09,Mumbai,India
+ORD_00086,CUST_0193,Water Bottle,Sports,4,14.99,59.96,2024-08-22,Tokyo,Japan
+ORD_00087,CUST_0097,Python Cookbook,Books,5,44.99,224.95,2024-07-28,Paris,France
+ORD_00088,CUST_0116,Dumbbell Set,Sports,3,59.99,179.97,2024-09-18,Sydney,Australia
+ORD_00089,CUST_0131,Jeans,Clothing,1,49.99,49.99,2024-06-05,Los Angeles,USA
+ORD_00090,CUST_0111,Garden Hose,Home & Garden,2,39.99,79.98,2024-07-11,London,UK
+ORD_00091,CUST_0055,Data Science Handbook,Books,3,39.99,119.97,2024-09-07,London,UK
+ORD_00092,CUST_0275,Jacket,Clothing,5,119.99,599.95,2024-11-14,Tokyo,Japan
+ORD_00093,CUST_0289,Data Science Handbook,Books,3,39.99,119.97,2024-11-14,Paris,France
+ORD_00094,CUST_0160,Data Science Handbook,Books,5,39.99,199.95,2024-10-18,Paris,France
+ORD_00095,CUST_0011,USB-C Cable,Electronics,1,12.99,12.99,2024-03-17,Sydney,Australia
+ORD_00096,CUST_0040,Fiction Novel,Books,5,14.99,74.95,2024-12-18,Mumbai,India
+ORD_00097,CUST_0175,Python Cookbook,Books,4,44.99,179.96,2024-02-15,Sydney,Australia
+ORD_00098,CUST_0288,Running Shoes,Sports,1,109.99,109.99,2024-03-23,Mumbai,India
+ORD_00099,CUST_0299,Throw Pillow,Home & Garden,3,29.99,89.97,2024-10-27,Sydney,Australia
+ORD_00100,CUST_0178,Yoga Mat,Sports,2,29.99,59.98,2024-01-03,Sydney,Australia
+ORD_00101,CUST_0039,Garden Hose,Home & Garden,1,39.99,39.99,2024-07-01,Los Angeles,USA
+ORD_00102,CUST_0157,Throw Pillow,Home & Garden,3,29.99,89.97,2024-09-22,Tokyo,Japan
+ORD_00103,CUST_0071,Running Shoes,Sports,3,109.99,329.97,2024-08-04,Berlin,Germany
+ORD_00104,CUST_0036,Dumbbell Set,Sports,1,59.99,59.99,2024-09-03,Sydney,Australia
+ORD_00105,CUST_0277,Garden Hose,Home & Garden,4,39.99,159.96,2024-10-06,Berlin,Germany
+ORD_00106,CUST_0270,History Book,Books,2,24.99,49.98,2024-10-22,Sydney,Australia
+ORD_00107,CUST_0160,Data Science Handbook,Books,4,39.99,159.96,2024-04-09,London,UK
+ORD_00108,CUST_0281,Power Bank,Electronics,1,34.99,34.99,2024-07-13,New York,USA
+ORD_00109,CUST_0053,Data Science Handbook,Books,1,39.99,39.99,2024-07-27,Sydney,Australia
+ORD_00110,CUST_0144,Resistance Bands,Sports,4,19.99,79.96,2024-02-11,Tokyo,Japan
+ORD_00111,CUST_0254,Self-Help Guide,Books,1,19.99,19.99,2024-12-12,Sydney,Australia
+ORD_00112,CUST_0192,USB-C Cable,Electronics,5,12.99,64.95,2024-02-04,Toronto,Canada
+ORD_00113,CUST_0164,Throw Pillow,Home & Garden,1,29.99,29.99,2024-01-03,Tokyo,Japan
+ORD_00114,CUST_0089,Garden Hose,Home & Garden,5,39.99,199.95,2024-12-13,Berlin,Germany
+ORD_00115,CUST_0155,Sneakers,Clothing,1,89.99,89.99,2024-12-21,London,UK
+ORD_00116,CUST_0300,Fiction Novel,Books,1,14.99,14.99,2024-01-25,London,UK
+ORD_00117,CUST_0013,Data Science Handbook,Books,4,39.99,159.96,2024-02-19,Toronto,Canada
+ORD_00118,CUST_0196,Yoga Mat,Sports,4,29.99,119.96,2024-08-03,Los Angeles,USA
+ORD_00119,CUST_0074,Self-Help Guide,Books,5,19.99,99.95,2024-03-13,New York,USA
+ORD_00120,CUST_0060,Power Bank,Electronics,4,34.99,139.96,2024-01-26,Toronto,Canada
+ORD_00121,CUST_0002,Jacket,Clothing,5,119.99,599.95,2024-01-05,New York,USA
+ORD_00122,CUST_0241,Power Bank,Electronics,4,34.99,139.96,2024-12-07,Mumbai,India
+ORD_00123,CUST_0201,Socks Pack,Clothing,2,14.99,29.98,2024-10-28,New York,USA
+ORD_00124,CUST_0210,Yoga Mat,Sports,4,29.99,119.96,2024-10-24,Toronto,Canada
+ORD_00125,CUST_0035,Plant Pot,Home & Garden,3,18.99,56.97,2024-02-20,Chicago,USA
+ORD_00126,CUST_0190,Throw Pillow,Home & Garden,4,29.99,119.96,2024-02-24,Paris,France
+ORD_00127,CUST_0016,Plant Pot,Home & Garden,5,18.99,94.95,2024-03-01,Sydney,Australia
+ORD_00128,CUST_0295,T-Shirt,Clothing,4,24.99,99.96,2024-09-18,Paris,France
+ORD_00129,CUST_0002,Plant Pot,Home & Garden,1,18.99,18.99,2024-01-07,Tokyo,Japan
+ORD_00130,CUST_0052,Water Bottle,Sports,4,14.99,59.96,2024-05-03,Berlin,Germany
+ORD_00131,CUST_0178,Python Cookbook,Books,2,44.99,89.98,2024-06-16,Mumbai,India
+ORD_00132,CUST_0172,Data Science Handbook,Books,4,39.99,159.96,2024-06-05,Toronto,Canada
+ORD_00133,CUST_0126,Socks Pack,Clothing,3,14.99,44.97,2024-07-16,London,UK
+ORD_00134,CUST_0283,Data Science Handbook,Books,4,39.99,159.96,2024-02-05,Berlin,Germany
+ORD_00135,CUST_0275,Throw Pillow,Home & Garden,4,29.99,119.96,2024-06-04,Berlin,Germany
+ORD_00136,CUST_0084,Power Bank,Electronics,1,34.99,34.99,2024-02-09,Mumbai,India
+ORD_00137,CUST_0121,Fiction Novel,Books,4,14.99,59.96,2024-08-28,Tokyo,Japan
+ORD_00138,CUST_0066,Plant Pot,Home & Garden,3,18.99,56.97,2024-12-17,Toronto,Canada
+ORD_00139,CUST_0090,Data Science Handbook,Books,5,39.99,199.95,2024-06-14,New York,USA
+ORD_00140,CUST_0172,Plant Pot,Home & Garden,2,18.99,37.98,2024-05-16,New York,USA
+ORD_00141,CUST_0177,Garden Hose,Home & Garden,3,39.99,119.97,2024-08-18,Tokyo,Japan
+ORD_00142,CUST_0165,Jeans,Clothing,4,49.99,199.96,2024-03-13,London,UK
+ORD_00143,CUST_0289,Garden Hose,Home & Garden,3,39.99,119.97,2024-07-23,London,UK
+ORD_00144,CUST_0277,Fiction Novel,Books,5,14.99,74.95,2024-11-15,Los Angeles,USA
+ORD_00145,CUST_0074,Fiction Novel,Books,2,14.99,29.98,2024-04-15,Sydney,Australia
+ORD_00146,CUST_0035,Resistance Bands,Sports,3,19.99,59.97,2024-01-03,New York,USA
+ORD_00147,CUST_0024,Dumbbell Set,Sports,5,59.99,299.95,2024-04-16,New York,USA
+ORD_00148,CUST_0095,Sneakers,Clothing,1,89.99,89.99,2024-01-21,Sydney,Australia
+ORD_00149,CUST_0212,Yoga Mat,Sports,3,29.99,89.97,2024-11-12,Toronto,Canada
+ORD_00150,CUST_0181,Jacket,Clothing,1,119.99,119.99,2024-09-04,Chicago,USA
+ORD_00151,CUST_0023,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-12-13,Mumbai,India
+ORD_00152,CUST_0207,Fiction Novel,Books,2,14.99,29.98,2024-02-20,Sydney,Australia
+ORD_00153,CUST_0101,Data Science Handbook,Books,5,39.99,199.95,2024-01-19,Tokyo,Japan
+ORD_00154,CUST_0050,Jacket,Clothing,3,119.99,359.97,2024-09-05,Berlin,Germany
+ORD_00155,CUST_0288,Wall Clock,Home & Garden,5,34.99,174.95,2024-07-06,Mumbai,India
+ORD_00156,CUST_0043,Dumbbell Set,Sports,5,59.99,299.95,2024-07-13,Tokyo,Japan
+ORD_00157,CUST_0251,Resistance Bands,Sports,2,19.99,39.98,2024-10-02,New York,USA
+ORD_00158,CUST_0046,Throw Pillow,Home & Garden,3,29.99,89.97,2024-04-06,Mumbai,India
+ORD_00159,CUST_0190,Socks Pack,Clothing,5,14.99,74.95,2024-03-06,New York,USA
+ORD_00160,CUST_0176,T-Shirt,Clothing,3,24.99,74.97,2024-09-14,Mumbai,India
+ORD_00161,CUST_0253,Wireless Headphones,Electronics,2,59.99,119.98,2024-11-24,Chicago,USA
+ORD_00162,CUST_0202,Fiction Novel,Books,4,14.99,59.96,2024-10-22,Berlin,Germany
+ORD_00163,CUST_0224,Python Cookbook,Books,4,44.99,179.96,2024-07-25,London,UK
+ORD_00164,CUST_0145,Socks Pack,Clothing,5,14.99,74.95,2024-07-22,London,UK
+ORD_00165,CUST_0130,Self-Help Guide,Books,2,19.99,39.98,2024-11-09,Paris,France
+ORD_00166,CUST_0103,Plant Pot,Home & Garden,5,18.99,94.95,2024-07-14,London,UK
+ORD_00167,CUST_0007,Water Bottle,Sports,3,14.99,44.97,2024-05-28,Los Angeles,USA
+ORD_00168,CUST_0054,Running Shoes,Sports,4,109.99,439.96,2024-01-10,London,UK
+ORD_00169,CUST_0183,T-Shirt,Clothing,2,24.99,49.98,2024-12-20,New York,USA
+ORD_00170,CUST_0180,Throw Pillow,Home & Garden,2,29.99,59.98,2024-07-01,Los Angeles,USA
+ORD_00171,CUST_0158,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-08-20,Sydney,Australia
+ORD_00172,CUST_0144,Dumbbell Set,Sports,4,59.99,239.96,2024-12-22,Toronto,Canada
+ORD_00173,CUST_0086,Self-Help Guide,Books,3,19.99,59.97,2024-12-18,Sydney,Australia
+ORD_00174,CUST_0035,Fiction Novel,Books,5,14.99,74.95,2024-07-21,New York,USA
+ORD_00175,CUST_0289,Water Bottle,Sports,4,14.99,59.96,2024-08-12,Paris,France
+ORD_00176,CUST_0087,Yoga Mat,Sports,5,29.99,149.95,2024-10-21,Los Angeles,USA
+ORD_00177,CUST_0002,Running Shoes,Sports,4,109.99,439.96,2024-02-09,London,UK
+ORD_00178,CUST_0147,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-11-28,Mumbai,India
+ORD_00179,CUST_0073,Water Bottle,Sports,2,14.99,29.98,2024-05-03,Mumbai,India
+ORD_00180,CUST_0167,History Book,Books,1,24.99,24.99,2024-07-23,Chicago,USA
+ORD_00181,CUST_0072,Socks Pack,Clothing,3,14.99,44.97,2024-01-02,Toronto,Canada
+ORD_00182,CUST_0033,Socks Pack,Clothing,1,14.99,14.99,2024-12-19,London,UK
+ORD_00183,CUST_0003,History Book,Books,4,24.99,99.96,2024-11-21,Sydney,Australia
+ORD_00184,CUST_0015,Data Science Handbook,Books,5,39.99,199.95,2024-11-07,London,UK
+ORD_00185,CUST_0134,Phone Case,Electronics,2,19.99,39.98,2024-01-27,Toronto,Canada
+ORD_00186,CUST_0009,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-10-12,Paris,France
+ORD_00187,CUST_0077,Self-Help Guide,Books,4,19.99,79.96,2024-03-12,Tokyo,Japan
+ORD_00188,CUST_0257,Water Bottle,Sports,2,14.99,29.98,2024-11-09,Sydney,Australia
+ORD_00189,CUST_0035,Fiction Novel,Books,3,14.99,44.97,2024-04-16,London,UK
+ORD_00190,CUST_0026,Dumbbell Set,Sports,1,59.99,59.99,2024-09-10,Tokyo,Japan
+ORD_00191,CUST_0161,Garden Hose,Home & Garden,3,39.99,119.97,2024-12-18,Toronto,Canada
+ORD_00192,CUST_0042,Jacket,Clothing,3,119.99,359.97,2024-02-17,Paris,France
+ORD_00193,CUST_0221,Power Bank,Electronics,5,34.99,174.95,2024-08-02,Sydney,Australia
+ORD_00194,CUST_0150,Sneakers,Clothing,5,89.99,449.95,2024-05-04,Chicago,USA
+ORD_00195,CUST_0106,USB-C Cable,Electronics,1,12.99,12.99,2024-03-16,New York,USA
+ORD_00196,CUST_0191,USB-C Cable,Electronics,3,12.99,38.97,2024-11-10,Mumbai,India
+ORD_00197,CUST_0289,Throw Pillow,Home & Garden,5,29.99,149.95,2024-10-15,Mumbai,India
+ORD_00198,CUST_0270,Wall Clock,Home & Garden,2,34.99,69.98,2024-05-07,London,UK
+ORD_00199,CUST_0092,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-07-28,Mumbai,India
+ORD_00200,CUST_0197,Data Science Handbook,Books,3,39.99,119.97,2024-01-09,Tokyo,Japan
+ORD_00201,CUST_0054,Resistance Bands,Sports,2,19.99,39.98,2024-02-10,London,UK
+ORD_00202,CUST_0169,Yoga Mat,Sports,2,29.99,59.98,2024-04-23,New York,USA
+ORD_00203,CUST_0259,Garden Hose,Home & Garden,4,39.99,159.96,2024-06-27,Berlin,Germany
+ORD_00204,CUST_0245,Water Bottle,Sports,4,14.99,59.96,2024-09-26,Chicago,USA
+ORD_00205,CUST_0052,Jacket,Clothing,3,119.99,359.97,2024-07-09,Los Angeles,USA
+ORD_00206,CUST_0287,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-10-15,London,UK
+ORD_00207,CUST_0282,Water Bottle,Sports,1,14.99,14.99,2024-12-21,New York,USA
+ORD_00208,CUST_0074,USB-C Cable,Electronics,1,12.99,12.99,2024-07-02,New York,USA
+ORD_00209,CUST_0238,Water Bottle,Sports,2,14.99,29.98,2024-04-02,Paris,France
+ORD_00210,CUST_0116,Power Bank,Electronics,1,34.99,34.99,2024-10-02,Tokyo,Japan
+ORD_00211,CUST_0294,Running Shoes,Sports,3,109.99,329.97,2024-04-14,Chicago,USA
+ORD_00212,CUST_0001,Jeans,Clothing,3,49.99,149.97,2024-04-04,Los Angeles,USA
+ORD_00213,CUST_0034,Wall Clock,Home & Garden,1,34.99,34.99,2024-07-08,New York,USA
+ORD_00214,CUST_0130,Plant Pot,Home & Garden,2,18.99,37.98,2024-07-22,Berlin,Germany
+ORD_00215,CUST_0069,Wall Clock,Home & Garden,3,34.99,104.97,2024-04-17,Chicago,USA
+ORD_00216,CUST_0205,Socks Pack,Clothing,3,14.99,44.97,2024-05-07,Toronto,Canada
+ORD_00217,CUST_0145,Data Science Handbook,Books,2,39.99,79.98,2024-01-14,Mumbai,India
+ORD_00218,CUST_0046,Wall Clock,Home & Garden,4,34.99,139.96,2024-08-02,Los Angeles,USA
+ORD_00219,CUST_0027,T-Shirt,Clothing,1,24.99,24.99,2024-01-27,Mumbai,India
+ORD_00220,CUST_0034,Power Bank,Electronics,1,34.99,34.99,2024-09-18,Los Angeles,USA
+ORD_00221,CUST_0070,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-08-20,Paris,France
+ORD_00222,CUST_0257,Water Bottle,Sports,1,14.99,14.99,2024-07-18,Chicago,USA
+ORD_00223,CUST_0299,Plant Pot,Home & Garden,5,18.99,94.95,2024-11-09,Sydney,Australia
+ORD_00224,CUST_0137,Jeans,Clothing,5,49.99,249.95,2024-12-17,Paris,France
+ORD_00225,CUST_0221,Dumbbell Set,Sports,1,59.99,59.99,2024-10-05,London,UK
+ORD_00226,CUST_0181,Sneakers,Clothing,4,89.99,359.96,2024-04-07,Los Angeles,USA
+ORD_00227,CUST_0247,Throw Pillow,Home & Garden,4,29.99,119.96,2024-01-25,London,UK
+ORD_00228,CUST_0006,Phone Case,Electronics,2,19.99,39.98,2024-09-05,London,UK
+ORD_00229,CUST_0091,History Book,Books,5,24.99,124.95,2024-09-24,Sydney,Australia
+ORD_00230,CUST_0179,T-Shirt,Clothing,5,24.99,124.95,2024-03-04,Los Angeles,USA
+ORD_00231,CUST_0019,Python Cookbook,Books,4,44.99,179.96,2024-03-23,Tokyo,Japan
+ORD_00232,CUST_0002,Plant Pot,Home & Garden,5,18.99,94.95,2024-12-01,Chicago,USA
+ORD_00233,CUST_0117,Wall Clock,Home & Garden,3,34.99,104.97,2024-02-17,Paris,France
+ORD_00234,CUST_0161,Yoga Mat,Sports,5,29.99,149.95,2024-02-18,Berlin,Germany
+ORD_00235,CUST_0135,USB-C Cable,Electronics,4,12.99,51.96,2024-08-04,New York,USA
+ORD_00236,CUST_0251,Jeans,Clothing,4,49.99,199.96,2024-03-01,Mumbai,India
+ORD_00237,CUST_0255,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-11-24,Chicago,USA
+ORD_00238,CUST_0167,Jacket,Clothing,4,119.99,479.96,2024-07-12,Los Angeles,USA
+ORD_00239,CUST_0229,History Book,Books,3,24.99,74.97,2024-07-08,Sydney,Australia
+ORD_00240,CUST_0126,History Book,Books,5,24.99,124.95,2024-12-15,Los Angeles,USA
+ORD_00241,CUST_0108,Yoga Mat,Sports,1,29.99,29.99,2024-07-12,Sydney,Australia
+ORD_00242,CUST_0267,Wall Clock,Home & Garden,1,34.99,34.99,2024-08-12,Sydney,Australia
+ORD_00243,CUST_0108,Phone Case,Electronics,3,19.99,59.97,2024-12-08,Los Angeles,USA
+ORD_00244,CUST_0258,Phone Case,Electronics,1,19.99,19.99,2024-12-26,Mumbai,India
+ORD_00245,CUST_0264,Jeans,Clothing,2,49.99,99.98,2024-09-19,Berlin,Germany
+ORD_00246,CUST_0156,Running Shoes,Sports,2,109.99,219.98,2024-02-21,Berlin,Germany
+ORD_00247,CUST_0285,History Book,Books,3,24.99,74.97,2024-07-13,Sydney,Australia
+ORD_00248,CUST_0260,Phone Case,Electronics,5,19.99,99.95,2024-11-23,Tokyo,Japan
+ORD_00249,CUST_0130,Plant Pot,Home & Garden,1,18.99,18.99,2024-09-13,Chicago,USA
+ORD_00250,CUST_0114,USB-C Cable,Electronics,5,12.99,64.95,2024-10-21,Mumbai,India
+ORD_00251,CUST_0188,Dumbbell Set,Sports,4,59.99,239.96,2024-04-10,London,UK
+ORD_00252,CUST_0123,Fiction Novel,Books,3,14.99,44.97,2024-01-17,London,UK
+ORD_00253,CUST_0021,Wall Clock,Home & Garden,3,34.99,104.97,2024-03-10,Berlin,Germany
+ORD_00254,CUST_0040,Jeans,Clothing,2,49.99,99.98,2024-04-05,Sydney,Australia
+ORD_00255,CUST_0008,Jacket,Clothing,1,119.99,119.99,2024-12-21,London,UK
+ORD_00256,CUST_0227,T-Shirt,Clothing,1,24.99,24.99,2024-08-25,Berlin,Germany
+ORD_00257,CUST_0293,Jeans,Clothing,3,49.99,149.97,2024-03-14,Chicago,USA
+ORD_00258,CUST_0078,Plant Pot,Home & Garden,3,18.99,56.97,2024-02-02,Berlin,Germany
+ORD_00259,CUST_0074,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-08-19,Mumbai,India
+ORD_00260,CUST_0076,Wall Clock,Home & Garden,1,34.99,34.99,2024-02-09,Chicago,USA
+ORD_00261,CUST_0232,Jacket,Clothing,2,119.99,239.98,2024-11-03,Toronto,Canada
+ORD_00262,CUST_0286,Running Shoes,Sports,5,109.99,549.95,2024-08-03,London,UK
+ORD_00263,CUST_0067,Plant Pot,Home & Garden,5,18.99,94.95,2024-07-12,London,UK
+ORD_00264,CUST_0186,Power Bank,Electronics,5,34.99,174.95,2024-05-16,Sydney,Australia
+ORD_00265,CUST_0137,Plant Pot,Home & Garden,1,18.99,18.99,2024-02-03,Chicago,USA
+ORD_00266,CUST_0221,Resistance Bands,Sports,3,19.99,59.97,2024-09-09,Paris,France
+ORD_00267,CUST_0034,Resistance Bands,Sports,5,19.99,99.95,2024-10-01,Berlin,Germany
+ORD_00268,CUST_0283,Python Cookbook,Books,2,44.99,89.98,2024-05-04,Tokyo,Japan
+ORD_00269,CUST_0116,Socks Pack,Clothing,4,14.99,59.96,2024-04-05,Los Angeles,USA
+ORD_00270,CUST_0125,Running Shoes,Sports,1,109.99,109.99,2024-01-13,Tokyo,Japan
+ORD_00271,CUST_0041,USB-C Cable,Electronics,5,12.99,64.95,2024-11-17,Sydney,Australia
+ORD_00272,CUST_0160,Running Shoes,Sports,2,109.99,219.98,2024-09-07,Paris,France
+ORD_00273,CUST_0011,Jeans,Clothing,2,49.99,99.98,2024-12-03,Los Angeles,USA
+ORD_00274,CUST_0156,Yoga Mat,Sports,4,29.99,119.96,2024-04-14,London,UK
+ORD_00275,CUST_0248,Throw Pillow,Home & Garden,2,29.99,59.98,2024-06-11,Paris,France
+ORD_00276,CUST_0286,USB-C Cable,Electronics,1,12.99,12.99,2024-02-14,Los Angeles,USA
+ORD_00277,CUST_0112,Dumbbell Set,Sports,1,59.99,59.99,2024-07-27,Los Angeles,USA
+ORD_00278,CUST_0010,T-Shirt,Clothing,2,24.99,49.98,2024-05-04,Toronto,Canada
+ORD_00279,CUST_0275,Power Bank,Electronics,1,34.99,34.99,2024-08-03,London,UK
+ORD_00280,CUST_0160,Wall Clock,Home & Garden,3,34.99,104.97,2024-08-06,Paris,France
+ORD_00281,CUST_0246,Dumbbell Set,Sports,1,59.99,59.99,2024-09-11,Toronto,Canada
+ORD_00282,CUST_0277,Wall Clock,Home & Garden,1,34.99,34.99,2024-09-10,Toronto,Canada
+ORD_00283,CUST_0018,Plant Pot,Home & Garden,5,18.99,94.95,2024-10-19,London,UK
+ORD_00284,CUST_0239,Python Cookbook,Books,4,44.99,179.96,2024-10-06,Tokyo,Japan
+ORD_00285,CUST_0087,Socks Pack,Clothing,3,14.99,44.97,2024-08-22,Berlin,Germany
+ORD_00286,CUST_0085,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-11-02,Chicago,USA
+ORD_00287,CUST_0131,Sneakers,Clothing,4,89.99,359.96,2024-02-23,Los Angeles,USA
+ORD_00288,CUST_0277,Fiction Novel,Books,2,14.99,29.98,2024-08-09,Los Angeles,USA
+ORD_00289,CUST_0091,Garden Hose,Home & Garden,4,39.99,159.96,2024-08-19,Berlin,Germany
+ORD_00290,CUST_0286,Plant Pot,Home & Garden,3,18.99,56.97,2024-07-10,Tokyo,Japan
+ORD_00291,CUST_0296,Plant Pot,Home & Garden,1,18.99,18.99,2024-11-17,Tokyo,Japan
+ORD_00292,CUST_0268,Power Bank,Electronics,3,34.99,104.97,2024-09-21,Chicago,USA
+ORD_00293,CUST_0226,Socks Pack,Clothing,3,14.99,44.97,2024-08-05,Paris,France
+ORD_00294,CUST_0110,Jeans,Clothing,5,49.99,249.95,2024-09-21,Sydney,Australia
+ORD_00295,CUST_0045,Sneakers,Clothing,5,89.99,449.95,2024-09-17,Paris,France
+ORD_00296,CUST_0126,Garden Hose,Home & Garden,5,39.99,199.95,2024-03-19,London,UK
+ORD_00297,CUST_0140,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-06-08,Berlin,Germany
+ORD_00298,CUST_0201,Power Bank,Electronics,1,34.99,34.99,2024-02-19,London,UK
+ORD_00299,CUST_0267,History Book,Books,2,24.99,49.98,2024-04-23,New York,USA
+ORD_00300,CUST_0259,Wireless Headphones,Electronics,4,59.99,239.96,2024-10-07,Mumbai,India
+ORD_00301,CUST_0262,Running Shoes,Sports,1,109.99,109.99,2024-04-22,Los Angeles,USA
+ORD_00302,CUST_0203,USB-C Cable,Electronics,2,12.99,25.98,2024-11-26,Chicago,USA
+ORD_00303,CUST_0164,Data Science Handbook,Books,5,39.99,199.95,2024-09-22,Paris,France
+ORD_00304,CUST_0077,Water Bottle,Sports,4,14.99,59.96,2024-04-18,Sydney,Australia
+ORD_00305,CUST_0156,USB-C Cable,Electronics,4,12.99,51.96,2024-05-13,Mumbai,India
+ORD_00306,CUST_0121,Fiction Novel,Books,1,14.99,14.99,2024-09-25,Paris,France
+ORD_00307,CUST_0053,Running Shoes,Sports,2,109.99,219.98,2024-12-24,Berlin,Germany
+ORD_00308,CUST_0164,Resistance Bands,Sports,2,19.99,39.98,2024-09-14,Toronto,Canada
+ORD_00309,CUST_0243,Garden Hose,Home & Garden,5,39.99,199.95,2024-03-12,London,UK
+ORD_00310,CUST_0253,Dumbbell Set,Sports,5,59.99,299.95,2024-12-28,London,UK
+ORD_00311,CUST_0070,Phone Case,Electronics,5,19.99,99.95,2024-10-03,Sydney,Australia
+ORD_00312,CUST_0073,Garden Hose,Home & Garden,3,39.99,119.97,2024-08-19,Tokyo,Japan
+ORD_00313,CUST_0139,Data Science Handbook,Books,2,39.99,79.98,2024-08-11,Chicago,USA
+ORD_00314,CUST_0245,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-04-25,Tokyo,Japan
+ORD_00315,CUST_0012,Plant Pot,Home & Garden,2,18.99,37.98,2024-05-13,New York,USA
+ORD_00316,CUST_0042,Python Cookbook,Books,5,44.99,224.95,2024-09-22,Chicago,USA
+ORD_00317,CUST_0136,Python Cookbook,Books,1,44.99,44.99,2024-12-09,London,UK
+ORD_00318,CUST_0127,Power Bank,Electronics,1,34.99,34.99,2024-05-18,New York,USA
+ORD_00319,CUST_0190,Dumbbell Set,Sports,2,59.99,119.98,2024-01-27,Mumbai,India
+ORD_00320,CUST_0082,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-06-25,Chicago,USA
+ORD_00321,CUST_0214,Jacket,Clothing,3,119.99,359.97,2024-10-17,Los Angeles,USA
+ORD_00322,CUST_0166,Wireless Headphones,Electronics,3,59.99,179.97,2024-03-15,Paris,France
+ORD_00323,CUST_0001,Jacket,Clothing,4,119.99,479.96,2024-12-01,Tokyo,Japan
+ORD_00324,CUST_0029,Yoga Mat,Sports,3,29.99,89.97,2024-09-21,Los Angeles,USA
+ORD_00325,CUST_0090,Power Bank,Electronics,2,34.99,69.98,2024-06-05,London,UK
+ORD_00326,CUST_0202,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-10-10,London,UK
+ORD_00327,CUST_0272,Jacket,Clothing,4,119.99,479.96,2024-10-27,Toronto,Canada
+ORD_00328,CUST_0225,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-09-23,Chicago,USA
+ORD_00329,CUST_0081,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-02-16,Toronto,Canada
+ORD_00330,CUST_0047,Dumbbell Set,Sports,1,59.99,59.99,2024-04-15,London,UK
+ORD_00331,CUST_0069,T-Shirt,Clothing,3,24.99,74.97,2024-01-03,New York,USA
+ORD_00332,CUST_0011,Wall Clock,Home & Garden,4,34.99,139.96,2024-05-19,New York,USA
+ORD_00333,CUST_0008,Self-Help Guide,Books,2,19.99,39.98,2024-02-02,Los Angeles,USA
+ORD_00334,CUST_0162,Resistance Bands,Sports,5,19.99,99.95,2024-06-23,Paris,France
+ORD_00335,CUST_0164,Wireless Headphones,Electronics,3,59.99,179.97,2024-09-17,London,UK
+ORD_00336,CUST_0152,Jeans,Clothing,4,49.99,199.96,2024-07-22,Chicago,USA
+ORD_00337,CUST_0124,Fiction Novel,Books,2,14.99,29.98,2024-03-18,London,UK
+ORD_00338,CUST_0036,Jacket,Clothing,4,119.99,479.96,2024-10-03,Mumbai,India
+ORD_00339,CUST_0014,T-Shirt,Clothing,1,24.99,24.99,2024-10-02,Los Angeles,USA
+ORD_00340,CUST_0042,Jacket,Clothing,5,119.99,599.95,2024-12-19,Toronto,Canada
+ORD_00341,CUST_0056,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-11-27,London,UK
+ORD_00342,CUST_0058,Dumbbell Set,Sports,5,59.99,299.95,2024-08-07,Berlin,Germany
+ORD_00343,CUST_0076,Garden Hose,Home & Garden,5,39.99,199.95,2024-09-01,Chicago,USA
+ORD_00344,CUST_0249,Garden Hose,Home & Garden,3,39.99,119.97,2024-05-20,London,UK
+ORD_00345,CUST_0280,Plant Pot,Home & Garden,3,18.99,56.97,2024-08-11,New York,USA
+ORD_00346,CUST_0126,Garden Hose,Home & Garden,2,39.99,79.98,2024-04-22,Chicago,USA
+ORD_00347,CUST_0048,Power Bank,Electronics,2,34.99,69.98,2024-05-22,Paris,France
+ORD_00348,CUST_0095,T-Shirt,Clothing,3,24.99,74.97,2024-06-16,Los Angeles,USA
+ORD_00349,CUST_0109,History Book,Books,5,24.99,124.95,2024-01-01,New York,USA
+ORD_00350,CUST_0194,Sneakers,Clothing,5,89.99,449.95,2024-10-05,Sydney,Australia
+ORD_00351,CUST_0250,Dumbbell Set,Sports,1,59.99,59.99,2024-06-24,Berlin,Germany
+ORD_00352,CUST_0065,Water Bottle,Sports,1,14.99,14.99,2024-06-17,London,UK
+ORD_00353,CUST_0009,Plant Pot,Home & Garden,2,18.99,37.98,2024-03-25,Tokyo,Japan
+ORD_00354,CUST_0127,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-07-05,Los Angeles,USA
+ORD_00355,CUST_0055,Wireless Headphones,Electronics,4,59.99,239.96,2024-04-10,Toronto,Canada
+ORD_00356,CUST_0108,Jeans,Clothing,1,49.99,49.99,2024-05-08,Paris,France
+ORD_00357,CUST_0241,Running Shoes,Sports,3,109.99,329.97,2024-11-01,Chicago,USA
+ORD_00358,CUST_0033,Running Shoes,Sports,1,109.99,109.99,2024-01-04,Sydney,Australia
+ORD_00359,CUST_0060,Garden Hose,Home & Garden,3,39.99,119.97,2024-11-27,Los Angeles,USA
+ORD_00360,CUST_0158,Python Cookbook,Books,5,44.99,224.95,2024-02-28,Tokyo,Japan
+ORD_00361,CUST_0019,Plant Pot,Home & Garden,2,18.99,37.98,2024-04-14,Berlin,Germany
+ORD_00362,CUST_0242,Yoga Mat,Sports,3,29.99,89.97,2024-12-05,Mumbai,India
+ORD_00363,CUST_0160,Dumbbell Set,Sports,2,59.99,119.98,2024-06-09,Berlin,Germany
+ORD_00364,CUST_0120,Dumbbell Set,Sports,2,59.99,119.98,2024-10-17,Toronto,Canada
+ORD_00365,CUST_0066,Plant Pot,Home & Garden,4,18.99,75.96,2024-03-28,London,UK
+ORD_00366,CUST_0177,Phone Case,Electronics,5,19.99,99.95,2024-07-11,New York,USA
+ORD_00367,CUST_0241,Fiction Novel,Books,3,14.99,44.97,2024-08-11,Berlin,Germany
+ORD_00368,CUST_0118,Dumbbell Set,Sports,5,59.99,299.95,2024-10-10,Sydney,Australia
+ORD_00369,CUST_0116,Sneakers,Clothing,5,89.99,449.95,2024-06-09,Paris,France
+ORD_00370,CUST_0097,Data Science Handbook,Books,3,39.99,119.97,2024-12-10,London,UK
+ORD_00371,CUST_0092,USB-C Cable,Electronics,3,12.99,38.97,2024-02-15,New York,USA
+ORD_00372,CUST_0065,Self-Help Guide,Books,2,19.99,39.98,2024-10-16,Toronto,Canada
+ORD_00373,CUST_0158,History Book,Books,3,24.99,74.97,2024-10-28,Chicago,USA
+ORD_00374,CUST_0201,Yoga Mat,Sports,3,29.99,89.97,2024-12-02,Los Angeles,USA
+ORD_00375,CUST_0032,Self-Help Guide,Books,5,19.99,99.95,2024-12-26,London,UK
+ORD_00376,CUST_0012,Wall Clock,Home & Garden,1,34.99,34.99,2024-12-20,Tokyo,Japan
+ORD_00377,CUST_0101,Water Bottle,Sports,1,14.99,14.99,2024-09-05,New York,USA
+ORD_00378,CUST_0140,Resistance Bands,Sports,3,19.99,59.97,2024-06-01,Chicago,USA
+ORD_00379,CUST_0265,Garden Hose,Home & Garden,5,39.99,199.95,2024-11-28,London,UK
+ORD_00380,CUST_0082,Socks Pack,Clothing,3,14.99,44.97,2024-09-05,New York,USA
+ORD_00381,CUST_0065,Garden Hose,Home & Garden,1,39.99,39.99,2024-07-07,Berlin,Germany
+ORD_00382,CUST_0257,Yoga Mat,Sports,5,29.99,149.95,2024-11-06,Sydney,Australia
+ORD_00383,CUST_0174,Water Bottle,Sports,5,14.99,74.95,2024-05-04,Toronto,Canada
+ORD_00384,CUST_0145,USB-C Cable,Electronics,5,12.99,64.95,2024-03-16,Paris,France
+ORD_00385,CUST_0274,Self-Help Guide,Books,4,19.99,79.96,2024-06-27,Tokyo,Japan
+ORD_00386,CUST_0036,T-Shirt,Clothing,3,24.99,74.97,2024-11-23,Los Angeles,USA
+ORD_00387,CUST_0212,Socks Pack,Clothing,1,14.99,14.99,2024-04-21,Chicago,USA
+ORD_00388,CUST_0157,Yoga Mat,Sports,1,29.99,29.99,2024-07-13,Mumbai,India
+ORD_00389,CUST_0188,Garden Hose,Home & Garden,3,39.99,119.97,2024-09-04,Los Angeles,USA
+ORD_00390,CUST_0013,Jacket,Clothing,4,119.99,479.96,2024-07-13,Los Angeles,USA
+ORD_00391,CUST_0135,Water Bottle,Sports,5,14.99,74.95,2024-02-17,Chicago,USA
+ORD_00392,CUST_0030,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-07-27,Los Angeles,USA
+ORD_00393,CUST_0125,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-12-07,Toronto,Canada
+ORD_00394,CUST_0262,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-11-18,Mumbai,India
+ORD_00395,CUST_0110,Sneakers,Clothing,1,89.99,89.99,2024-01-06,Berlin,Germany
+ORD_00396,CUST_0288,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-08-02,Berlin,Germany
+ORD_00397,CUST_0157,Jacket,Clothing,3,119.99,359.97,2024-11-11,London,UK
+ORD_00398,CUST_0252,USB-C Cable,Electronics,5,12.99,64.95,2024-11-04,Sydney,Australia
+ORD_00399,CUST_0282,T-Shirt,Clothing,1,24.99,24.99,2024-02-21,Toronto,Canada
+ORD_00400,CUST_0171,Plant Pot,Home & Garden,5,18.99,94.95,2024-09-12,Toronto,Canada
+ORD_00401,CUST_0052,Fiction Novel,Books,5,14.99,74.95,2024-12-09,New York,USA
+ORD_00402,CUST_0086,Jacket,Clothing,1,119.99,119.99,2024-03-28,Paris,France
+ORD_00403,CUST_0039,Wireless Headphones,Electronics,4,59.99,239.96,2024-09-16,Toronto,Canada
+ORD_00404,CUST_0253,Yoga Mat,Sports,5,29.99,149.95,2024-05-27,Tokyo,Japan
+ORD_00405,CUST_0091,Python Cookbook,Books,5,44.99,224.95,2024-07-11,Sydney,Australia
+ORD_00406,CUST_0292,Wall Clock,Home & Garden,5,34.99,174.95,2024-06-20,Chicago,USA
+ORD_00407,CUST_0259,Fiction Novel,Books,3,14.99,44.97,2024-05-08,Berlin,Germany
+ORD_00408,CUST_0027,T-Shirt,Clothing,2,24.99,49.98,2024-09-03,Los Angeles,USA
+ORD_00409,CUST_0059,Garden Hose,Home & Garden,4,39.99,159.96,2024-12-24,Berlin,Germany
+ORD_00410,CUST_0048,Python Cookbook,Books,1,44.99,44.99,2024-11-06,London,UK
+ORD_00411,CUST_0116,Socks Pack,Clothing,5,14.99,74.95,2024-07-19,Chicago,USA
+ORD_00412,CUST_0071,Dumbbell Set,Sports,5,59.99,299.95,2024-07-02,New York,USA
+ORD_00413,CUST_0045,T-Shirt,Clothing,5,24.99,124.95,2024-03-05,New York,USA
+ORD_00414,CUST_0162,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-08-18,Chicago,USA
+ORD_00415,CUST_0259,Data Science Handbook,Books,3,39.99,119.97,2024-08-19,Toronto,Canada
+ORD_00416,CUST_0105,Running Shoes,Sports,5,109.99,549.95,2024-02-03,Los Angeles,USA
+ORD_00417,CUST_0187,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-12-24,Berlin,Germany
+ORD_00418,CUST_0163,Jeans,Clothing,4,49.99,199.96,2024-06-06,Los Angeles,USA
+ORD_00419,CUST_0053,Data Science Handbook,Books,1,39.99,39.99,2024-09-05,Tokyo,Japan
+ORD_00420,CUST_0217,Wall Clock,Home & Garden,2,34.99,69.98,2024-11-05,Sydney,Australia
+ORD_00421,CUST_0247,Self-Help Guide,Books,4,19.99,79.96,2024-02-17,Los Angeles,USA
+ORD_00422,CUST_0153,Throw Pillow,Home & Garden,3,29.99,89.97,2024-12-13,New York,USA
+ORD_00423,CUST_0154,Socks Pack,Clothing,1,14.99,14.99,2024-06-26,Berlin,Germany
+ORD_00424,CUST_0178,Wall Clock,Home & Garden,1,34.99,34.99,2024-03-07,Sydney,Australia
+ORD_00425,CUST_0180,History Book,Books,4,24.99,99.96,2024-12-01,New York,USA
+ORD_00426,CUST_0143,Throw Pillow,Home & Garden,5,29.99,149.95,2024-09-02,Chicago,USA
+ORD_00427,CUST_0225,Dumbbell Set,Sports,4,59.99,239.96,2024-10-26,Tokyo,Japan
+ORD_00428,CUST_0257,Throw Pillow,Home & Garden,4,29.99,119.96,2024-10-18,Los Angeles,USA
+ORD_00429,CUST_0234,Jeans,Clothing,3,49.99,149.97,2024-09-27,Tokyo,Japan
+ORD_00430,CUST_0128,Running Shoes,Sports,2,109.99,219.98,2024-08-23,Paris,France
+ORD_00431,CUST_0147,Sneakers,Clothing,1,89.99,89.99,2024-06-15,Sydney,Australia
+ORD_00432,CUST_0040,Sneakers,Clothing,4,89.99,359.96,2024-05-06,London,UK
+ORD_00433,CUST_0068,Jacket,Clothing,1,119.99,119.99,2024-11-21,Sydney,Australia
+ORD_00434,CUST_0287,Sneakers,Clothing,1,89.99,89.99,2024-10-05,New York,USA
+ORD_00435,CUST_0099,T-Shirt,Clothing,2,24.99,49.98,2024-07-06,Chicago,USA
+ORD_00436,CUST_0213,Running Shoes,Sports,4,109.99,439.96,2024-11-05,Los Angeles,USA
+ORD_00437,CUST_0241,Data Science Handbook,Books,4,39.99,159.96,2024-02-11,Berlin,Germany
+ORD_00438,CUST_0039,Jeans,Clothing,2,49.99,99.98,2024-09-16,London,UK
+ORD_00439,CUST_0127,Running Shoes,Sports,1,109.99,109.99,2024-06-07,New York,USA
+ORD_00440,CUST_0245,Fiction Novel,Books,4,14.99,59.96,2024-03-13,Los Angeles,USA
+ORD_00441,CUST_0102,Wall Clock,Home & Garden,2,34.99,69.98,2024-05-06,Chicago,USA
+ORD_00442,CUST_0118,USB-C Cable,Electronics,3,12.99,38.97,2024-09-07,London,UK
+ORD_00443,CUST_0056,Running Shoes,Sports,1,109.99,109.99,2024-04-11,London,UK
+ORD_00444,CUST_0091,Wireless Headphones,Electronics,3,59.99,179.97,2024-11-11,Sydney,Australia
+ORD_00445,CUST_0018,Resistance Bands,Sports,3,19.99,59.97,2024-12-11,Sydney,Australia
+ORD_00446,CUST_0261,Garden Hose,Home & Garden,4,39.99,159.96,2024-08-28,New York,USA
+ORD_00447,CUST_0250,Garden Hose,Home & Garden,3,39.99,119.97,2024-11-15,Toronto,Canada
+ORD_00448,CUST_0025,Data Science Handbook,Books,3,39.99,119.97,2024-09-01,Sydney,Australia
+ORD_00449,CUST_0148,Throw Pillow,Home & Garden,3,29.99,89.97,2024-05-13,Berlin,Germany
+ORD_00450,CUST_0251,Garden Hose,Home & Garden,3,39.99,119.97,2024-12-04,Tokyo,Japan
+ORD_00451,CUST_0021,Data Science Handbook,Books,1,39.99,39.99,2024-11-22,Sydney,Australia
+ORD_00452,CUST_0267,Running Shoes,Sports,5,109.99,549.95,2024-02-09,Los Angeles,USA
+ORD_00453,CUST_0247,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-08-18,Chicago,USA
+ORD_00454,CUST_0168,Water Bottle,Sports,2,14.99,29.98,2024-08-09,Mumbai,India
+ORD_00455,CUST_0225,T-Shirt,Clothing,2,24.99,49.98,2024-01-18,Los Angeles,USA
+ORD_00456,CUST_0251,Running Shoes,Sports,3,109.99,329.97,2024-01-20,New York,USA
+ORD_00457,CUST_0068,Python Cookbook,Books,4,44.99,179.96,2024-10-28,Los Angeles,USA
+ORD_00458,CUST_0043,Socks Pack,Clothing,5,14.99,74.95,2024-04-19,Sydney,Australia
+ORD_00459,CUST_0289,Dumbbell Set,Sports,3,59.99,179.97,2024-04-10,Chicago,USA
+ORD_00460,CUST_0129,Water Bottle,Sports,2,14.99,29.98,2024-12-13,New York,USA
+ORD_00461,CUST_0183,Data Science Handbook,Books,4,39.99,159.96,2024-10-17,Sydney,Australia
+ORD_00462,CUST_0064,Jacket,Clothing,5,119.99,599.95,2024-09-01,Toronto,Canada
+ORD_00463,CUST_0265,Throw Pillow,Home & Garden,2,29.99,59.98,2024-01-06,Mumbai,India
+ORD_00464,CUST_0243,Socks Pack,Clothing,3,14.99,44.97,2024-10-03,Sydney,Australia
+ORD_00465,CUST_0047,USB-C Cable,Electronics,2,12.99,25.98,2024-05-07,Sydney,Australia
+ORD_00466,CUST_0124,Wireless Headphones,Electronics,1,59.99,59.99,2024-06-14,Paris,France
+ORD_00467,CUST_0222,Self-Help Guide,Books,3,19.99,59.97,2024-09-04,Tokyo,Japan
+ORD_00468,CUST_0122,Yoga Mat,Sports,3,29.99,89.97,2024-03-26,Tokyo,Japan
+ORD_00469,CUST_0027,USB-C Cable,Electronics,5,12.99,64.95,2024-10-28,Sydney,Australia
+ORD_00470,CUST_0061,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-03-06,Los Angeles,USA
+ORD_00471,CUST_0058,Throw Pillow,Home & Garden,2,29.99,59.98,2024-10-06,Chicago,USA
+ORD_00472,CUST_0080,Water Bottle,Sports,5,14.99,74.95,2024-08-08,Tokyo,Japan
+ORD_00473,CUST_0008,USB-C Cable,Electronics,2,12.99,25.98,2024-12-15,Los Angeles,USA
+ORD_00474,CUST_0255,Wall Clock,Home & Garden,2,34.99,69.98,2024-08-12,Berlin,Germany
+ORD_00475,CUST_0236,T-Shirt,Clothing,1,24.99,24.99,2024-08-13,Los Angeles,USA
+ORD_00476,CUST_0276,Python Cookbook,Books,2,44.99,89.98,2024-08-24,London,UK
+ORD_00477,CUST_0157,Socks Pack,Clothing,1,14.99,14.99,2024-01-25,Chicago,USA
+ORD_00478,CUST_0186,Water Bottle,Sports,2,14.99,29.98,2024-07-22,New York,USA
+ORD_00479,CUST_0048,Python Cookbook,Books,1,44.99,44.99,2024-12-03,Sydney,Australia
+ORD_00480,CUST_0264,Self-Help Guide,Books,3,19.99,59.97,2024-03-15,New York,USA
+ORD_00481,CUST_0049,Running Shoes,Sports,1,109.99,109.99,2024-09-18,Toronto,Canada
+ORD_00482,CUST_0072,Sneakers,Clothing,1,89.99,89.99,2024-04-15,Mumbai,India
+ORD_00483,CUST_0258,Fiction Novel,Books,3,14.99,44.97,2024-05-24,Paris,France
+ORD_00484,CUST_0075,Self-Help Guide,Books,5,19.99,99.95,2024-10-21,Sydney,Australia
+ORD_00485,CUST_0240,Jacket,Clothing,2,119.99,239.98,2024-03-10,Paris,France
+ORD_00486,CUST_0217,Fiction Novel,Books,5,14.99,74.95,2024-10-26,New York,USA
+ORD_00487,CUST_0107,Power Bank,Electronics,2,34.99,69.98,2024-08-19,London,UK
+ORD_00488,CUST_0029,Plant Pot,Home & Garden,5,18.99,94.95,2024-08-12,Chicago,USA
+ORD_00489,CUST_0155,Self-Help Guide,Books,1,19.99,19.99,2024-10-17,Chicago,USA
+ORD_00490,CUST_0266,Jacket,Clothing,5,119.99,599.95,2024-10-09,Berlin,Germany
+ORD_00491,CUST_0071,Jacket,Clothing,2,119.99,239.98,2024-08-09,London,UK
+ORD_00492,CUST_0008,Self-Help Guide,Books,5,19.99,99.95,2024-06-07,Mumbai,India
+ORD_00493,CUST_0182,Running Shoes,Sports,2,109.99,219.98,2024-06-14,Paris,France
+ORD_00494,CUST_0260,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-10-01,Toronto,Canada
+ORD_00495,CUST_0261,Resistance Bands,Sports,3,19.99,59.97,2024-01-11,Mumbai,India
+ORD_00496,CUST_0260,Fiction Novel,Books,2,14.99,29.98,2024-03-21,Paris,France
+ORD_00497,CUST_0165,Self-Help Guide,Books,2,19.99,39.98,2024-07-12,Chicago,USA
+ORD_00498,CUST_0070,History Book,Books,2,24.99,49.98,2024-05-01,Sydney,Australia
+ORD_00499,CUST_0033,Socks Pack,Clothing,3,14.99,44.97,2024-08-11,Sydney,Australia
+ORD_00500,CUST_0143,Self-Help Guide,Books,3,19.99,59.97,2024-02-13,Los Angeles,USA
+ORD_00501,CUST_0006,Phone Case,Electronics,2,19.99,39.98,2024-11-24,Chicago,USA
+ORD_00502,CUST_0174,Yoga Mat,Sports,2,29.99,59.98,2024-02-04,Mumbai,India
+ORD_00503,CUST_0204,Socks Pack,Clothing,1,14.99,14.99,2024-12-24,Mumbai,India
+ORD_00504,CUST_0064,Socks Pack,Clothing,1,14.99,14.99,2024-02-03,Chicago,USA
+ORD_00505,CUST_0019,Wireless Headphones,Electronics,2,59.99,119.98,2024-12-03,New York,USA
+ORD_00506,CUST_0249,Wireless Headphones,Electronics,1,59.99,59.99,2024-09-17,Paris,France
+ORD_00507,CUST_0123,Phone Case,Electronics,1,19.99,19.99,2024-11-09,Tokyo,Japan
+ORD_00508,CUST_0214,Fiction Novel,Books,3,14.99,44.97,2024-05-13,Mumbai,India
+ORD_00509,CUST_0021,Data Science Handbook,Books,1,39.99,39.99,2024-03-12,Berlin,Germany
+ORD_00510,CUST_0047,History Book,Books,2,24.99,49.98,2024-10-07,Berlin,Germany
+ORD_00511,CUST_0286,Self-Help Guide,Books,4,19.99,79.96,2024-09-19,London,UK
+ORD_00512,CUST_0230,Dumbbell Set,Sports,1,59.99,59.99,2024-03-09,Toronto,Canada
+ORD_00513,CUST_0196,Data Science Handbook,Books,3,39.99,119.97,2024-11-04,Tokyo,Japan
+ORD_00514,CUST_0087,Socks Pack,Clothing,3,14.99,44.97,2024-05-16,Chicago,USA
+ORD_00515,CUST_0047,Jacket,Clothing,3,119.99,359.97,2024-08-26,Tokyo,Japan
+ORD_00516,CUST_0203,USB-C Cable,Electronics,4,12.99,51.96,2024-07-20,Tokyo,Japan
+ORD_00517,CUST_0016,Python Cookbook,Books,4,44.99,179.96,2024-05-13,Berlin,Germany
+ORD_00518,CUST_0133,Power Bank,Electronics,2,34.99,69.98,2024-10-21,London,UK
+ORD_00519,CUST_0140,Data Science Handbook,Books,5,39.99,199.95,2024-07-02,Toronto,Canada
+ORD_00520,CUST_0150,Self-Help Guide,Books,3,19.99,59.97,2024-01-18,Paris,France
+ORD_00521,CUST_0288,Self-Help Guide,Books,5,19.99,99.95,2024-07-18,Berlin,Germany
+ORD_00522,CUST_0022,Self-Help Guide,Books,4,19.99,79.96,2024-05-15,Los Angeles,USA
+ORD_00523,CUST_0101,Fiction Novel,Books,3,14.99,44.97,2024-06-16,Mumbai,India
+ORD_00524,CUST_0136,Wall Clock,Home & Garden,5,34.99,174.95,2024-08-06,Paris,France
+ORD_00525,CUST_0177,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-01-19,New York,USA
+ORD_00526,CUST_0221,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-09-01,Paris,France
+ORD_00527,CUST_0032,Sneakers,Clothing,5,89.99,449.95,2024-12-28,Los Angeles,USA
+ORD_00528,CUST_0098,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-05-18,Los Angeles,USA
+ORD_00529,CUST_0046,Sneakers,Clothing,2,89.99,179.98,2024-03-07,Sydney,Australia
+ORD_00530,CUST_0227,Dumbbell Set,Sports,3,59.99,179.97,2024-06-24,Los Angeles,USA
+ORD_00531,CUST_0218,Socks Pack,Clothing,5,14.99,74.95,2024-04-10,Chicago,USA
+ORD_00532,CUST_0175,Jacket,Clothing,2,119.99,239.98,2024-10-28,Tokyo,Japan
+ORD_00533,CUST_0103,Power Bank,Electronics,1,34.99,34.99,2024-08-21,Paris,France
+ORD_00534,CUST_0062,Water Bottle,Sports,5,14.99,74.95,2024-05-15,London,UK
+ORD_00535,CUST_0282,Self-Help Guide,Books,2,19.99,39.98,2024-06-07,London,UK
+ORD_00536,CUST_0272,Water Bottle,Sports,5,14.99,74.95,2024-07-23,Mumbai,India
+ORD_00537,CUST_0192,Resistance Bands,Sports,1,19.99,19.99,2024-07-03,London,UK
+ORD_00538,CUST_0192,Plant Pot,Home & Garden,3,18.99,56.97,2024-05-12,Paris,France
+ORD_00539,CUST_0128,History Book,Books,5,24.99,124.95,2024-04-15,London,UK
+ORD_00540,CUST_0256,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-12-13,Paris,France
+ORD_00541,CUST_0296,USB-C Cable,Electronics,1,12.99,12.99,2024-07-05,Sydney,Australia
+ORD_00542,CUST_0054,Power Bank,Electronics,2,34.99,69.98,2024-04-19,Los Angeles,USA
+ORD_00543,CUST_0004,Resistance Bands,Sports,4,19.99,79.96,2024-01-26,New York,USA
+ORD_00544,CUST_0255,Wall Clock,Home & Garden,1,34.99,34.99,2024-02-05,New York,USA
+ORD_00545,CUST_0203,Garden Hose,Home & Garden,2,39.99,79.98,2024-06-11,Berlin,Germany
+ORD_00546,CUST_0268,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-02-01,Tokyo,Japan
+ORD_00547,CUST_0102,Plant Pot,Home & Garden,3,18.99,56.97,2024-07-20,Mumbai,India
+ORD_00548,CUST_0198,Power Bank,Electronics,2,34.99,69.98,2024-02-21,Toronto,Canada
+ORD_00549,CUST_0262,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-06-16,Mumbai,India
+ORD_00550,CUST_0108,Socks Pack,Clothing,3,14.99,44.97,2024-09-07,Sydney,Australia
+ORD_00551,CUST_0145,Python Cookbook,Books,1,44.99,44.99,2024-09-11,London,UK
+ORD_00552,CUST_0194,USB-C Cable,Electronics,3,12.99,38.97,2024-03-18,Paris,France
+ORD_00553,CUST_0067,History Book,Books,3,24.99,74.97,2024-09-02,Toronto,Canada
+ORD_00554,CUST_0182,Power Bank,Electronics,3,34.99,104.97,2024-09-07,Tokyo,Japan
+ORD_00555,CUST_0173,Wireless Headphones,Electronics,5,59.99,299.95,2024-06-05,Chicago,USA
+ORD_00556,CUST_0248,Plant Pot,Home & Garden,1,18.99,18.99,2024-07-26,Los Angeles,USA
+ORD_00557,CUST_0160,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-01-09,Mumbai,India
+ORD_00558,CUST_0004,Water Bottle,Sports,5,14.99,74.95,2024-11-22,Paris,France
+ORD_00559,CUST_0070,Self-Help Guide,Books,1,19.99,19.99,2024-12-06,Mumbai,India
+ORD_00560,CUST_0255,Garden Hose,Home & Garden,1,39.99,39.99,2024-01-18,New York,USA
+ORD_00561,CUST_0192,Running Shoes,Sports,3,109.99,329.97,2024-07-15,Berlin,Germany
+ORD_00562,CUST_0023,Phone Case,Electronics,4,19.99,79.96,2024-09-21,Sydney,Australia
+ORD_00563,CUST_0217,Power Bank,Electronics,3,34.99,104.97,2024-07-16,Berlin,Germany
+ORD_00564,CUST_0220,Socks Pack,Clothing,5,14.99,74.95,2024-01-11,Los Angeles,USA
+ORD_00565,CUST_0219,Yoga Mat,Sports,2,29.99,59.98,2024-06-17,Chicago,USA
+ORD_00566,CUST_0065,Water Bottle,Sports,4,14.99,59.96,2024-12-25,New York,USA
+ORD_00567,CUST_0236,Data Science Handbook,Books,1,39.99,39.99,2024-03-17,Toronto,Canada
+ORD_00568,CUST_0078,Fiction Novel,Books,5,14.99,74.95,2024-02-20,Los Angeles,USA
+ORD_00569,CUST_0136,Self-Help Guide,Books,3,19.99,59.97,2024-02-19,Los Angeles,USA
+ORD_00570,CUST_0022,Self-Help Guide,Books,2,19.99,39.98,2024-05-14,London,UK
+ORD_00571,CUST_0154,History Book,Books,1,24.99,24.99,2024-05-01,Chicago,USA
+ORD_00572,CUST_0253,Running Shoes,Sports,3,109.99,329.97,2024-01-13,London,UK
+ORD_00573,CUST_0057,Dumbbell Set,Sports,2,59.99,119.98,2024-02-10,Tokyo,Japan
+ORD_00574,CUST_0043,Running Shoes,Sports,3,109.99,329.97,2024-04-05,Chicago,USA
+ORD_00575,CUST_0163,Phone Case,Electronics,1,19.99,19.99,2024-04-13,New York,USA
+ORD_00576,CUST_0125,USB-C Cable,Electronics,3,12.99,38.97,2024-07-15,Tokyo,Japan
+ORD_00577,CUST_0206,Jeans,Clothing,3,49.99,149.97,2024-08-09,New York,USA
+ORD_00578,CUST_0033,Jeans,Clothing,4,49.99,199.96,2024-05-01,Sydney,Australia
+ORD_00579,CUST_0098,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-05-22,Berlin,Germany
+ORD_00580,CUST_0160,Yoga Mat,Sports,2,29.99,59.98,2024-03-17,Toronto,Canada
+ORD_00581,CUST_0227,Wireless Headphones,Electronics,4,59.99,239.96,2024-05-24,Paris,France
+ORD_00582,CUST_0235,Garden Hose,Home & Garden,1,39.99,39.99,2024-11-27,New York,USA
+ORD_00583,CUST_0075,T-Shirt,Clothing,5,24.99,124.95,2024-10-26,Tokyo,Japan
+ORD_00584,CUST_0190,Jacket,Clothing,4,119.99,479.96,2024-04-27,Paris,France
+ORD_00585,CUST_0110,Dumbbell Set,Sports,4,59.99,239.96,2024-06-27,New York,USA
+ORD_00586,CUST_0101,Throw Pillow,Home & Garden,1,29.99,29.99,2024-02-28,Sydney,Australia
+ORD_00587,CUST_0031,Wireless Headphones,Electronics,1,59.99,59.99,2024-11-15,Berlin,Germany
+ORD_00588,CUST_0294,T-Shirt,Clothing,3,24.99,74.97,2024-04-14,Los Angeles,USA
+ORD_00589,CUST_0218,Wireless Headphones,Electronics,2,59.99,119.98,2024-12-28,New York,USA
+ORD_00590,CUST_0028,Jacket,Clothing,3,119.99,359.97,2024-07-12,New York,USA
+ORD_00591,CUST_0297,Power Bank,Electronics,4,34.99,139.96,2024-12-28,Paris,France
+ORD_00592,CUST_0258,Socks Pack,Clothing,3,14.99,44.97,2024-02-13,Sydney,Australia
+ORD_00593,CUST_0259,USB-C Cable,Electronics,3,12.99,38.97,2024-05-10,Toronto,Canada
+ORD_00594,CUST_0056,Wall Clock,Home & Garden,5,34.99,174.95,2024-09-09,Chicago,USA
+ORD_00595,CUST_0169,Wireless Headphones,Electronics,3,59.99,179.97,2024-03-21,London,UK
+ORD_00596,CUST_0203,Fiction Novel,Books,1,14.99,14.99,2024-05-08,Paris,France
+ORD_00597,CUST_0092,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-09-13,London,UK
+ORD_00598,CUST_0256,Garden Hose,Home & Garden,2,39.99,79.98,2024-01-17,Los Angeles,USA
+ORD_00599,CUST_0129,Jeans,Clothing,1,49.99,49.99,2024-05-21,Mumbai,India
+ORD_00600,CUST_0038,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-12-07,Paris,France
+ORD_00601,CUST_0090,History Book,Books,2,24.99,49.98,2024-10-26,Los Angeles,USA
+ORD_00602,CUST_0214,Resistance Bands,Sports,4,19.99,79.96,2024-05-20,Los Angeles,USA
+ORD_00603,CUST_0159,Self-Help Guide,Books,3,19.99,59.97,2024-02-04,London,UK
+ORD_00604,CUST_0054,Wall Clock,Home & Garden,3,34.99,104.97,2024-06-18,Sydney,Australia
+ORD_00605,CUST_0182,T-Shirt,Clothing,1,24.99,24.99,2024-04-08,Mumbai,India
+ORD_00606,CUST_0073,Power Bank,Electronics,1,34.99,34.99,2024-05-08,Sydney,Australia
+ORD_00607,CUST_0082,Yoga Mat,Sports,2,29.99,59.98,2024-03-26,Chicago,USA
+ORD_00608,CUST_0102,Sneakers,Clothing,2,89.99,179.98,2024-05-10,Mumbai,India
+ORD_00609,CUST_0068,T-Shirt,Clothing,4,24.99,99.96,2024-03-09,New York,USA
+ORD_00610,CUST_0279,Fiction Novel,Books,5,14.99,74.95,2024-01-15,London,UK
+ORD_00611,CUST_0010,Fiction Novel,Books,5,14.99,74.95,2024-10-02,London,UK
+ORD_00612,CUST_0269,History Book,Books,5,24.99,124.95,2024-03-13,Berlin,Germany
+ORD_00613,CUST_0230,Phone Case,Electronics,4,19.99,79.96,2024-04-02,Toronto,Canada
+ORD_00614,CUST_0299,Water Bottle,Sports,1,14.99,14.99,2024-06-22,Mumbai,India
+ORD_00615,CUST_0041,Wireless Headphones,Electronics,2,59.99,119.98,2024-01-19,Tokyo,Japan
+ORD_00616,CUST_0181,History Book,Books,4,24.99,99.96,2024-07-24,Toronto,Canada
+ORD_00617,CUST_0294,T-Shirt,Clothing,4,24.99,99.96,2024-05-24,Chicago,USA
+ORD_00618,CUST_0080,Phone Case,Electronics,3,19.99,59.97,2024-12-11,Berlin,Germany
+ORD_00619,CUST_0056,Water Bottle,Sports,1,14.99,14.99,2024-04-25,Toronto,Canada
+ORD_00620,CUST_0099,Dumbbell Set,Sports,3,59.99,179.97,2024-09-15,Sydney,Australia
+ORD_00621,CUST_0113,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-07-02,Chicago,USA
+ORD_00622,CUST_0170,Phone Case,Electronics,2,19.99,39.98,2024-07-12,Tokyo,Japan
+ORD_00623,CUST_0201,Wall Clock,Home & Garden,5,34.99,174.95,2024-12-01,Chicago,USA
+ORD_00624,CUST_0252,Fiction Novel,Books,5,14.99,74.95,2024-02-04,Paris,France
+ORD_00625,CUST_0069,Water Bottle,Sports,3,14.99,44.97,2024-10-09,Los Angeles,USA
+ORD_00626,CUST_0279,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-12-04,Los Angeles,USA
+ORD_00627,CUST_0079,Sneakers,Clothing,2,89.99,179.98,2024-01-10,Sydney,Australia
+ORD_00628,CUST_0021,Plant Pot,Home & Garden,5,18.99,94.95,2024-07-15,New York,USA
+ORD_00629,CUST_0114,Jeans,Clothing,1,49.99,49.99,2024-02-12,Tokyo,Japan
+ORD_00630,CUST_0056,Resistance Bands,Sports,5,19.99,99.95,2024-04-10,Chicago,USA
+ORD_00631,CUST_0148,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-06-14,Sydney,Australia
+ORD_00632,CUST_0300,Phone Case,Electronics,1,19.99,19.99,2024-10-13,Sydney,Australia
+ORD_00633,CUST_0232,Socks Pack,Clothing,2,14.99,29.98,2024-12-26,Berlin,Germany
+ORD_00634,CUST_0279,Power Bank,Electronics,1,34.99,34.99,2024-08-27,Paris,France
+ORD_00635,CUST_0205,Jeans,Clothing,2,49.99,99.98,2024-06-21,London,UK
+ORD_00636,CUST_0270,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-11-08,Paris,France
+ORD_00637,CUST_0178,Garden Hose,Home & Garden,4,39.99,159.96,2024-01-04,New York,USA
+ORD_00638,CUST_0197,Python Cookbook,Books,2,44.99,89.98,2024-06-03,Paris,France
+ORD_00639,CUST_0121,Self-Help Guide,Books,5,19.99,99.95,2024-11-14,Sydney,Australia
+ORD_00640,CUST_0111,Power Bank,Electronics,2,34.99,69.98,2024-11-16,Mumbai,India
+ORD_00641,CUST_0141,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-05-16,New York,USA
+ORD_00642,CUST_0060,Jacket,Clothing,2,119.99,239.98,2024-09-08,Los Angeles,USA
+ORD_00643,CUST_0074,Jacket,Clothing,2,119.99,239.98,2024-05-20,London,UK
+ORD_00644,CUST_0114,Wall Clock,Home & Garden,4,34.99,139.96,2024-04-17,New York,USA
+ORD_00645,CUST_0037,Socks Pack,Clothing,2,14.99,29.98,2024-11-26,Paris,France
+ORD_00646,CUST_0129,Data Science Handbook,Books,1,39.99,39.99,2024-12-20,Sydney,Australia
+ORD_00647,CUST_0006,Wall Clock,Home & Garden,5,34.99,174.95,2024-02-13,Berlin,Germany
+ORD_00648,CUST_0226,Plant Pot,Home & Garden,1,18.99,18.99,2024-01-15,Sydney,Australia
+ORD_00649,CUST_0180,Phone Case,Electronics,5,19.99,99.95,2024-08-26,Toronto,Canada
+ORD_00650,CUST_0253,Fiction Novel,Books,4,14.99,59.96,2024-07-25,Paris,France
+ORD_00651,CUST_0213,Wireless Headphones,Electronics,1,59.99,59.99,2024-03-05,Paris,France
+ORD_00652,CUST_0127,Running Shoes,Sports,4,109.99,439.96,2024-01-06,Berlin,Germany
+ORD_00653,CUST_0093,Resistance Bands,Sports,4,19.99,79.96,2024-03-20,Sydney,Australia
+ORD_00654,CUST_0230,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-01-06,Sydney,Australia
+ORD_00655,CUST_0050,Jeans,Clothing,1,49.99,49.99,2024-09-17,Mumbai,India
+ORD_00656,CUST_0090,Data Science Handbook,Books,2,39.99,79.98,2024-09-02,Tokyo,Japan
+ORD_00657,CUST_0270,Phone Case,Electronics,4,19.99,79.96,2024-01-27,New York,USA
+ORD_00658,CUST_0227,Self-Help Guide,Books,5,19.99,99.95,2024-03-14,London,UK
+ORD_00659,CUST_0028,Sneakers,Clothing,5,89.99,449.95,2024-04-23,Berlin,Germany
+ORD_00660,CUST_0180,Throw Pillow,Home & Garden,3,29.99,89.97,2024-08-26,Chicago,USA
+ORD_00661,CUST_0118,Self-Help Guide,Books,5,19.99,99.95,2024-05-01,New York,USA
+ORD_00662,CUST_0087,Phone Case,Electronics,2,19.99,39.98,2024-04-05,Los Angeles,USA
+ORD_00663,CUST_0185,Phone Case,Electronics,5,19.99,99.95,2024-12-24,Berlin,Germany
+ORD_00664,CUST_0121,Power Bank,Electronics,1,34.99,34.99,2024-09-03,New York,USA
+ORD_00665,CUST_0100,Jeans,Clothing,2,49.99,99.98,2024-03-04,Mumbai,India
+ORD_00666,CUST_0150,Wireless Headphones,Electronics,3,59.99,179.97,2024-10-17,Berlin,Germany
+ORD_00667,CUST_0093,USB-C Cable,Electronics,2,12.99,25.98,2024-02-21,Toronto,Canada
+ORD_00668,CUST_0261,Plant Pot,Home & Garden,4,18.99,75.96,2024-10-11,Chicago,USA
+ORD_00669,CUST_0098,Throw Pillow,Home & Garden,4,29.99,119.96,2024-03-20,New York,USA
+ORD_00670,CUST_0087,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-01-21,Mumbai,India
+ORD_00671,CUST_0213,Wireless Headphones,Electronics,5,59.99,299.95,2024-11-03,Toronto,Canada
+ORD_00672,CUST_0017,USB-C Cable,Electronics,1,12.99,12.99,2024-07-24,Toronto,Canada
+ORD_00673,CUST_0231,Data Science Handbook,Books,3,39.99,119.97,2024-06-08,Paris,France
+ORD_00674,CUST_0151,Self-Help Guide,Books,3,19.99,59.97,2024-11-28,New York,USA
+ORD_00675,CUST_0284,Plant Pot,Home & Garden,3,18.99,56.97,2024-01-09,Toronto,Canada
+ORD_00676,CUST_0200,Plant Pot,Home & Garden,5,18.99,94.95,2024-12-20,Los Angeles,USA
+ORD_00677,CUST_0019,Data Science Handbook,Books,5,39.99,199.95,2024-05-10,Berlin,Germany
+ORD_00678,CUST_0099,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-09-09,Berlin,Germany
+ORD_00679,CUST_0013,Data Science Handbook,Books,5,39.99,199.95,2024-02-23,London,UK
+ORD_00680,CUST_0041,Resistance Bands,Sports,4,19.99,79.96,2024-06-20,Paris,France
+ORD_00681,CUST_0132,Dumbbell Set,Sports,1,59.99,59.99,2024-02-16,Chicago,USA
+ORD_00682,CUST_0229,Wireless Headphones,Electronics,1,59.99,59.99,2024-03-28,Chicago,USA
+ORD_00683,CUST_0032,T-Shirt,Clothing,2,24.99,49.98,2024-01-24,Sydney,Australia
+ORD_00684,CUST_0108,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-07-01,Toronto,Canada
+ORD_00685,CUST_0292,Sneakers,Clothing,1,89.99,89.99,2024-04-12,Mumbai,India
+ORD_00686,CUST_0167,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-08-17,London,UK
+ORD_00687,CUST_0141,Jacket,Clothing,4,119.99,479.96,2024-11-11,Sydney,Australia
+ORD_00688,CUST_0167,Resistance Bands,Sports,2,19.99,39.98,2024-09-09,Paris,France
+ORD_00689,CUST_0162,Resistance Bands,Sports,3,19.99,59.97,2024-09-26,Mumbai,India
+ORD_00690,CUST_0162,Water Bottle,Sports,3,14.99,44.97,2024-12-14,Los Angeles,USA
+ORD_00691,CUST_0294,T-Shirt,Clothing,2,24.99,49.98,2024-07-04,Chicago,USA
+ORD_00692,CUST_0038,Power Bank,Electronics,5,34.99,174.95,2024-02-06,Sydney,Australia
+ORD_00693,CUST_0046,History Book,Books,5,24.99,124.95,2024-11-27,New York,USA
+ORD_00694,CUST_0208,Python Cookbook,Books,1,44.99,44.99,2024-11-18,New York,USA
+ORD_00695,CUST_0268,Jacket,Clothing,1,119.99,119.99,2024-09-25,Toronto,Canada
+ORD_00696,CUST_0210,Throw Pillow,Home & Garden,2,29.99,59.98,2024-03-27,Mumbai,India
+ORD_00697,CUST_0124,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-06-19,Tokyo,Japan
+ORD_00698,CUST_0049,Data Science Handbook,Books,5,39.99,199.95,2024-01-06,Berlin,Germany
+ORD_00699,CUST_0252,Fiction Novel,Books,2,14.99,29.98,2024-07-02,Berlin,Germany
+ORD_00700,CUST_0175,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-10-17,Toronto,Canada
+ORD_00701,CUST_0057,Jacket,Clothing,4,119.99,479.96,2024-08-08,Sydney,Australia
+ORD_00702,CUST_0162,History Book,Books,4,24.99,99.96,2024-01-17,Mumbai,India
+ORD_00703,CUST_0254,Python Cookbook,Books,1,44.99,44.99,2024-07-28,Chicago,USA
+ORD_00704,CUST_0028,Water Bottle,Sports,4,14.99,59.96,2024-05-17,London,UK
+ORD_00705,CUST_0270,USB-C Cable,Electronics,1,12.99,12.99,2024-10-11,Sydney,Australia
+ORD_00706,CUST_0102,Wall Clock,Home & Garden,3,34.99,104.97,2024-09-13,Chicago,USA
+ORD_00707,CUST_0111,Dumbbell Set,Sports,1,59.99,59.99,2024-07-08,Sydney,Australia
+ORD_00708,CUST_0043,Jeans,Clothing,1,49.99,49.99,2024-05-06,Sydney,Australia
+ORD_00709,CUST_0115,USB-C Cable,Electronics,5,12.99,64.95,2024-07-28,Mumbai,India
+ORD_00710,CUST_0102,Socks Pack,Clothing,1,14.99,14.99,2024-01-23,Chicago,USA
+ORD_00711,CUST_0241,Resistance Bands,Sports,5,19.99,99.95,2024-10-17,Sydney,Australia
+ORD_00712,CUST_0288,Power Bank,Electronics,4,34.99,139.96,2024-03-12,Mumbai,India
+ORD_00713,CUST_0280,Wireless Headphones,Electronics,5,59.99,299.95,2024-11-19,Mumbai,India
+ORD_00714,CUST_0064,Wall Clock,Home & Garden,3,34.99,104.97,2024-09-23,Tokyo,Japan
+ORD_00715,CUST_0189,Fiction Novel,Books,1,14.99,14.99,2024-09-22,New York,USA
+ORD_00716,CUST_0084,Water Bottle,Sports,5,14.99,74.95,2024-11-02,Sydney,Australia
+ORD_00717,CUST_0017,Wall Clock,Home & Garden,4,34.99,139.96,2024-07-22,Mumbai,India
+ORD_00718,CUST_0126,Self-Help Guide,Books,3,19.99,59.97,2024-11-04,Tokyo,Japan
+ORD_00719,CUST_0096,T-Shirt,Clothing,4,24.99,99.96,2024-11-11,Chicago,USA
+ORD_00720,CUST_0165,Wireless Headphones,Electronics,2,59.99,119.98,2024-12-07,Mumbai,India
+ORD_00721,CUST_0243,T-Shirt,Clothing,2,24.99,49.98,2024-05-22,Paris,France
+ORD_00722,CUST_0046,Data Science Handbook,Books,5,39.99,199.95,2024-12-26,Berlin,Germany
+ORD_00723,CUST_0077,Power Bank,Electronics,5,34.99,174.95,2024-08-16,Toronto,Canada
+ORD_00724,CUST_0208,History Book,Books,4,24.99,99.96,2024-07-01,Paris,France
+ORD_00725,CUST_0053,Power Bank,Electronics,5,34.99,174.95,2024-10-05,Paris,France
+ORD_00726,CUST_0153,Jeans,Clothing,1,49.99,49.99,2024-04-15,Toronto,Canada
+ORD_00727,CUST_0250,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-03-04,London,UK
+ORD_00728,CUST_0291,Wall Clock,Home & Garden,2,34.99,69.98,2024-06-05,New York,USA
+ORD_00729,CUST_0166,Data Science Handbook,Books,5,39.99,199.95,2024-07-07,Chicago,USA
+ORD_00730,CUST_0286,Plant Pot,Home & Garden,4,18.99,75.96,2024-04-08,Sydney,Australia
+ORD_00731,CUST_0072,Garden Hose,Home & Garden,5,39.99,199.95,2024-04-08,New York,USA
+ORD_00732,CUST_0186,Wall Clock,Home & Garden,1,34.99,34.99,2024-08-19,Toronto,Canada
+ORD_00733,CUST_0204,Phone Case,Electronics,2,19.99,39.98,2024-08-10,Paris,France
+ORD_00734,CUST_0030,Sneakers,Clothing,1,89.99,89.99,2024-06-19,Sydney,Australia
+ORD_00735,CUST_0198,Power Bank,Electronics,2,34.99,69.98,2024-07-18,New York,USA
+ORD_00736,CUST_0164,Fiction Novel,Books,5,14.99,74.95,2024-02-18,London,UK
+ORD_00737,CUST_0279,Jacket,Clothing,5,119.99,599.95,2024-02-04,Toronto,Canada
+ORD_00738,CUST_0251,Resistance Bands,Sports,1,19.99,19.99,2024-05-03,Chicago,USA
+ORD_00739,CUST_0181,Python Cookbook,Books,2,44.99,89.98,2024-06-25,New York,USA
+ORD_00740,CUST_0136,Jeans,Clothing,1,49.99,49.99,2024-02-12,Chicago,USA
+ORD_00741,CUST_0235,Running Shoes,Sports,4,109.99,439.96,2024-08-25,Toronto,Canada
+ORD_00742,CUST_0274,Power Bank,Electronics,2,34.99,69.98,2024-06-03,Sydney,Australia
+ORD_00743,CUST_0171,Sneakers,Clothing,5,89.99,449.95,2024-12-13,Mumbai,India
+ORD_00744,CUST_0138,Wall Clock,Home & Garden,4,34.99,139.96,2024-09-22,Paris,France
+ORD_00745,CUST_0139,Plant Pot,Home & Garden,1,18.99,18.99,2024-08-23,Los Angeles,USA
+ORD_00746,CUST_0106,Jacket,Clothing,4,119.99,479.96,2024-04-25,New York,USA
+ORD_00747,CUST_0094,Dumbbell Set,Sports,3,59.99,179.97,2024-10-03,Berlin,Germany
+ORD_00748,CUST_0060,T-Shirt,Clothing,3,24.99,74.97,2024-05-25,Chicago,USA
+ORD_00749,CUST_0106,Wall Clock,Home & Garden,5,34.99,174.95,2024-11-26,Mumbai,India
+ORD_00750,CUST_0280,Resistance Bands,Sports,2,19.99,39.98,2024-11-16,Paris,France
+ORD_00751,CUST_0104,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-05-02,Paris,France
+ORD_00752,CUST_0025,Jacket,Clothing,2,119.99,239.98,2024-08-14,Mumbai,India
+ORD_00753,CUST_0210,Dumbbell Set,Sports,3,59.99,179.97,2024-07-06,Tokyo,Japan
+ORD_00754,CUST_0063,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-03-24,Tokyo,Japan
+ORD_00755,CUST_0248,T-Shirt,Clothing,4,24.99,99.96,2024-10-28,Sydney,Australia
+ORD_00756,CUST_0088,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-10-25,Chicago,USA
+ORD_00757,CUST_0002,Jacket,Clothing,5,119.99,599.95,2024-08-05,Sydney,Australia
+ORD_00758,CUST_0127,Yoga Mat,Sports,5,29.99,149.95,2024-03-23,Los Angeles,USA
+ORD_00759,CUST_0274,Jacket,Clothing,1,119.99,119.99,2024-12-06,Berlin,Germany
+ORD_00760,CUST_0032,Sneakers,Clothing,3,89.99,269.97,2024-10-07,Paris,France
+ORD_00761,CUST_0274,Socks Pack,Clothing,4,14.99,59.96,2024-05-16,London,UK
+ORD_00762,CUST_0242,T-Shirt,Clothing,3,24.99,74.97,2024-05-26,Paris,France
+ORD_00763,CUST_0117,Python Cookbook,Books,4,44.99,179.96,2024-06-09,Paris,France
+ORD_00764,CUST_0120,Fiction Novel,Books,3,14.99,44.97,2024-06-14,Chicago,USA
+ORD_00765,CUST_0037,Sneakers,Clothing,2,89.99,179.98,2024-06-22,Paris,France
+ORD_00766,CUST_0103,Running Shoes,Sports,4,109.99,439.96,2024-08-23,New York,USA
+ORD_00767,CUST_0026,Wall Clock,Home & Garden,2,34.99,69.98,2024-07-19,Los Angeles,USA
+ORD_00768,CUST_0072,Jacket,Clothing,4,119.99,479.96,2024-09-19,London,UK
+ORD_00769,CUST_0050,USB-C Cable,Electronics,3,12.99,38.97,2024-12-11,Paris,France
+ORD_00770,CUST_0297,T-Shirt,Clothing,5,24.99,124.95,2024-06-25,Chicago,USA
+ORD_00771,CUST_0163,Wireless Headphones,Electronics,5,59.99,299.95,2024-01-27,Toronto,Canada
+ORD_00772,CUST_0207,Socks Pack,Clothing,5,14.99,74.95,2024-09-15,Toronto,Canada
+ORD_00773,CUST_0168,USB-C Cable,Electronics,4,12.99,51.96,2024-09-01,Toronto,Canada
+ORD_00774,CUST_0069,Throw Pillow,Home & Garden,5,29.99,149.95,2024-05-05,London,UK
+ORD_00775,CUST_0023,Garden Hose,Home & Garden,5,39.99,199.95,2024-03-09,Mumbai,India
+ORD_00776,CUST_0259,Socks Pack,Clothing,1,14.99,14.99,2024-12-07,New York,USA
+ORD_00777,CUST_0122,Sneakers,Clothing,3,89.99,269.97,2024-01-12,Mumbai,India
+ORD_00778,CUST_0243,Throw Pillow,Home & Garden,3,29.99,89.97,2024-04-10,Mumbai,India
+ORD_00779,CUST_0077,Fiction Novel,Books,3,14.99,44.97,2024-09-24,Los Angeles,USA
+ORD_00780,CUST_0119,Data Science Handbook,Books,1,39.99,39.99,2024-07-26,Los Angeles,USA
+ORD_00781,CUST_0060,Yoga Mat,Sports,4,29.99,119.96,2024-07-01,Chicago,USA
+ORD_00782,CUST_0139,Sneakers,Clothing,2,89.99,179.98,2024-10-06,Paris,France
+ORD_00783,CUST_0028,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-07-28,Sydney,Australia
+ORD_00784,CUST_0053,USB-C Cable,Electronics,5,12.99,64.95,2024-03-22,Paris,France
+ORD_00785,CUST_0054,Resistance Bands,Sports,3,19.99,59.97,2024-03-22,Sydney,Australia
+ORD_00786,CUST_0010,Phone Case,Electronics,3,19.99,59.97,2024-12-07,Mumbai,India
+ORD_00787,CUST_0033,Phone Case,Electronics,3,19.99,59.97,2024-01-16,Toronto,Canada
+ORD_00788,CUST_0261,Water Bottle,Sports,4,14.99,59.96,2024-07-20,Mumbai,India
+ORD_00789,CUST_0132,Garden Hose,Home & Garden,3,39.99,119.97,2024-08-22,Paris,France
+ORD_00790,CUST_0095,Running Shoes,Sports,1,109.99,109.99,2024-01-03,Paris,France
+ORD_00791,CUST_0027,Wall Clock,Home & Garden,3,34.99,104.97,2024-09-02,Berlin,Germany
+ORD_00792,CUST_0049,Dumbbell Set,Sports,5,59.99,299.95,2024-04-23,Chicago,USA
+ORD_00793,CUST_0066,Socks Pack,Clothing,1,14.99,14.99,2024-10-17,New York,USA
+ORD_00794,CUST_0155,Jacket,Clothing,4,119.99,479.96,2024-02-08,Paris,France
+ORD_00795,CUST_0237,Plant Pot,Home & Garden,3,18.99,56.97,2024-02-03,Los Angeles,USA
+ORD_00796,CUST_0065,Data Science Handbook,Books,2,39.99,79.98,2024-10-20,London,UK
+ORD_00797,CUST_0174,Jacket,Clothing,4,119.99,479.96,2024-12-13,Paris,France
+ORD_00798,CUST_0023,Sneakers,Clothing,5,89.99,449.95,2024-06-21,Sydney,Australia
+ORD_00799,CUST_0025,Socks Pack,Clothing,5,14.99,74.95,2024-07-15,Toronto,Canada
+ORD_00800,CUST_0204,Self-Help Guide,Books,2,19.99,39.98,2024-10-22,Paris,France
+ORD_00801,CUST_0183,Socks Pack,Clothing,1,14.99,14.99,2024-01-13,Berlin,Germany
+ORD_00802,CUST_0074,Garden Hose,Home & Garden,1,39.99,39.99,2024-08-10,Chicago,USA
+ORD_00803,CUST_0272,Garden Hose,Home & Garden,4,39.99,159.96,2024-02-01,Los Angeles,USA
+ORD_00804,CUST_0209,USB-C Cable,Electronics,5,12.99,64.95,2024-06-02,Chicago,USA
+ORD_00805,CUST_0157,Plant Pot,Home & Garden,3,18.99,56.97,2024-04-22,Paris,France
+ORD_00806,CUST_0277,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-10-09,Los Angeles,USA
+ORD_00807,CUST_0264,History Book,Books,4,24.99,99.96,2024-12-28,New York,USA
+ORD_00808,CUST_0140,Dumbbell Set,Sports,4,59.99,239.96,2024-03-07,New York,USA
+ORD_00809,CUST_0039,Dumbbell Set,Sports,3,59.99,179.97,2024-03-25,Sydney,Australia
+ORD_00810,CUST_0248,Throw Pillow,Home & Garden,3,29.99,89.97,2024-10-20,Chicago,USA
+ORD_00811,CUST_0149,Jacket,Clothing,5,119.99,599.95,2024-04-15,Tokyo,Japan
+ORD_00812,CUST_0237,Jacket,Clothing,1,119.99,119.99,2024-05-13,Los Angeles,USA
+ORD_00813,CUST_0228,Throw Pillow,Home & Garden,4,29.99,119.96,2024-03-11,Chicago,USA
+ORD_00814,CUST_0020,Wall Clock,Home & Garden,2,34.99,69.98,2024-01-22,Paris,France
+ORD_00815,CUST_0084,Data Science Handbook,Books,4,39.99,159.96,2024-06-09,London,UK
+ORD_00816,CUST_0228,Water Bottle,Sports,2,14.99,29.98,2024-04-27,Paris,France
+ORD_00817,CUST_0060,Garden Hose,Home & Garden,5,39.99,199.95,2024-09-01,Berlin,Germany
+ORD_00818,CUST_0158,Wall Clock,Home & Garden,3,34.99,104.97,2024-03-09,Tokyo,Japan
+ORD_00819,CUST_0251,Plant Pot,Home & Garden,3,18.99,56.97,2024-02-24,Berlin,Germany
+ORD_00820,CUST_0280,Garden Hose,Home & Garden,3,39.99,119.97,2024-03-02,Chicago,USA
+ORD_00821,CUST_0006,History Book,Books,5,24.99,124.95,2024-01-13,Berlin,Germany
+ORD_00822,CUST_0066,Socks Pack,Clothing,1,14.99,14.99,2024-02-08,Toronto,Canada
+ORD_00823,CUST_0162,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-01-04,Paris,France
+ORD_00824,CUST_0165,Wireless Headphones,Electronics,1,59.99,59.99,2024-04-10,London,UK
+ORD_00825,CUST_0123,Throw Pillow,Home & Garden,2,29.99,59.98,2024-01-14,Chicago,USA
+ORD_00826,CUST_0039,Resistance Bands,Sports,1,19.99,19.99,2024-03-05,Sydney,Australia
+ORD_00827,CUST_0194,Dumbbell Set,Sports,3,59.99,179.97,2024-08-16,Tokyo,Japan
+ORD_00828,CUST_0293,Running Shoes,Sports,1,109.99,109.99,2024-05-06,London,UK
+ORD_00829,CUST_0038,Running Shoes,Sports,3,109.99,329.97,2024-05-13,Berlin,Germany
+ORD_00830,CUST_0300,Resistance Bands,Sports,1,19.99,19.99,2024-06-11,Berlin,Germany
+ORD_00831,CUST_0178,History Book,Books,2,24.99,49.98,2024-01-12,Mumbai,India
+ORD_00832,CUST_0212,Resistance Bands,Sports,3,19.99,59.97,2024-11-05,Tokyo,Japan
+ORD_00833,CUST_0036,Throw Pillow,Home & Garden,1,29.99,29.99,2024-06-10,Tokyo,Japan
+ORD_00834,CUST_0257,Power Bank,Electronics,2,34.99,69.98,2024-11-01,Chicago,USA
+ORD_00835,CUST_0167,Jacket,Clothing,4,119.99,479.96,2024-01-25,Mumbai,India
+ORD_00836,CUST_0018,Wireless Headphones,Electronics,4,59.99,239.96,2024-03-17,Tokyo,Japan
+ORD_00837,CUST_0143,Jacket,Clothing,3,119.99,359.97,2024-05-10,Paris,France
+ORD_00838,CUST_0063,Fiction Novel,Books,3,14.99,44.97,2024-11-16,Paris,France
+ORD_00839,CUST_0237,Self-Help Guide,Books,5,19.99,99.95,2024-06-21,Tokyo,Japan
+ORD_00840,CUST_0074,Jacket,Clothing,1,119.99,119.99,2024-08-01,Mumbai,India
+ORD_00841,CUST_0040,Power Bank,Electronics,5,34.99,174.95,2024-10-28,Chicago,USA
+ORD_00842,CUST_0126,Phone Case,Electronics,2,19.99,39.98,2024-02-10,Sydney,Australia
+ORD_00843,CUST_0195,Garden Hose,Home & Garden,1,39.99,39.99,2024-11-27,Mumbai,India
+ORD_00844,CUST_0045,Wireless Headphones,Electronics,4,59.99,239.96,2024-06-26,Los Angeles,USA
+ORD_00845,CUST_0207,Fiction Novel,Books,1,14.99,14.99,2024-02-15,London,UK
+ORD_00846,CUST_0275,USB-C Cable,Electronics,2,12.99,25.98,2024-02-23,Tokyo,Japan
+ORD_00847,CUST_0223,Self-Help Guide,Books,5,19.99,99.95,2024-08-04,Los Angeles,USA
+ORD_00848,CUST_0097,Socks Pack,Clothing,3,14.99,44.97,2024-11-08,London,UK
+ORD_00849,CUST_0077,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-06-06,Los Angeles,USA
+ORD_00850,CUST_0280,Data Science Handbook,Books,1,39.99,39.99,2024-12-15,Chicago,USA
+ORD_00851,CUST_0205,Wall Clock,Home & Garden,1,34.99,34.99,2024-09-07,Tokyo,Japan
+ORD_00852,CUST_0185,History Book,Books,5,24.99,124.95,2024-10-08,Los Angeles,USA
+ORD_00853,CUST_0058,Python Cookbook,Books,4,44.99,179.96,2024-01-21,Tokyo,Japan
+ORD_00854,CUST_0165,Sneakers,Clothing,1,89.99,89.99,2024-12-05,Mumbai,India
+ORD_00855,CUST_0279,Jacket,Clothing,4,119.99,479.96,2024-10-04,Sydney,Australia
+ORD_00856,CUST_0169,Socks Pack,Clothing,3,14.99,44.97,2024-01-14,Toronto,Canada
+ORD_00857,CUST_0257,Running Shoes,Sports,1,109.99,109.99,2024-12-22,Chicago,USA
+ORD_00858,CUST_0179,Phone Case,Electronics,5,19.99,99.95,2024-06-07,Tokyo,Japan
+ORD_00859,CUST_0119,Jacket,Clothing,1,119.99,119.99,2024-10-19,New York,USA
+ORD_00860,CUST_0024,Throw Pillow,Home & Garden,1,29.99,29.99,2024-10-22,London,UK
+ORD_00861,CUST_0147,Jeans,Clothing,2,49.99,99.98,2024-10-13,Toronto,Canada
+ORD_00862,CUST_0213,Fiction Novel,Books,2,14.99,29.98,2024-10-27,Toronto,Canada
+ORD_00863,CUST_0131,T-Shirt,Clothing,3,24.99,74.97,2024-03-12,London,UK
+ORD_00864,CUST_0143,Jeans,Clothing,4,49.99,199.96,2024-02-16,Paris,France
+ORD_00865,CUST_0117,USB-C Cable,Electronics,3,12.99,38.97,2024-04-24,Los Angeles,USA
+ORD_00866,CUST_0114,Yoga Mat,Sports,4,29.99,119.96,2024-06-23,Tokyo,Japan
+ORD_00867,CUST_0115,T-Shirt,Clothing,2,24.99,49.98,2024-03-05,Chicago,USA
+ORD_00868,CUST_0186,Yoga Mat,Sports,4,29.99,119.96,2024-11-01,Sydney,Australia
+ORD_00869,CUST_0270,T-Shirt,Clothing,3,24.99,74.97,2024-05-07,Tokyo,Japan
+ORD_00870,CUST_0135,Running Shoes,Sports,4,109.99,439.96,2024-05-21,Berlin,Germany
+ORD_00871,CUST_0095,Socks Pack,Clothing,1,14.99,14.99,2024-08-20,Berlin,Germany
+ORD_00872,CUST_0266,Running Shoes,Sports,2,109.99,219.98,2024-06-03,Chicago,USA
+ORD_00873,CUST_0183,Running Shoes,Sports,1,109.99,109.99,2024-08-25,Sydney,Australia
+ORD_00874,CUST_0046,Throw Pillow,Home & Garden,4,29.99,119.96,2024-11-07,Los Angeles,USA
+ORD_00875,CUST_0241,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-06-04,Paris,France
+ORD_00876,CUST_0113,T-Shirt,Clothing,5,24.99,124.95,2024-01-13,London,UK
+ORD_00877,CUST_0043,Water Bottle,Sports,4,14.99,59.96,2024-09-02,Los Angeles,USA
+ORD_00878,CUST_0290,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-01-23,Paris,France
+ORD_00879,CUST_0004,Garden Hose,Home & Garden,1,39.99,39.99,2024-11-19,Toronto,Canada
+ORD_00880,CUST_0183,T-Shirt,Clothing,4,24.99,99.96,2024-10-08,New York,USA
+ORD_00881,CUST_0075,Jeans,Clothing,2,49.99,99.98,2024-08-09,Los Angeles,USA
+ORD_00882,CUST_0095,Self-Help Guide,Books,4,19.99,79.96,2024-12-06,Paris,France
+ORD_00883,CUST_0240,Throw Pillow,Home & Garden,4,29.99,119.96,2024-12-11,Paris,France
+ORD_00884,CUST_0256,Yoga Mat,Sports,5,29.99,149.95,2024-05-28,Los Angeles,USA
+ORD_00885,CUST_0080,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-02-09,New York,USA
+ORD_00886,CUST_0051,Jacket,Clothing,2,119.99,239.98,2024-12-27,Los Angeles,USA
+ORD_00887,CUST_0212,T-Shirt,Clothing,1,24.99,24.99,2024-10-09,Mumbai,India
+ORD_00888,CUST_0100,Python Cookbook,Books,4,44.99,179.96,2024-09-19,Paris,France
+ORD_00889,CUST_0085,Plant Pot,Home & Garden,1,18.99,18.99,2024-04-20,Mumbai,India
+ORD_00890,CUST_0197,Jeans,Clothing,4,49.99,199.96,2024-01-13,Paris,France
+ORD_00891,CUST_0229,Garden Hose,Home & Garden,1,39.99,39.99,2024-09-23,Los Angeles,USA
+ORD_00892,CUST_0049,Socks Pack,Clothing,2,14.99,29.98,2024-12-10,Tokyo,Japan
+ORD_00893,CUST_0019,Resistance Bands,Sports,4,19.99,79.96,2024-03-20,Berlin,Germany
+ORD_00894,CUST_0039,USB-C Cable,Electronics,3,12.99,38.97,2024-08-20,Chicago,USA
+ORD_00895,CUST_0071,Self-Help Guide,Books,1,19.99,19.99,2024-11-16,Berlin,Germany
+ORD_00896,CUST_0217,Phone Case,Electronics,1,19.99,19.99,2024-07-22,Chicago,USA
+ORD_00897,CUST_0022,Wall Clock,Home & Garden,3,34.99,104.97,2024-10-02,New York,USA
+ORD_00898,CUST_0052,T-Shirt,Clothing,2,24.99,49.98,2024-06-28,Paris,France
+ORD_00899,CUST_0122,Wireless Headphones,Electronics,2,59.99,119.98,2024-08-01,Toronto,Canada
+ORD_00900,CUST_0258,Python Cookbook,Books,4,44.99,179.96,2024-04-06,Los Angeles,USA
+ORD_00901,CUST_0091,T-Shirt,Clothing,1,24.99,24.99,2024-05-23,Paris,France
+ORD_00902,CUST_0100,USB-C Cable,Electronics,1,12.99,12.99,2024-01-02,Berlin,Germany
+ORD_00903,CUST_0140,Yoga Mat,Sports,4,29.99,119.96,2024-04-22,Mumbai,India
+ORD_00904,CUST_0043,Yoga Mat,Sports,5,29.99,149.95,2024-01-21,Mumbai,India
+ORD_00905,CUST_0070,Phone Case,Electronics,1,19.99,19.99,2024-02-02,Tokyo,Japan
+ORD_00906,CUST_0182,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-04-28,Toronto,Canada
+ORD_00907,CUST_0168,History Book,Books,1,24.99,24.99,2024-12-14,Sydney,Australia
+ORD_00908,CUST_0261,Data Science Handbook,Books,1,39.99,39.99,2024-09-11,Los Angeles,USA
+ORD_00909,CUST_0188,Python Cookbook,Books,1,44.99,44.99,2024-12-22,Paris,France
+ORD_00910,CUST_0053,Socks Pack,Clothing,3,14.99,44.97,2024-01-02,Toronto,Canada
+ORD_00911,CUST_0044,Yoga Mat,Sports,5,29.99,149.95,2024-11-05,Sydney,Australia
+ORD_00912,CUST_0059,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-08-01,Chicago,USA
+ORD_00913,CUST_0065,Sneakers,Clothing,3,89.99,269.97,2024-08-22,Tokyo,Japan
+ORD_00914,CUST_0029,Jeans,Clothing,3,49.99,149.97,2024-07-05,Paris,France
+ORD_00915,CUST_0093,Wall Clock,Home & Garden,3,34.99,104.97,2024-12-23,Sydney,Australia
+ORD_00916,CUST_0279,Running Shoes,Sports,4,109.99,439.96,2024-11-12,Paris,France
+ORD_00917,CUST_0064,Wireless Headphones,Electronics,2,59.99,119.98,2024-02-28,New York,USA
+ORD_00918,CUST_0211,Phone Case,Electronics,2,19.99,39.98,2024-12-23,Los Angeles,USA
+ORD_00919,CUST_0256,Water Bottle,Sports,4,14.99,59.96,2024-09-08,Los Angeles,USA
+ORD_00920,CUST_0085,Jacket,Clothing,1,119.99,119.99,2024-01-10,Toronto,Canada
+ORD_00921,CUST_0011,Resistance Bands,Sports,3,19.99,59.97,2024-10-09,Toronto,Canada
+ORD_00922,CUST_0243,Python Cookbook,Books,1,44.99,44.99,2024-12-19,Sydney,Australia
+ORD_00923,CUST_0104,Plant Pot,Home & Garden,2,18.99,37.98,2024-06-05,Tokyo,Japan
+ORD_00924,CUST_0156,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-05-03,Los Angeles,USA
+ORD_00925,CUST_0135,Plant Pot,Home & Garden,1,18.99,18.99,2024-12-07,Los Angeles,USA
+ORD_00926,CUST_0097,Jeans,Clothing,2,49.99,99.98,2024-08-26,Sydney,Australia
+ORD_00927,CUST_0237,Water Bottle,Sports,4,14.99,59.96,2024-04-04,Mumbai,India
+ORD_00928,CUST_0104,Power Bank,Electronics,3,34.99,104.97,2024-04-23,Chicago,USA
+ORD_00929,CUST_0037,Self-Help Guide,Books,2,19.99,39.98,2024-12-15,Berlin,Germany
+ORD_00930,CUST_0147,Throw Pillow,Home & Garden,2,29.99,59.98,2024-09-02,Mumbai,India
+ORD_00931,CUST_0243,Socks Pack,Clothing,1,14.99,14.99,2024-04-08,Los Angeles,USA
+ORD_00932,CUST_0024,Plant Pot,Home & Garden,1,18.99,18.99,2024-02-20,New York,USA
+ORD_00933,CUST_0253,T-Shirt,Clothing,1,24.99,24.99,2024-05-02,Berlin,Germany
+ORD_00934,CUST_0230,Sneakers,Clothing,1,89.99,89.99,2024-05-27,Mumbai,India
+ORD_00935,CUST_0094,T-Shirt,Clothing,5,24.99,124.95,2024-08-05,Mumbai,India
+ORD_00936,CUST_0212,History Book,Books,4,24.99,99.96,2024-07-23,Paris,France
+ORD_00937,CUST_0043,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-04-27,Paris,France
+ORD_00938,CUST_0011,Phone Case,Electronics,4,19.99,79.96,2024-01-08,Berlin,Germany
+ORD_00939,CUST_0252,Wireless Headphones,Electronics,1,59.99,59.99,2024-08-01,Los Angeles,USA
+ORD_00940,CUST_0028,Python Cookbook,Books,3,44.99,134.97,2024-02-13,New York,USA
+ORD_00941,CUST_0219,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-07-16,Sydney,Australia
+ORD_00942,CUST_0290,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-05-22,New York,USA
+ORD_00943,CUST_0040,Water Bottle,Sports,5,14.99,74.95,2024-01-04,Berlin,Germany
+ORD_00944,CUST_0077,Water Bottle,Sports,2,14.99,29.98,2024-11-28,Berlin,Germany
+ORD_00945,CUST_0277,Phone Case,Electronics,2,19.99,39.98,2024-01-06,New York,USA
+ORD_00946,CUST_0022,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-02-27,London,UK
+ORD_00947,CUST_0236,Dumbbell Set,Sports,3,59.99,179.97,2024-08-13,Paris,France
+ORD_00948,CUST_0222,Sneakers,Clothing,1,89.99,89.99,2024-11-03,Los Angeles,USA
+ORD_00949,CUST_0099,Wireless Headphones,Electronics,4,59.99,239.96,2024-01-28,London,UK
+ORD_00950,CUST_0241,Garden Hose,Home & Garden,4,39.99,159.96,2024-07-17,Los Angeles,USA
+ORD_00951,CUST_0028,Socks Pack,Clothing,5,14.99,74.95,2024-11-25,Berlin,Germany
+ORD_00952,CUST_0284,Throw Pillow,Home & Garden,2,29.99,59.98,2024-06-08,New York,USA
+ORD_00953,CUST_0136,Python Cookbook,Books,1,44.99,44.99,2024-05-06,Chicago,USA
+ORD_00954,CUST_0265,Jeans,Clothing,3,49.99,149.97,2024-10-09,Paris,France
+ORD_00955,CUST_0223,Water Bottle,Sports,1,14.99,14.99,2024-10-11,London,UK
+ORD_00956,CUST_0151,Wireless Headphones,Electronics,1,59.99,59.99,2024-06-19,Tokyo,Japan
+ORD_00957,CUST_0265,Running Shoes,Sports,1,109.99,109.99,2024-10-10,Paris,France
+ORD_00958,CUST_0035,Socks Pack,Clothing,1,14.99,14.99,2024-11-02,Paris,France
+ORD_00959,CUST_0090,USB-C Cable,Electronics,2,12.99,25.98,2024-05-16,Berlin,Germany
+ORD_00960,CUST_0204,Wall Clock,Home & Garden,3,34.99,104.97,2024-03-19,Paris,France
+ORD_00961,CUST_0083,Resistance Bands,Sports,1,19.99,19.99,2024-08-25,London,UK
+ORD_00962,CUST_0100,Plant Pot,Home & Garden,2,18.99,37.98,2024-08-20,Tokyo,Japan
+ORD_00963,CUST_0112,Jacket,Clothing,2,119.99,239.98,2024-06-01,Los Angeles,USA
+ORD_00964,CUST_0257,Water Bottle,Sports,1,14.99,14.99,2024-01-05,Toronto,Canada
+ORD_00965,CUST_0184,Sneakers,Clothing,4,89.99,359.96,2024-01-19,Berlin,Germany
+ORD_00966,CUST_0287,Water Bottle,Sports,3,14.99,44.97,2024-01-09,Chicago,USA
+ORD_00967,CUST_0200,Power Bank,Electronics,3,34.99,104.97,2024-07-15,Mumbai,India
+ORD_00968,CUST_0165,Sneakers,Clothing,4,89.99,359.96,2024-12-27,Mumbai,India
+ORD_00969,CUST_0264,Throw Pillow,Home & Garden,1,29.99,29.99,2024-02-12,Chicago,USA
+ORD_00970,CUST_0009,Data Science Handbook,Books,5,39.99,199.95,2024-03-21,Tokyo,Japan
+ORD_00971,CUST_0219,Dumbbell Set,Sports,5,59.99,299.95,2024-02-03,New York,USA
+ORD_00972,CUST_0021,Fiction Novel,Books,4,14.99,59.96,2024-07-24,Toronto,Canada
+ORD_00973,CUST_0015,Throw Pillow,Home & Garden,3,29.99,89.97,2024-11-23,Mumbai,India
+ORD_00974,CUST_0076,Water Bottle,Sports,3,14.99,44.97,2024-11-15,London,UK
+ORD_00975,CUST_0300,Python Cookbook,Books,4,44.99,179.96,2024-02-16,Tokyo,Japan
+ORD_00976,CUST_0090,Throw Pillow,Home & Garden,1,29.99,29.99,2024-08-07,Berlin,Germany
+ORD_00977,CUST_0215,Garden Hose,Home & Garden,1,39.99,39.99,2024-01-02,Sydney,Australia
+ORD_00978,CUST_0103,Resistance Bands,Sports,5,19.99,99.95,2024-04-19,Berlin,Germany
+ORD_00979,CUST_0106,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-07-19,Los Angeles,USA
+ORD_00980,CUST_0278,Power Bank,Electronics,5,34.99,174.95,2024-06-24,Tokyo,Japan
+ORD_00981,CUST_0271,Fiction Novel,Books,1,14.99,14.99,2024-12-13,Paris,France
+ORD_00982,CUST_0169,Jacket,Clothing,1,119.99,119.99,2024-12-10,Los Angeles,USA
+ORD_00983,CUST_0179,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-08-09,New York,USA
+ORD_00984,CUST_0013,Jacket,Clothing,1,119.99,119.99,2024-11-11,New York,USA
+ORD_00985,CUST_0007,Power Bank,Electronics,1,34.99,34.99,2024-09-20,London,UK
+ORD_00986,CUST_0247,Data Science Handbook,Books,2,39.99,79.98,2024-01-20,Mumbai,India
+ORD_00987,CUST_0010,Water Bottle,Sports,4,14.99,59.96,2024-01-05,New York,USA
+ORD_00988,CUST_0282,Running Shoes,Sports,4,109.99,439.96,2024-03-26,Chicago,USA
+ORD_00989,CUST_0078,Wireless Headphones,Electronics,1,59.99,59.99,2024-06-14,Sydney,Australia
+ORD_00990,CUST_0087,Data Science Handbook,Books,1,39.99,39.99,2024-09-22,London,UK
+ORD_00991,CUST_0117,Phone Case,Electronics,1,19.99,19.99,2024-04-14,Tokyo,Japan
+ORD_00992,CUST_0132,Jacket,Clothing,5,119.99,599.95,2024-07-13,Toronto,Canada
+ORD_00993,CUST_0113,Fiction Novel,Books,3,14.99,44.97,2024-07-20,Berlin,Germany
+ORD_00994,CUST_0273,Wall Clock,Home & Garden,5,34.99,174.95,2024-03-27,Berlin,Germany
+ORD_00995,CUST_0103,Sneakers,Clothing,2,89.99,179.98,2024-09-03,Berlin,Germany
+ORD_00996,CUST_0210,Dumbbell Set,Sports,3,59.99,179.97,2024-03-21,Paris,France
+ORD_00997,CUST_0238,Jacket,Clothing,2,119.99,239.98,2024-03-18,Sydney,Australia
+ORD_00998,CUST_0001,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-12-24,Mumbai,India
+ORD_00999,CUST_0172,Garden Hose,Home & Garden,2,39.99,79.98,2024-10-07,Los Angeles,USA
+ORD_01000,CUST_0118,History Book,Books,4,24.99,99.96,2024-05-24,London,UK
+ORD_01001,CUST_0116,Water Bottle,Sports,5,14.99,74.95,2024-01-18,Paris,France
+ORD_01002,CUST_0171,Self-Help Guide,Books,4,19.99,79.96,2024-09-14,New York,USA
+ORD_01003,CUST_0140,Wall Clock,Home & Garden,4,34.99,139.96,2024-04-15,Tokyo,Japan
+ORD_01004,CUST_0297,Running Shoes,Sports,4,109.99,439.96,2024-03-28,Los Angeles,USA
+ORD_01005,CUST_0275,Wall Clock,Home & Garden,5,34.99,174.95,2024-08-24,Sydney,Australia
+ORD_01006,CUST_0230,Wireless Headphones,Electronics,3,59.99,179.97,2024-07-15,Toronto,Canada
+ORD_01007,CUST_0179,Self-Help Guide,Books,5,19.99,99.95,2024-05-23,Los Angeles,USA
+ORD_01008,CUST_0033,Wall Clock,Home & Garden,3,34.99,104.97,2024-12-05,Tokyo,Japan
+ORD_01009,CUST_0146,Socks Pack,Clothing,5,14.99,74.95,2024-01-28,Berlin,Germany
+ORD_01010,CUST_0050,Wireless Headphones,Electronics,3,59.99,179.97,2024-08-20,New York,USA
+ORD_01011,CUST_0214,Jacket,Clothing,4,119.99,479.96,2024-08-23,Chicago,USA
+ORD_01012,CUST_0267,USB-C Cable,Electronics,2,12.99,25.98,2024-09-16,London,UK
+ORD_01013,CUST_0042,Wall Clock,Home & Garden,3,34.99,104.97,2024-04-19,Chicago,USA
+ORD_01014,CUST_0300,Throw Pillow,Home & Garden,3,29.99,89.97,2024-02-04,Mumbai,India
+ORD_01015,CUST_0195,Socks Pack,Clothing,3,14.99,44.97,2024-07-08,Toronto,Canada
+ORD_01016,CUST_0088,T-Shirt,Clothing,3,24.99,74.97,2024-01-23,Chicago,USA
+ORD_01017,CUST_0154,Water Bottle,Sports,3,14.99,44.97,2024-08-12,Mumbai,India
+ORD_01018,CUST_0152,Throw Pillow,Home & Garden,4,29.99,119.96,2024-01-26,Tokyo,Japan
+ORD_01019,CUST_0097,Yoga Mat,Sports,2,29.99,59.98,2024-10-23,Mumbai,India
+ORD_01020,CUST_0252,Yoga Mat,Sports,3,29.99,89.97,2024-03-09,Paris,France
+ORD_01021,CUST_0070,Phone Case,Electronics,5,19.99,99.95,2024-04-25,Los Angeles,USA
+ORD_01022,CUST_0117,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-02-23,Paris,France
+ORD_01023,CUST_0047,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-01-02,Sydney,Australia
+ORD_01024,CUST_0121,History Book,Books,4,24.99,99.96,2024-08-21,Tokyo,Japan
+ORD_01025,CUST_0298,Socks Pack,Clothing,5,14.99,74.95,2024-05-04,Toronto,Canada
+ORD_01026,CUST_0088,Garden Hose,Home & Garden,4,39.99,159.96,2024-06-23,London,UK
+ORD_01027,CUST_0141,USB-C Cable,Electronics,2,12.99,25.98,2024-02-08,Toronto,Canada
+ORD_01028,CUST_0261,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-09-25,Paris,France
+ORD_01029,CUST_0205,Socks Pack,Clothing,2,14.99,29.98,2024-04-08,Berlin,Germany
+ORD_01030,CUST_0067,Wireless Headphones,Electronics,3,59.99,179.97,2024-06-27,Mumbai,India
+ORD_01031,CUST_0075,Python Cookbook,Books,3,44.99,134.97,2024-03-18,Los Angeles,USA
+ORD_01032,CUST_0197,USB-C Cable,Electronics,2,12.99,25.98,2024-05-10,London,UK
+ORD_01033,CUST_0275,Garden Hose,Home & Garden,1,39.99,39.99,2024-08-17,Toronto,Canada
+ORD_01034,CUST_0048,Fiction Novel,Books,2,14.99,29.98,2024-11-09,London,UK
+ORD_01035,CUST_0074,Socks Pack,Clothing,3,14.99,44.97,2024-04-21,Tokyo,Japan
+ORD_01036,CUST_0201,Plant Pot,Home & Garden,5,18.99,94.95,2024-05-16,Berlin,Germany
+ORD_01037,CUST_0275,Self-Help Guide,Books,2,19.99,39.98,2024-08-05,Tokyo,Japan
+ORD_01038,CUST_0290,USB-C Cable,Electronics,1,12.99,12.99,2024-07-17,Sydney,Australia
+ORD_01039,CUST_0092,Fiction Novel,Books,3,14.99,44.97,2024-01-16,Paris,France
+ORD_01040,CUST_0242,Yoga Mat,Sports,2,29.99,59.98,2024-07-15,Chicago,USA
+ORD_01041,CUST_0035,Data Science Handbook,Books,4,39.99,159.96,2024-10-19,New York,USA
+ORD_01042,CUST_0227,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-04-10,Tokyo,Japan
+ORD_01043,CUST_0130,Jeans,Clothing,2,49.99,99.98,2024-11-22,Chicago,USA
+ORD_01044,CUST_0093,Socks Pack,Clothing,2,14.99,29.98,2024-07-06,Mumbai,India
+ORD_01045,CUST_0151,Data Science Handbook,Books,5,39.99,199.95,2024-02-25,New York,USA
+ORD_01046,CUST_0018,Garden Hose,Home & Garden,5,39.99,199.95,2024-03-06,Paris,France
+ORD_01047,CUST_0074,Dumbbell Set,Sports,3,59.99,179.97,2024-09-11,Toronto,Canada
+ORD_01048,CUST_0064,Jeans,Clothing,3,49.99,149.97,2024-05-04,London,UK
+ORD_01049,CUST_0265,Resistance Bands,Sports,1,19.99,19.99,2024-05-24,Paris,France
+ORD_01050,CUST_0104,History Book,Books,2,24.99,49.98,2024-12-23,New York,USA
+ORD_01051,CUST_0278,Self-Help Guide,Books,2,19.99,39.98,2024-07-09,London,UK
+ORD_01052,CUST_0222,Socks Pack,Clothing,1,14.99,14.99,2024-01-05,New York,USA
+ORD_01053,CUST_0028,Water Bottle,Sports,4,14.99,59.96,2024-03-22,Berlin,Germany
+ORD_01054,CUST_0286,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-08-18,London,UK
+ORD_01055,CUST_0072,Jeans,Clothing,4,49.99,199.96,2024-08-18,New York,USA
+ORD_01056,CUST_0226,Phone Case,Electronics,3,19.99,59.97,2024-12-12,Chicago,USA
+ORD_01057,CUST_0146,Jeans,Clothing,3,49.99,149.97,2024-01-02,New York,USA
+ORD_01058,CUST_0074,Garden Hose,Home & Garden,5,39.99,199.95,2024-06-17,New York,USA
+ORD_01059,CUST_0025,Running Shoes,Sports,3,109.99,329.97,2024-02-19,New York,USA
+ORD_01060,CUST_0132,Jeans,Clothing,4,49.99,199.96,2024-11-21,Toronto,Canada
+ORD_01061,CUST_0288,Self-Help Guide,Books,1,19.99,19.99,2024-12-17,Sydney,Australia
+ORD_01062,CUST_0250,Self-Help Guide,Books,5,19.99,99.95,2024-05-21,Toronto,Canada
+ORD_01063,CUST_0177,Wall Clock,Home & Garden,5,34.99,174.95,2024-06-05,Mumbai,India
+ORD_01064,CUST_0256,Fiction Novel,Books,3,14.99,44.97,2024-02-13,Tokyo,Japan
+ORD_01065,CUST_0257,Self-Help Guide,Books,4,19.99,79.96,2024-12-18,Sydney,Australia
+ORD_01066,CUST_0228,Sneakers,Clothing,4,89.99,359.96,2024-07-27,Los Angeles,USA
+ORD_01067,CUST_0199,Socks Pack,Clothing,3,14.99,44.97,2024-07-26,Paris,France
+ORD_01068,CUST_0077,Phone Case,Electronics,5,19.99,99.95,2024-06-21,Chicago,USA
+ORD_01069,CUST_0194,Running Shoes,Sports,4,109.99,439.96,2024-03-13,Berlin,Germany
+ORD_01070,CUST_0154,Wireless Headphones,Electronics,5,59.99,299.95,2024-01-03,Toronto,Canada
+ORD_01071,CUST_0259,Phone Case,Electronics,2,19.99,39.98,2024-11-22,Chicago,USA
+ORD_01072,CUST_0026,Sneakers,Clothing,2,89.99,179.98,2024-09-15,Toronto,Canada
+ORD_01073,CUST_0190,Fiction Novel,Books,1,14.99,14.99,2024-06-11,Sydney,Australia
+ORD_01074,CUST_0084,Sneakers,Clothing,2,89.99,179.98,2024-01-26,Chicago,USA
+ORD_01075,CUST_0144,T-Shirt,Clothing,1,24.99,24.99,2024-04-12,Mumbai,India
+ORD_01076,CUST_0018,USB-C Cable,Electronics,2,12.99,25.98,2024-06-23,Toronto,Canada
+ORD_01077,CUST_0067,Water Bottle,Sports,2,14.99,29.98,2024-08-09,London,UK
+ORD_01078,CUST_0289,History Book,Books,5,24.99,124.95,2024-05-20,London,UK
+ORD_01079,CUST_0107,Self-Help Guide,Books,3,19.99,59.97,2024-06-14,Sydney,Australia
+ORD_01080,CUST_0228,History Book,Books,1,24.99,24.99,2024-02-27,Toronto,Canada
+ORD_01081,CUST_0084,Python Cookbook,Books,3,44.99,134.97,2024-12-12,Toronto,Canada
+ORD_01082,CUST_0279,Jeans,Clothing,3,49.99,149.97,2024-03-27,Tokyo,Japan
+ORD_01083,CUST_0187,Plant Pot,Home & Garden,5,18.99,94.95,2024-09-01,London,UK
+ORD_01084,CUST_0007,Jacket,Clothing,2,119.99,239.98,2024-10-05,New York,USA
+ORD_01085,CUST_0164,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-08-14,Tokyo,Japan
+ORD_01086,CUST_0083,History Book,Books,3,24.99,74.97,2024-02-01,New York,USA
+ORD_01087,CUST_0152,Jeans,Clothing,1,49.99,49.99,2024-03-08,London,UK
+ORD_01088,CUST_0200,Wireless Headphones,Electronics,1,59.99,59.99,2024-10-18,Berlin,Germany
+ORD_01089,CUST_0282,Self-Help Guide,Books,2,19.99,39.98,2024-07-24,Sydney,Australia
+ORD_01090,CUST_0019,Power Bank,Electronics,3,34.99,104.97,2024-09-13,Chicago,USA
+ORD_01091,CUST_0024,Jeans,Clothing,5,49.99,249.95,2024-04-05,Berlin,Germany
+ORD_01092,CUST_0231,Self-Help Guide,Books,5,19.99,99.95,2024-06-18,Tokyo,Japan
+ORD_01093,CUST_0165,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-09-11,New York,USA
+ORD_01094,CUST_0099,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-10-27,Los Angeles,USA
+ORD_01095,CUST_0127,History Book,Books,4,24.99,99.96,2024-08-22,Berlin,Germany
+ORD_01096,CUST_0088,Throw Pillow,Home & Garden,3,29.99,89.97,2024-01-13,Chicago,USA
+ORD_01097,CUST_0229,History Book,Books,5,24.99,124.95,2024-10-13,New York,USA
+ORD_01098,CUST_0193,Jeans,Clothing,4,49.99,199.96,2024-07-19,Toronto,Canada
+ORD_01099,CUST_0267,Phone Case,Electronics,1,19.99,19.99,2024-07-11,Mumbai,India
+ORD_01100,CUST_0071,History Book,Books,4,24.99,99.96,2024-01-08,Paris,France
+ORD_01101,CUST_0282,Throw Pillow,Home & Garden,3,29.99,89.97,2024-05-24,Chicago,USA
+ORD_01102,CUST_0066,Sneakers,Clothing,4,89.99,359.96,2024-05-23,Chicago,USA
+ORD_01103,CUST_0131,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-01-01,Sydney,Australia
+ORD_01104,CUST_0203,Wall Clock,Home & Garden,1,34.99,34.99,2024-01-10,Toronto,Canada
+ORD_01105,CUST_0084,Socks Pack,Clothing,3,14.99,44.97,2024-07-01,London,UK
+ORD_01106,CUST_0141,T-Shirt,Clothing,4,24.99,99.96,2024-02-11,Tokyo,Japan
+ORD_01107,CUST_0246,Resistance Bands,Sports,1,19.99,19.99,2024-02-17,Los Angeles,USA
+ORD_01108,CUST_0001,Running Shoes,Sports,3,109.99,329.97,2024-02-27,Chicago,USA
+ORD_01109,CUST_0108,Wireless Headphones,Electronics,5,59.99,299.95,2024-09-15,Berlin,Germany
+ORD_01110,CUST_0140,Water Bottle,Sports,4,14.99,59.96,2024-04-28,Toronto,Canada
+ORD_01111,CUST_0026,T-Shirt,Clothing,3,24.99,74.97,2024-11-24,Mumbai,India
+ORD_01112,CUST_0043,Water Bottle,Sports,2,14.99,29.98,2024-11-19,Paris,France
+ORD_01113,CUST_0252,Throw Pillow,Home & Garden,4,29.99,119.96,2024-12-27,Paris,France
+ORD_01114,CUST_0121,History Book,Books,2,24.99,49.98,2024-11-04,New York,USA
+ORD_01115,CUST_0221,Plant Pot,Home & Garden,3,18.99,56.97,2024-10-22,Los Angeles,USA
+ORD_01116,CUST_0113,Data Science Handbook,Books,3,39.99,119.97,2024-07-19,Los Angeles,USA
+ORD_01117,CUST_0159,Power Bank,Electronics,3,34.99,104.97,2024-07-20,Toronto,Canada
+ORD_01118,CUST_0143,Yoga Mat,Sports,3,29.99,89.97,2024-10-25,New York,USA
+ORD_01119,CUST_0054,Jeans,Clothing,3,49.99,149.97,2024-04-12,London,UK
+ORD_01120,CUST_0199,Wall Clock,Home & Garden,3,34.99,104.97,2024-10-13,London,UK
+ORD_01121,CUST_0053,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-05-08,Toronto,Canada
+ORD_01122,CUST_0169,Yoga Mat,Sports,2,29.99,59.98,2024-03-16,London,UK
+ORD_01123,CUST_0029,Self-Help Guide,Books,1,19.99,19.99,2024-11-19,Los Angeles,USA
+ORD_01124,CUST_0154,Garden Hose,Home & Garden,3,39.99,119.97,2024-09-02,Chicago,USA
+ORD_01125,CUST_0135,Fiction Novel,Books,1,14.99,14.99,2024-05-09,Chicago,USA
+ORD_01126,CUST_0028,Fiction Novel,Books,3,14.99,44.97,2024-05-03,Sydney,Australia
+ORD_01127,CUST_0098,Yoga Mat,Sports,5,29.99,149.95,2024-08-24,Los Angeles,USA
+ORD_01128,CUST_0063,USB-C Cable,Electronics,5,12.99,64.95,2024-09-03,London,UK
+ORD_01129,CUST_0035,Dumbbell Set,Sports,5,59.99,299.95,2024-06-10,Chicago,USA
+ORD_01130,CUST_0215,Running Shoes,Sports,5,109.99,549.95,2024-02-02,Sydney,Australia
+ORD_01131,CUST_0040,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-12-19,Mumbai,India
+ORD_01132,CUST_0095,Wireless Headphones,Electronics,2,59.99,119.98,2024-07-04,London,UK
+ORD_01133,CUST_0280,Phone Case,Electronics,5,19.99,99.95,2024-05-10,Chicago,USA
+ORD_01134,CUST_0048,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-03-13,Tokyo,Japan
+ORD_01135,CUST_0172,Wireless Headphones,Electronics,4,59.99,239.96,2024-02-28,Mumbai,India
+ORD_01136,CUST_0023,Garden Hose,Home & Garden,1,39.99,39.99,2024-08-06,Paris,France
+ORD_01137,CUST_0207,Yoga Mat,Sports,4,29.99,119.96,2024-06-28,Los Angeles,USA
+ORD_01138,CUST_0133,Data Science Handbook,Books,1,39.99,39.99,2024-01-17,Paris,France
+ORD_01139,CUST_0066,Jeans,Clothing,1,49.99,49.99,2024-01-13,London,UK
+ORD_01140,CUST_0298,T-Shirt,Clothing,3,24.99,74.97,2024-06-28,New York,USA
+ORD_01141,CUST_0216,Dumbbell Set,Sports,3,59.99,179.97,2024-01-24,Berlin,Germany
+ORD_01142,CUST_0005,T-Shirt,Clothing,2,24.99,49.98,2024-09-03,Chicago,USA
+ORD_01143,CUST_0040,Water Bottle,Sports,4,14.99,59.96,2024-03-19,London,UK
+ORD_01144,CUST_0256,Data Science Handbook,Books,2,39.99,79.98,2024-05-07,Mumbai,India
+ORD_01145,CUST_0020,Sneakers,Clothing,3,89.99,269.97,2024-06-23,Los Angeles,USA
+ORD_01146,CUST_0184,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-04-08,Chicago,USA
+ORD_01147,CUST_0166,Yoga Mat,Sports,1,29.99,29.99,2024-01-12,Mumbai,India
+ORD_01148,CUST_0076,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-10-13,Tokyo,Japan
+ORD_01149,CUST_0269,Yoga Mat,Sports,2,29.99,59.98,2024-03-28,Sydney,Australia
+ORD_01150,CUST_0271,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-09-23,Berlin,Germany
+ORD_01151,CUST_0210,Socks Pack,Clothing,3,14.99,44.97,2024-08-17,Tokyo,Japan
+ORD_01152,CUST_0154,Garden Hose,Home & Garden,5,39.99,199.95,2024-03-10,London,UK
+ORD_01153,CUST_0244,History Book,Books,2,24.99,49.98,2024-02-02,Paris,France
+ORD_01154,CUST_0255,Jacket,Clothing,2,119.99,239.98,2024-07-11,Toronto,Canada
+ORD_01155,CUST_0155,Power Bank,Electronics,5,34.99,174.95,2024-10-20,Berlin,Germany
+ORD_01156,CUST_0145,Phone Case,Electronics,5,19.99,99.95,2024-07-08,Sydney,Australia
+ORD_01157,CUST_0101,Data Science Handbook,Books,2,39.99,79.98,2024-05-03,Chicago,USA
+ORD_01158,CUST_0201,Fiction Novel,Books,5,14.99,74.95,2024-03-16,Los Angeles,USA
+ORD_01159,CUST_0096,Throw Pillow,Home & Garden,4,29.99,119.96,2024-11-06,Toronto,Canada
+ORD_01160,CUST_0119,Jeans,Clothing,5,49.99,249.95,2024-06-23,Los Angeles,USA
+ORD_01161,CUST_0226,Wall Clock,Home & Garden,4,34.99,139.96,2024-02-13,Sydney,Australia
+ORD_01162,CUST_0237,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-08-08,Los Angeles,USA
+ORD_01163,CUST_0265,History Book,Books,5,24.99,124.95,2024-03-22,Mumbai,India
+ORD_01164,CUST_0126,Sneakers,Clothing,4,89.99,359.96,2024-12-05,Tokyo,Japan
+ORD_01165,CUST_0132,Wireless Headphones,Electronics,5,59.99,299.95,2024-08-13,Berlin,Germany
+ORD_01166,CUST_0136,Plant Pot,Home & Garden,1,18.99,18.99,2024-03-11,Mumbai,India
+ORD_01167,CUST_0033,Jeans,Clothing,2,49.99,99.98,2024-04-14,Sydney,Australia
+ORD_01168,CUST_0162,Wall Clock,Home & Garden,5,34.99,174.95,2024-01-18,Chicago,USA
+ORD_01169,CUST_0144,Wireless Headphones,Electronics,4,59.99,239.96,2024-02-21,Los Angeles,USA
+ORD_01170,CUST_0056,Fiction Novel,Books,5,14.99,74.95,2024-02-07,Berlin,Germany
+ORD_01171,CUST_0045,Jeans,Clothing,2,49.99,99.98,2024-08-10,Paris,France
+ORD_01172,CUST_0089,Fiction Novel,Books,5,14.99,74.95,2024-08-19,Berlin,Germany
+ORD_01173,CUST_0095,Throw Pillow,Home & Garden,3,29.99,89.97,2024-11-19,London,UK
+ORD_01174,CUST_0219,Power Bank,Electronics,4,34.99,139.96,2024-08-26,New York,USA
+ORD_01175,CUST_0186,Throw Pillow,Home & Garden,2,29.99,59.98,2024-10-25,London,UK
+ORD_01176,CUST_0231,History Book,Books,3,24.99,74.97,2024-04-08,London,UK
+ORD_01177,CUST_0289,Water Bottle,Sports,2,14.99,29.98,2024-04-15,Toronto,Canada
+ORD_01178,CUST_0240,Garden Hose,Home & Garden,5,39.99,199.95,2024-08-25,Paris,France
+ORD_01179,CUST_0184,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-02-02,Mumbai,India
+ORD_01180,CUST_0240,Wall Clock,Home & Garden,3,34.99,104.97,2024-07-26,Paris,France
+ORD_01181,CUST_0016,History Book,Books,4,24.99,99.96,2024-06-04,Tokyo,Japan
+ORD_01182,CUST_0007,Plant Pot,Home & Garden,3,18.99,56.97,2024-02-15,London,UK
+ORD_01183,CUST_0052,Power Bank,Electronics,4,34.99,139.96,2024-10-18,Sydney,Australia
+ORD_01184,CUST_0011,T-Shirt,Clothing,3,24.99,74.97,2024-01-11,Sydney,Australia
+ORD_01185,CUST_0018,Throw Pillow,Home & Garden,3,29.99,89.97,2024-01-03,Chicago,USA
+ORD_01186,CUST_0125,History Book,Books,3,24.99,74.97,2024-12-07,New York,USA
+ORD_01187,CUST_0142,Throw Pillow,Home & Garden,2,29.99,59.98,2024-06-21,Berlin,Germany
+ORD_01188,CUST_0273,Plant Pot,Home & Garden,1,18.99,18.99,2024-01-02,Berlin,Germany
+ORD_01189,CUST_0200,Fiction Novel,Books,2,14.99,29.98,2024-07-18,Chicago,USA
+ORD_01190,CUST_0119,Sneakers,Clothing,5,89.99,449.95,2024-02-18,London,UK
+ORD_01191,CUST_0297,USB-C Cable,Electronics,4,12.99,51.96,2024-05-12,New York,USA
+ORD_01192,CUST_0289,Garden Hose,Home & Garden,3,39.99,119.97,2024-03-20,Toronto,Canada
+ORD_01193,CUST_0215,Socks Pack,Clothing,2,14.99,29.98,2024-10-04,Chicago,USA
+ORD_01194,CUST_0296,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-12-19,Paris,France
+ORD_01195,CUST_0232,Self-Help Guide,Books,1,19.99,19.99,2024-02-25,Sydney,Australia
+ORD_01196,CUST_0276,Data Science Handbook,Books,3,39.99,119.97,2024-12-23,Berlin,Germany
+ORD_01197,CUST_0051,Python Cookbook,Books,5,44.99,224.95,2024-01-27,Los Angeles,USA
+ORD_01198,CUST_0218,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-12-16,Berlin,Germany
+ORD_01199,CUST_0298,Self-Help Guide,Books,5,19.99,99.95,2024-07-27,Chicago,USA
+ORD_01200,CUST_0053,Wireless Headphones,Electronics,5,59.99,299.95,2024-11-03,Tokyo,Japan
+ORD_01201,CUST_0255,Data Science Handbook,Books,1,39.99,39.99,2024-02-03,Toronto,Canada
+ORD_01202,CUST_0226,Python Cookbook,Books,4,44.99,179.96,2024-03-06,Mumbai,India
+ORD_01203,CUST_0224,Python Cookbook,Books,3,44.99,134.97,2024-03-22,Berlin,Germany
+ORD_01204,CUST_0135,Data Science Handbook,Books,2,39.99,79.98,2024-04-04,New York,USA
+ORD_01205,CUST_0025,Throw Pillow,Home & Garden,1,29.99,29.99,2024-09-10,Los Angeles,USA
+ORD_01206,CUST_0206,Wireless Headphones,Electronics,5,59.99,299.95,2024-06-06,Chicago,USA
+ORD_01207,CUST_0150,T-Shirt,Clothing,4,24.99,99.96,2024-02-24,London,UK
+ORD_01208,CUST_0181,Sneakers,Clothing,5,89.99,449.95,2024-11-05,Sydney,Australia
+ORD_01209,CUST_0224,Water Bottle,Sports,3,14.99,44.97,2024-12-20,Chicago,USA
+ORD_01210,CUST_0232,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-09-02,London,UK
+ORD_01211,CUST_0243,Plant Pot,Home & Garden,3,18.99,56.97,2024-11-13,London,UK
+ORD_01212,CUST_0235,Garden Hose,Home & Garden,4,39.99,159.96,2024-12-24,Tokyo,Japan
+ORD_01213,CUST_0159,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-09-12,Paris,France
+ORD_01214,CUST_0007,Sneakers,Clothing,5,89.99,449.95,2024-12-06,London,UK
+ORD_01215,CUST_0085,Self-Help Guide,Books,2,19.99,39.98,2024-02-05,London,UK
+ORD_01216,CUST_0254,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-09-02,New York,USA
+ORD_01217,CUST_0151,Yoga Mat,Sports,3,29.99,89.97,2024-12-26,Berlin,Germany
+ORD_01218,CUST_0267,Sneakers,Clothing,5,89.99,449.95,2024-06-08,Sydney,Australia
+ORD_01219,CUST_0212,Wall Clock,Home & Garden,5,34.99,174.95,2024-07-09,Tokyo,Japan
+ORD_01220,CUST_0238,Throw Pillow,Home & Garden,5,29.99,149.95,2024-01-22,Paris,France
+ORD_01221,CUST_0039,Wall Clock,Home & Garden,3,34.99,104.97,2024-10-20,Berlin,Germany
+ORD_01222,CUST_0013,Yoga Mat,Sports,2,29.99,59.98,2024-07-12,Toronto,Canada
+ORD_01223,CUST_0177,Dumbbell Set,Sports,5,59.99,299.95,2024-09-28,Chicago,USA
+ORD_01224,CUST_0185,Power Bank,Electronics,2,34.99,69.98,2024-10-04,Los Angeles,USA
+ORD_01225,CUST_0272,Power Bank,Electronics,5,34.99,174.95,2024-11-28,Los Angeles,USA
+ORD_01226,CUST_0182,Sneakers,Clothing,5,89.99,449.95,2024-03-03,Mumbai,India
+ORD_01227,CUST_0229,T-Shirt,Clothing,1,24.99,24.99,2024-08-15,New York,USA
+ORD_01228,CUST_0134,Water Bottle,Sports,3,14.99,44.97,2024-03-17,Chicago,USA
+ORD_01229,CUST_0247,Water Bottle,Sports,2,14.99,29.98,2024-06-08,Tokyo,Japan
+ORD_01230,CUST_0106,Python Cookbook,Books,5,44.99,224.95,2024-09-01,London,UK
+ORD_01231,CUST_0054,T-Shirt,Clothing,2,24.99,49.98,2024-05-22,Paris,France
+ORD_01232,CUST_0157,Yoga Mat,Sports,4,29.99,119.96,2024-11-23,New York,USA
+ORD_01233,CUST_0085,Jeans,Clothing,4,49.99,199.96,2024-01-13,Toronto,Canada
+ORD_01234,CUST_0237,Fiction Novel,Books,5,14.99,74.95,2024-01-24,Toronto,Canada
+ORD_01235,CUST_0272,Data Science Handbook,Books,3,39.99,119.97,2024-07-02,Toronto,Canada
+ORD_01236,CUST_0061,History Book,Books,1,24.99,24.99,2024-11-16,Toronto,Canada
+ORD_01237,CUST_0114,T-Shirt,Clothing,1,24.99,24.99,2024-11-07,Sydney,Australia
+ORD_01238,CUST_0282,Dumbbell Set,Sports,1,59.99,59.99,2024-04-02,Tokyo,Japan
+ORD_01239,CUST_0204,Water Bottle,Sports,1,14.99,14.99,2024-01-08,Toronto,Canada
+ORD_01240,CUST_0154,Power Bank,Electronics,1,34.99,34.99,2024-07-23,Sydney,Australia
+ORD_01241,CUST_0205,Yoga Mat,Sports,1,29.99,29.99,2024-07-03,Los Angeles,USA
+ORD_01242,CUST_0285,Sneakers,Clothing,4,89.99,359.96,2024-12-22,London,UK
+ORD_01243,CUST_0134,Wall Clock,Home & Garden,4,34.99,139.96,2024-10-16,Paris,France
+ORD_01244,CUST_0197,Power Bank,Electronics,1,34.99,34.99,2024-08-02,Tokyo,Japan
+ORD_01245,CUST_0258,Wall Clock,Home & Garden,2,34.99,69.98,2024-12-15,Tokyo,Japan
+ORD_01246,CUST_0223,Jacket,Clothing,3,119.99,359.97,2024-09-07,Tokyo,Japan
+ORD_01247,CUST_0268,Fiction Novel,Books,5,14.99,74.95,2024-12-28,Tokyo,Japan
+ORD_01248,CUST_0143,Fiction Novel,Books,1,14.99,14.99,2024-10-17,London,UK
+ORD_01249,CUST_0011,Plant Pot,Home & Garden,4,18.99,75.96,2024-04-25,Berlin,Germany
+ORD_01250,CUST_0050,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-12-17,New York,USA
+ORD_01251,CUST_0220,T-Shirt,Clothing,3,24.99,74.97,2024-03-21,Sydney,Australia
+ORD_01252,CUST_0157,Resistance Bands,Sports,1,19.99,19.99,2024-10-09,Mumbai,India
+ORD_01253,CUST_0032,Jeans,Clothing,2,49.99,99.98,2024-11-15,Berlin,Germany
+ORD_01254,CUST_0047,Water Bottle,Sports,2,14.99,29.98,2024-10-21,Paris,France
+ORD_01255,CUST_0037,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-10-08,Chicago,USA
+ORD_01256,CUST_0108,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-07-13,New York,USA
+ORD_01257,CUST_0101,Python Cookbook,Books,3,44.99,134.97,2024-02-24,Sydney,Australia
+ORD_01258,CUST_0224,History Book,Books,4,24.99,99.96,2024-07-01,Sydney,Australia
+ORD_01259,CUST_0272,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-08-16,Berlin,Germany
+ORD_01260,CUST_0263,Water Bottle,Sports,2,14.99,29.98,2024-10-05,London,UK
+ORD_01261,CUST_0215,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-09-07,New York,USA
+ORD_01262,CUST_0233,Phone Case,Electronics,2,19.99,39.98,2024-12-15,Mumbai,India
+ORD_01263,CUST_0204,Yoga Mat,Sports,2,29.99,59.98,2024-07-09,New York,USA
+ORD_01264,CUST_0185,Jacket,Clothing,1,119.99,119.99,2024-03-07,Paris,France
+ORD_01265,CUST_0164,Sneakers,Clothing,2,89.99,179.98,2024-03-16,London,UK
+ORD_01266,CUST_0009,Wireless Headphones,Electronics,2,59.99,119.98,2024-12-09,Chicago,USA
+ORD_01267,CUST_0031,Dumbbell Set,Sports,5,59.99,299.95,2024-05-21,Toronto,Canada
+ORD_01268,CUST_0249,Plant Pot,Home & Garden,3,18.99,56.97,2024-05-07,Toronto,Canada
+ORD_01269,CUST_0138,Jeans,Clothing,2,49.99,99.98,2024-01-08,London,UK
+ORD_01270,CUST_0274,T-Shirt,Clothing,5,24.99,124.95,2024-07-04,Tokyo,Japan
+ORD_01271,CUST_0149,Water Bottle,Sports,4,14.99,59.96,2024-06-08,London,UK
+ORD_01272,CUST_0253,Garden Hose,Home & Garden,1,39.99,39.99,2024-07-28,Los Angeles,USA
+ORD_01273,CUST_0099,History Book,Books,5,24.99,124.95,2024-07-07,Tokyo,Japan
+ORD_01274,CUST_0176,Jacket,Clothing,1,119.99,119.99,2024-04-02,Tokyo,Japan
+ORD_01275,CUST_0197,Self-Help Guide,Books,4,19.99,79.96,2024-05-11,Berlin,Germany
+ORD_01276,CUST_0053,Jeans,Clothing,5,49.99,249.95,2024-11-05,Tokyo,Japan
+ORD_01277,CUST_0300,Plant Pot,Home & Garden,2,18.99,37.98,2024-12-26,Tokyo,Japan
+ORD_01278,CUST_0084,T-Shirt,Clothing,5,24.99,124.95,2024-01-19,Mumbai,India
+ORD_01279,CUST_0034,Wireless Headphones,Electronics,5,59.99,299.95,2024-08-11,Berlin,Germany
+ORD_01280,CUST_0249,Wall Clock,Home & Garden,2,34.99,69.98,2024-06-28,Tokyo,Japan
+ORD_01281,CUST_0261,Throw Pillow,Home & Garden,5,29.99,149.95,2024-10-20,Tokyo,Japan
+ORD_01282,CUST_0085,Jeans,Clothing,5,49.99,249.95,2024-04-22,Tokyo,Japan
+ORD_01283,CUST_0230,Wireless Headphones,Electronics,4,59.99,239.96,2024-07-28,Chicago,USA
+ORD_01284,CUST_0299,Wall Clock,Home & Garden,5,34.99,174.95,2024-09-04,Chicago,USA
+ORD_01285,CUST_0299,USB-C Cable,Electronics,1,12.99,12.99,2024-06-01,London,UK
+ORD_01286,CUST_0232,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-06-01,New York,USA
+ORD_01287,CUST_0237,Fiction Novel,Books,4,14.99,59.96,2024-06-01,Tokyo,Japan
+ORD_01288,CUST_0124,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-11-06,Sydney,Australia
+ORD_01289,CUST_0226,Jacket,Clothing,1,119.99,119.99,2024-08-22,London,UK
+ORD_01290,CUST_0037,Wall Clock,Home & Garden,5,34.99,174.95,2024-08-04,Mumbai,India
+ORD_01291,CUST_0260,Jeans,Clothing,4,49.99,199.96,2024-04-18,Berlin,Germany
+ORD_01292,CUST_0026,Self-Help Guide,Books,2,19.99,39.98,2024-07-12,Sydney,Australia
+ORD_01293,CUST_0124,Running Shoes,Sports,5,109.99,549.95,2024-09-01,Toronto,Canada
+ORD_01294,CUST_0205,Plant Pot,Home & Garden,4,18.99,75.96,2024-11-07,Mumbai,India
+ORD_01295,CUST_0192,Water Bottle,Sports,4,14.99,59.96,2024-04-18,Sydney,Australia
+ORD_01296,CUST_0151,Self-Help Guide,Books,3,19.99,59.97,2024-02-03,Paris,France
+ORD_01297,CUST_0211,Phone Case,Electronics,3,19.99,59.97,2024-02-03,Toronto,Canada
+ORD_01298,CUST_0009,Socks Pack,Clothing,1,14.99,14.99,2024-05-28,Los Angeles,USA
+ORD_01299,CUST_0158,Fiction Novel,Books,1,14.99,14.99,2024-04-20,London,UK
+ORD_01300,CUST_0218,Resistance Bands,Sports,2,19.99,39.98,2024-06-08,Los Angeles,USA
+ORD_01301,CUST_0071,T-Shirt,Clothing,3,24.99,74.97,2024-01-14,Tokyo,Japan
+ORD_01302,CUST_0224,Data Science Handbook,Books,2,39.99,79.98,2024-11-22,Los Angeles,USA
+ORD_01303,CUST_0111,Garden Hose,Home & Garden,2,39.99,79.98,2024-09-19,New York,USA
+ORD_01304,CUST_0083,Dumbbell Set,Sports,2,59.99,119.98,2024-11-23,New York,USA
+ORD_01305,CUST_0295,Wireless Headphones,Electronics,3,59.99,179.97,2024-10-06,Tokyo,Japan
+ORD_01306,CUST_0173,Phone Case,Electronics,3,19.99,59.97,2024-07-09,Mumbai,India
+ORD_01307,CUST_0212,Power Bank,Electronics,5,34.99,174.95,2024-05-13,Los Angeles,USA
+ORD_01308,CUST_0247,Dumbbell Set,Sports,1,59.99,59.99,2024-12-03,London,UK
+ORD_01309,CUST_0205,Water Bottle,Sports,3,14.99,44.97,2024-09-19,New York,USA
+ORD_01310,CUST_0295,Self-Help Guide,Books,5,19.99,99.95,2024-09-19,Sydney,Australia
+ORD_01311,CUST_0128,Garden Hose,Home & Garden,1,39.99,39.99,2024-11-03,Paris,France
+ORD_01312,CUST_0071,Python Cookbook,Books,5,44.99,224.95,2024-11-14,Toronto,Canada
+ORD_01313,CUST_0122,Running Shoes,Sports,1,109.99,109.99,2024-03-04,Chicago,USA
+ORD_01314,CUST_0055,Dumbbell Set,Sports,3,59.99,179.97,2024-11-10,Chicago,USA
+ORD_01315,CUST_0102,USB-C Cable,Electronics,3,12.99,38.97,2024-12-19,Tokyo,Japan
+ORD_01316,CUST_0210,Resistance Bands,Sports,4,19.99,79.96,2024-09-10,London,UK
+ORD_01317,CUST_0216,Dumbbell Set,Sports,5,59.99,299.95,2024-02-03,Chicago,USA
+ORD_01318,CUST_0092,Yoga Mat,Sports,5,29.99,149.95,2024-01-19,Berlin,Germany
+ORD_01319,CUST_0166,Fiction Novel,Books,5,14.99,74.95,2024-04-17,London,UK
+ORD_01320,CUST_0134,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-08-15,Paris,France
+ORD_01321,CUST_0226,Jeans,Clothing,4,49.99,199.96,2024-08-26,Mumbai,India
+ORD_01322,CUST_0187,Water Bottle,Sports,1,14.99,14.99,2024-04-24,Tokyo,Japan
+ORD_01323,CUST_0054,Resistance Bands,Sports,3,19.99,59.97,2024-04-11,Los Angeles,USA
+ORD_01324,CUST_0098,T-Shirt,Clothing,3,24.99,74.97,2024-07-08,Tokyo,Japan
+ORD_01325,CUST_0256,History Book,Books,5,24.99,124.95,2024-05-02,New York,USA
+ORD_01326,CUST_0067,Python Cookbook,Books,1,44.99,44.99,2024-07-06,Mumbai,India
+ORD_01327,CUST_0131,Wireless Headphones,Electronics,1,59.99,59.99,2024-01-10,Berlin,Germany
+ORD_01328,CUST_0276,Sneakers,Clothing,5,89.99,449.95,2024-03-07,Tokyo,Japan
+ORD_01329,CUST_0061,Data Science Handbook,Books,5,39.99,199.95,2024-11-16,Berlin,Germany
+ORD_01330,CUST_0038,Water Bottle,Sports,1,14.99,14.99,2024-08-12,Tokyo,Japan
+ORD_01331,CUST_0034,Self-Help Guide,Books,3,19.99,59.97,2024-02-28,Toronto,Canada
+ORD_01332,CUST_0206,Throw Pillow,Home & Garden,1,29.99,29.99,2024-10-26,Chicago,USA
+ORD_01333,CUST_0132,Throw Pillow,Home & Garden,1,29.99,29.99,2024-07-03,New York,USA
+ORD_01334,CUST_0103,Garden Hose,Home & Garden,5,39.99,199.95,2024-05-25,Mumbai,India
+ORD_01335,CUST_0135,Data Science Handbook,Books,4,39.99,159.96,2024-04-28,Los Angeles,USA
+ORD_01336,CUST_0199,Power Bank,Electronics,2,34.99,69.98,2024-09-04,New York,USA
+ORD_01337,CUST_0211,Wireless Headphones,Electronics,3,59.99,179.97,2024-01-23,Los Angeles,USA
+ORD_01338,CUST_0014,Running Shoes,Sports,5,109.99,549.95,2024-05-22,Mumbai,India
+ORD_01339,CUST_0099,Jacket,Clothing,4,119.99,479.96,2024-05-01,Mumbai,India
+ORD_01340,CUST_0257,Jeans,Clothing,3,49.99,149.97,2024-10-21,Berlin,Germany
+ORD_01341,CUST_0128,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-09-23,Chicago,USA
+ORD_01342,CUST_0201,Water Bottle,Sports,2,14.99,29.98,2024-06-12,London,UK
+ORD_01343,CUST_0267,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-10-14,Paris,France
+ORD_01344,CUST_0103,Dumbbell Set,Sports,3,59.99,179.97,2024-11-11,Sydney,Australia
+ORD_01345,CUST_0244,T-Shirt,Clothing,5,24.99,124.95,2024-02-15,Chicago,USA
+ORD_01346,CUST_0104,Throw Pillow,Home & Garden,1,29.99,29.99,2024-06-23,New York,USA
+ORD_01347,CUST_0131,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-11-13,Tokyo,Japan
+ORD_01348,CUST_0104,Plant Pot,Home & Garden,1,18.99,18.99,2024-06-17,Toronto,Canada
+ORD_01349,CUST_0126,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-06-06,Los Angeles,USA
+ORD_01350,CUST_0184,Garden Hose,Home & Garden,2,39.99,79.98,2024-10-02,Mumbai,India
+ORD_01351,CUST_0076,Data Science Handbook,Books,4,39.99,159.96,2024-04-02,Toronto,Canada
+ORD_01352,CUST_0095,History Book,Books,3,24.99,74.97,2024-05-26,Los Angeles,USA
+ORD_01353,CUST_0266,USB-C Cable,Electronics,4,12.99,51.96,2024-11-11,Chicago,USA
+ORD_01354,CUST_0015,History Book,Books,4,24.99,99.96,2024-05-04,Los Angeles,USA
+ORD_01355,CUST_0006,Jacket,Clothing,3,119.99,359.97,2024-03-13,Chicago,USA
+ORD_01356,CUST_0022,Data Science Handbook,Books,2,39.99,79.98,2024-03-02,Paris,France
+ORD_01357,CUST_0119,Throw Pillow,Home & Garden,3,29.99,89.97,2024-11-26,Tokyo,Japan
+ORD_01358,CUST_0159,Power Bank,Electronics,1,34.99,34.99,2024-01-11,Chicago,USA
+ORD_01359,CUST_0064,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-07-14,Mumbai,India
+ORD_01360,CUST_0020,Garden Hose,Home & Garden,5,39.99,199.95,2024-11-27,Berlin,Germany
+ORD_01361,CUST_0145,Sneakers,Clothing,5,89.99,449.95,2024-12-24,Paris,France
+ORD_01362,CUST_0082,Plant Pot,Home & Garden,3,18.99,56.97,2024-07-19,Tokyo,Japan
+ORD_01363,CUST_0165,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-09-02,Chicago,USA
+ORD_01364,CUST_0002,Data Science Handbook,Books,2,39.99,79.98,2024-01-13,Tokyo,Japan
+ORD_01365,CUST_0147,Yoga Mat,Sports,4,29.99,119.96,2024-06-14,New York,USA
+ORD_01366,CUST_0197,Phone Case,Electronics,2,19.99,39.98,2024-07-09,Sydney,Australia
+ORD_01367,CUST_0066,Self-Help Guide,Books,5,19.99,99.95,2024-08-12,Mumbai,India
+ORD_01368,CUST_0096,Dumbbell Set,Sports,5,59.99,299.95,2024-09-21,Los Angeles,USA
+ORD_01369,CUST_0137,T-Shirt,Clothing,1,24.99,24.99,2024-06-23,Tokyo,Japan
+ORD_01370,CUST_0287,Phone Case,Electronics,2,19.99,39.98,2024-07-09,Mumbai,India
+ORD_01371,CUST_0134,T-Shirt,Clothing,5,24.99,124.95,2024-06-20,Los Angeles,USA
+ORD_01372,CUST_0132,Water Bottle,Sports,4,14.99,59.96,2024-02-06,Paris,France
+ORD_01373,CUST_0142,Plant Pot,Home & Garden,2,18.99,37.98,2024-10-28,Berlin,Germany
+ORD_01374,CUST_0179,Python Cookbook,Books,3,44.99,134.97,2024-06-13,Sydney,Australia
+ORD_01375,CUST_0062,Throw Pillow,Home & Garden,1,29.99,29.99,2024-09-25,Paris,France
+ORD_01376,CUST_0129,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-01-01,Tokyo,Japan
+ORD_01377,CUST_0300,Jeans,Clothing,4,49.99,199.96,2024-07-26,Paris,France
+ORD_01378,CUST_0083,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-06-19,Berlin,Germany
+ORD_01379,CUST_0089,Jacket,Clothing,5,119.99,599.95,2024-05-24,Berlin,Germany
+ORD_01380,CUST_0237,Power Bank,Electronics,3,34.99,104.97,2024-10-26,Toronto,Canada
+ORD_01381,CUST_0013,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-09-18,Chicago,USA
+ORD_01382,CUST_0248,Python Cookbook,Books,2,44.99,89.98,2024-11-03,Tokyo,Japan
+ORD_01383,CUST_0247,Plant Pot,Home & Garden,5,18.99,94.95,2024-02-01,Los Angeles,USA
+ORD_01384,CUST_0083,Water Bottle,Sports,3,14.99,44.97,2024-09-13,Tokyo,Japan
+ORD_01385,CUST_0178,Jeans,Clothing,1,49.99,49.99,2024-02-04,London,UK
+ORD_01386,CUST_0233,Fiction Novel,Books,1,14.99,14.99,2024-01-06,Sydney,Australia
+ORD_01387,CUST_0096,Jacket,Clothing,1,119.99,119.99,2024-02-25,Toronto,Canada
+ORD_01388,CUST_0139,Wireless Headphones,Electronics,5,59.99,299.95,2024-09-18,Paris,France
+ORD_01389,CUST_0243,Python Cookbook,Books,3,44.99,134.97,2024-07-04,Chicago,USA
+ORD_01390,CUST_0233,Resistance Bands,Sports,2,19.99,39.98,2024-11-19,Mumbai,India
+ORD_01391,CUST_0120,Yoga Mat,Sports,3,29.99,89.97,2024-03-06,Chicago,USA
+ORD_01392,CUST_0131,Wall Clock,Home & Garden,4,34.99,139.96,2024-07-07,London,UK
+ORD_01393,CUST_0213,Garden Hose,Home & Garden,2,39.99,79.98,2024-07-09,Paris,France
+ORD_01394,CUST_0205,Garden Hose,Home & Garden,2,39.99,79.98,2024-04-11,Paris,France
+ORD_01395,CUST_0278,Resistance Bands,Sports,3,19.99,59.97,2024-08-22,Los Angeles,USA
+ORD_01396,CUST_0258,Data Science Handbook,Books,2,39.99,79.98,2024-02-24,Sydney,Australia
+ORD_01397,CUST_0253,Yoga Mat,Sports,1,29.99,29.99,2024-05-18,Tokyo,Japan
+ORD_01398,CUST_0085,Resistance Bands,Sports,2,19.99,39.98,2024-06-13,Mumbai,India
+ORD_01399,CUST_0061,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-06-02,Tokyo,Japan
+ORD_01400,CUST_0267,Socks Pack,Clothing,3,14.99,44.97,2024-09-23,Tokyo,Japan
+ORD_01401,CUST_0268,Fiction Novel,Books,4,14.99,59.96,2024-03-25,Chicago,USA
+ORD_01402,CUST_0172,Yoga Mat,Sports,4,29.99,119.96,2024-05-25,Mumbai,India
+ORD_01403,CUST_0137,Plant Pot,Home & Garden,2,18.99,37.98,2024-03-23,Tokyo,Japan
+ORD_01404,CUST_0117,USB-C Cable,Electronics,3,12.99,38.97,2024-11-27,New York,USA
+ORD_01405,CUST_0112,Resistance Bands,Sports,1,19.99,19.99,2024-09-04,Toronto,Canada
+ORD_01406,CUST_0123,Fiction Novel,Books,5,14.99,74.95,2024-12-11,Los Angeles,USA
+ORD_01407,CUST_0172,Python Cookbook,Books,4,44.99,179.96,2024-11-19,Chicago,USA
+ORD_01408,CUST_0065,Plant Pot,Home & Garden,2,18.99,37.98,2024-08-14,Toronto,Canada
+ORD_01409,CUST_0159,Jacket,Clothing,2,119.99,239.98,2024-10-25,Chicago,USA
+ORD_01410,CUST_0076,History Book,Books,4,24.99,99.96,2024-06-18,Chicago,USA
+ORD_01411,CUST_0264,Python Cookbook,Books,4,44.99,179.96,2024-09-28,London,UK
+ORD_01412,CUST_0258,Fiction Novel,Books,1,14.99,14.99,2024-05-02,London,UK
+ORD_01413,CUST_0281,Sneakers,Clothing,4,89.99,359.96,2024-07-16,Mumbai,India
+ORD_01414,CUST_0235,Yoga Mat,Sports,3,29.99,89.97,2024-10-19,Berlin,Germany
+ORD_01415,CUST_0086,History Book,Books,3,24.99,74.97,2024-09-18,Chicago,USA
+ORD_01416,CUST_0069,Socks Pack,Clothing,5,14.99,74.95,2024-12-07,Tokyo,Japan
+ORD_01417,CUST_0025,Wall Clock,Home & Garden,3,34.99,104.97,2024-05-19,Chicago,USA
+ORD_01418,CUST_0048,Data Science Handbook,Books,1,39.99,39.99,2024-01-14,Sydney,Australia
+ORD_01419,CUST_0103,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-01-01,Chicago,USA
+ORD_01420,CUST_0010,T-Shirt,Clothing,2,24.99,49.98,2024-08-18,Paris,France
+ORD_01421,CUST_0051,Garden Hose,Home & Garden,5,39.99,199.95,2024-04-20,New York,USA
+ORD_01422,CUST_0124,Dumbbell Set,Sports,3,59.99,179.97,2024-01-14,Berlin,Germany
+ORD_01423,CUST_0091,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-11-03,Toronto,Canada
+ORD_01424,CUST_0094,Running Shoes,Sports,2,109.99,219.98,2024-10-05,Tokyo,Japan
+ORD_01425,CUST_0181,Jeans,Clothing,1,49.99,49.99,2024-08-16,London,UK
+ORD_01426,CUST_0031,USB-C Cable,Electronics,5,12.99,64.95,2024-06-01,Chicago,USA
+ORD_01427,CUST_0147,Socks Pack,Clothing,2,14.99,29.98,2024-05-19,Sydney,Australia
+ORD_01428,CUST_0051,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-12-14,Mumbai,India
+ORD_01429,CUST_0102,Resistance Bands,Sports,3,19.99,59.97,2024-03-15,Tokyo,Japan
+ORD_01430,CUST_0050,Data Science Handbook,Books,4,39.99,159.96,2024-12-02,Tokyo,Japan
+ORD_01431,CUST_0207,Fiction Novel,Books,4,14.99,59.96,2024-08-24,Sydney,Australia
+ORD_01432,CUST_0071,Self-Help Guide,Books,3,19.99,59.97,2024-08-15,Chicago,USA
+ORD_01433,CUST_0227,USB-C Cable,Electronics,5,12.99,64.95,2024-03-02,Sydney,Australia
+ORD_01434,CUST_0147,Socks Pack,Clothing,3,14.99,44.97,2024-06-17,Sydney,Australia
+ORD_01435,CUST_0112,Water Bottle,Sports,3,14.99,44.97,2024-11-15,Mumbai,India
+ORD_01436,CUST_0191,Water Bottle,Sports,4,14.99,59.96,2024-04-18,London,UK
+ORD_01437,CUST_0220,Fiction Novel,Books,3,14.99,44.97,2024-08-15,London,UK
+ORD_01438,CUST_0256,Wireless Headphones,Electronics,1,59.99,59.99,2024-01-02,Toronto,Canada
+ORD_01439,CUST_0071,Fiction Novel,Books,2,14.99,29.98,2024-03-11,Tokyo,Japan
+ORD_01440,CUST_0266,Running Shoes,Sports,1,109.99,109.99,2024-12-22,Paris,France
+ORD_01441,CUST_0053,USB-C Cable,Electronics,2,12.99,25.98,2024-04-16,Los Angeles,USA
+ORD_01442,CUST_0300,Sneakers,Clothing,2,89.99,179.98,2024-08-07,Los Angeles,USA
+ORD_01443,CUST_0192,Dumbbell Set,Sports,5,59.99,299.95,2024-12-23,Los Angeles,USA
+ORD_01444,CUST_0168,Socks Pack,Clothing,3,14.99,44.97,2024-10-04,Berlin,Germany
+ORD_01445,CUST_0017,Wall Clock,Home & Garden,3,34.99,104.97,2024-07-20,Chicago,USA
+ORD_01446,CUST_0017,Wall Clock,Home & Garden,4,34.99,139.96,2024-07-05,Paris,France
+ORD_01447,CUST_0131,Python Cookbook,Books,5,44.99,224.95,2024-02-06,London,UK
+ORD_01448,CUST_0188,Resistance Bands,Sports,3,19.99,59.97,2024-01-11,Mumbai,India
+ORD_01449,CUST_0114,Jeans,Clothing,2,49.99,99.98,2024-04-12,Paris,France
+ORD_01450,CUST_0152,Jeans,Clothing,3,49.99,149.97,2024-08-28,Mumbai,India
+ORD_01451,CUST_0143,Data Science Handbook,Books,2,39.99,79.98,2024-02-03,Berlin,Germany
+ORD_01452,CUST_0053,Socks Pack,Clothing,4,14.99,59.96,2024-05-17,Toronto,Canada
+ORD_01453,CUST_0258,Throw Pillow,Home & Garden,2,29.99,59.98,2024-12-03,New York,USA
+ORD_01454,CUST_0125,Throw Pillow,Home & Garden,4,29.99,119.96,2024-09-27,Mumbai,India
+ORD_01455,CUST_0006,Resistance Bands,Sports,5,19.99,99.95,2024-10-24,Berlin,Germany
+ORD_01456,CUST_0299,Sneakers,Clothing,2,89.99,179.98,2024-01-16,Los Angeles,USA
+ORD_01457,CUST_0182,Phone Case,Electronics,5,19.99,99.95,2024-10-28,Tokyo,Japan
+ORD_01458,CUST_0089,Resistance Bands,Sports,3,19.99,59.97,2024-09-01,Toronto,Canada
+ORD_01459,CUST_0066,Running Shoes,Sports,4,109.99,439.96,2024-06-25,Toronto,Canada
+ORD_01460,CUST_0153,Power Bank,Electronics,2,34.99,69.98,2024-09-24,Paris,France
+ORD_01461,CUST_0226,T-Shirt,Clothing,3,24.99,74.97,2024-10-10,Tokyo,Japan
+ORD_01462,CUST_0278,Yoga Mat,Sports,1,29.99,29.99,2024-03-17,New York,USA
+ORD_01463,CUST_0123,Running Shoes,Sports,5,109.99,549.95,2024-07-20,New York,USA
+ORD_01464,CUST_0130,Fiction Novel,Books,2,14.99,29.98,2024-04-16,Los Angeles,USA
+ORD_01465,CUST_0194,Fiction Novel,Books,3,14.99,44.97,2024-06-04,New York,USA
+ORD_01466,CUST_0293,Jacket,Clothing,5,119.99,599.95,2024-03-09,Paris,France
+ORD_01467,CUST_0100,Yoga Mat,Sports,4,29.99,119.96,2024-06-11,Chicago,USA
+ORD_01468,CUST_0017,Dumbbell Set,Sports,3,59.99,179.97,2024-03-02,Paris,France
+ORD_01469,CUST_0214,Resistance Bands,Sports,2,19.99,39.98,2024-08-02,Toronto,Canada
+ORD_01470,CUST_0279,Throw Pillow,Home & Garden,2,29.99,59.98,2024-04-10,Sydney,Australia
+ORD_01471,CUST_0233,Socks Pack,Clothing,1,14.99,14.99,2024-06-17,Toronto,Canada
+ORD_01472,CUST_0198,Running Shoes,Sports,2,109.99,219.98,2024-02-03,New York,USA
+ORD_01473,CUST_0031,Water Bottle,Sports,4,14.99,59.96,2024-01-10,Chicago,USA
+ORD_01474,CUST_0177,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-04-13,Paris,France
+ORD_01475,CUST_0146,USB-C Cable,Electronics,5,12.99,64.95,2024-12-15,Mumbai,India
+ORD_01476,CUST_0195,Power Bank,Electronics,3,34.99,104.97,2024-04-21,Tokyo,Japan
+ORD_01477,CUST_0075,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-02-25,Sydney,Australia
+ORD_01478,CUST_0188,Jacket,Clothing,4,119.99,479.96,2024-09-24,Toronto,Canada
+ORD_01479,CUST_0268,Yoga Mat,Sports,4,29.99,119.96,2024-01-07,Los Angeles,USA
+ORD_01480,CUST_0152,Phone Case,Electronics,1,19.99,19.99,2024-12-15,New York,USA
+ORD_01481,CUST_0177,Garden Hose,Home & Garden,3,39.99,119.97,2024-01-07,London,UK
+ORD_01482,CUST_0260,Data Science Handbook,Books,1,39.99,39.99,2024-04-01,Los Angeles,USA
+ORD_01483,CUST_0095,Fiction Novel,Books,3,14.99,44.97,2024-07-21,Toronto,Canada
+ORD_01484,CUST_0037,Data Science Handbook,Books,4,39.99,159.96,2024-02-19,Sydney,Australia
+ORD_01485,CUST_0202,Power Bank,Electronics,1,34.99,34.99,2024-06-08,Mumbai,India
+ORD_01486,CUST_0163,Jacket,Clothing,4,119.99,479.96,2024-12-08,Chicago,USA
+ORD_01487,CUST_0090,Python Cookbook,Books,5,44.99,224.95,2024-06-11,Los Angeles,USA
+ORD_01488,CUST_0016,Phone Case,Electronics,1,19.99,19.99,2024-05-27,Mumbai,India
+ORD_01489,CUST_0270,Wireless Headphones,Electronics,4,59.99,239.96,2024-06-25,New York,USA
+ORD_01490,CUST_0274,T-Shirt,Clothing,5,24.99,124.95,2024-04-12,Sydney,Australia
+ORD_01491,CUST_0183,Throw Pillow,Home & Garden,2,29.99,59.98,2024-01-10,London,UK
+ORD_01492,CUST_0031,T-Shirt,Clothing,1,24.99,24.99,2024-05-16,Berlin,Germany
+ORD_01493,CUST_0129,Yoga Mat,Sports,3,29.99,89.97,2024-06-23,Los Angeles,USA
+ORD_01494,CUST_0002,Wall Clock,Home & Garden,1,34.99,34.99,2024-05-06,New York,USA
+ORD_01495,CUST_0006,USB-C Cable,Electronics,5,12.99,64.95,2024-11-06,Toronto,Canada
+ORD_01496,CUST_0214,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-08-18,Sydney,Australia
+ORD_01497,CUST_0212,Python Cookbook,Books,2,44.99,89.98,2024-06-18,Los Angeles,USA
+ORD_01498,CUST_0088,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-02-09,Mumbai,India
+ORD_01499,CUST_0259,Resistance Bands,Sports,5,19.99,99.95,2024-08-02,Berlin,Germany
+ORD_01500,CUST_0031,Throw Pillow,Home & Garden,2,29.99,59.98,2024-09-24,Paris,France
+ORD_01501,CUST_0117,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-04-02,New York,USA
+ORD_01502,CUST_0263,Water Bottle,Sports,4,14.99,59.96,2024-12-17,Paris,France
+ORD_01503,CUST_0156,Sneakers,Clothing,5,89.99,449.95,2024-03-28,Berlin,Germany
+ORD_01504,CUST_0047,Data Science Handbook,Books,3,39.99,119.97,2024-11-25,Berlin,Germany
+ORD_01505,CUST_0220,Resistance Bands,Sports,2,19.99,39.98,2024-04-25,New York,USA
+ORD_01506,CUST_0148,Yoga Mat,Sports,5,29.99,149.95,2024-06-27,Los Angeles,USA
+ORD_01507,CUST_0256,Self-Help Guide,Books,3,19.99,59.97,2024-11-12,Toronto,Canada
+ORD_01508,CUST_0174,Socks Pack,Clothing,4,14.99,59.96,2024-12-21,Mumbai,India
+ORD_01509,CUST_0229,Python Cookbook,Books,3,44.99,134.97,2024-12-10,Sydney,Australia
+ORD_01510,CUST_0114,Socks Pack,Clothing,5,14.99,74.95,2024-12-06,Los Angeles,USA
+ORD_01511,CUST_0183,Python Cookbook,Books,1,44.99,44.99,2024-07-24,Sydney,Australia
+ORD_01512,CUST_0100,Sneakers,Clothing,4,89.99,359.96,2024-08-13,Sydney,Australia
+ORD_01513,CUST_0283,Wall Clock,Home & Garden,2,34.99,69.98,2024-10-28,Tokyo,Japan
+ORD_01514,CUST_0073,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-04-08,Tokyo,Japan
+ORD_01515,CUST_0023,Yoga Mat,Sports,4,29.99,119.96,2024-08-22,Paris,France
+ORD_01516,CUST_0004,Fiction Novel,Books,2,14.99,29.98,2024-05-18,Los Angeles,USA
+ORD_01517,CUST_0289,Power Bank,Electronics,3,34.99,104.97,2024-03-27,Chicago,USA
+ORD_01518,CUST_0076,Jeans,Clothing,3,49.99,149.97,2024-12-10,Mumbai,India
+ORD_01519,CUST_0041,Jacket,Clothing,4,119.99,479.96,2024-05-16,London,UK
+ORD_01520,CUST_0123,Wireless Headphones,Electronics,5,59.99,299.95,2024-10-10,New York,USA
+ORD_01521,CUST_0256,Plant Pot,Home & Garden,4,18.99,75.96,2024-11-10,Tokyo,Japan
+ORD_01522,CUST_0044,USB-C Cable,Electronics,1,12.99,12.99,2024-12-17,Paris,France
+ORD_01523,CUST_0044,Socks Pack,Clothing,4,14.99,59.96,2024-05-17,Berlin,Germany
+ORD_01524,CUST_0075,Data Science Handbook,Books,4,39.99,159.96,2024-06-05,Chicago,USA
+ORD_01525,CUST_0100,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-09-21,Sydney,Australia
+ORD_01526,CUST_0084,Data Science Handbook,Books,5,39.99,199.95,2024-11-10,Chicago,USA
+ORD_01527,CUST_0213,Python Cookbook,Books,4,44.99,179.96,2024-07-24,Toronto,Canada
+ORD_01528,CUST_0218,Jeans,Clothing,1,49.99,49.99,2024-10-21,Tokyo,Japan
+ORD_01529,CUST_0143,Phone Case,Electronics,4,19.99,79.96,2024-11-12,Chicago,USA
+ORD_01530,CUST_0196,Fiction Novel,Books,4,14.99,59.96,2024-10-26,Tokyo,Japan
+ORD_01531,CUST_0099,Socks Pack,Clothing,4,14.99,59.96,2024-06-19,Paris,France
+ORD_01532,CUST_0194,Jeans,Clothing,5,49.99,249.95,2024-01-03,Berlin,Germany
+ORD_01533,CUST_0145,Yoga Mat,Sports,4,29.99,119.96,2024-11-12,Mumbai,India
+ORD_01534,CUST_0236,Resistance Bands,Sports,3,19.99,59.97,2024-01-24,London,UK
+ORD_01535,CUST_0148,USB-C Cable,Electronics,3,12.99,38.97,2024-12-24,Los Angeles,USA
+ORD_01536,CUST_0196,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-07-20,New York,USA
+ORD_01537,CUST_0049,Jeans,Clothing,4,49.99,199.96,2024-03-17,Sydney,Australia
+ORD_01538,CUST_0210,Resistance Bands,Sports,2,19.99,39.98,2024-11-22,Toronto,Canada
+ORD_01539,CUST_0017,Yoga Mat,Sports,2,29.99,59.98,2024-10-19,Chicago,USA
+ORD_01540,CUST_0137,Wireless Headphones,Electronics,1,59.99,59.99,2024-04-27,Berlin,Germany
+ORD_01541,CUST_0248,Sneakers,Clothing,3,89.99,269.97,2024-12-01,London,UK
+ORD_01542,CUST_0124,Plant Pot,Home & Garden,3,18.99,56.97,2024-04-09,Tokyo,Japan
+ORD_01543,CUST_0029,Jeans,Clothing,2,49.99,99.98,2024-01-15,Tokyo,Japan
+ORD_01544,CUST_0116,Data Science Handbook,Books,2,39.99,79.98,2024-09-05,Tokyo,Japan
+ORD_01545,CUST_0152,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-05-05,Sydney,Australia
+ORD_01546,CUST_0246,Phone Case,Electronics,2,19.99,39.98,2024-11-08,Paris,France
+ORD_01547,CUST_0179,Phone Case,Electronics,4,19.99,79.96,2024-03-20,London,UK
+ORD_01548,CUST_0010,Data Science Handbook,Books,3,39.99,119.97,2024-02-27,London,UK
+ORD_01549,CUST_0295,Plant Pot,Home & Garden,1,18.99,18.99,2024-05-28,London,UK
+ORD_01550,CUST_0002,Garden Hose,Home & Garden,4,39.99,159.96,2024-12-27,New York,USA
+ORD_01551,CUST_0089,Phone Case,Electronics,5,19.99,99.95,2024-10-19,Mumbai,India
+ORD_01552,CUST_0108,Yoga Mat,Sports,4,29.99,119.96,2024-01-13,New York,USA
+ORD_01553,CUST_0111,Running Shoes,Sports,2,109.99,219.98,2024-09-08,Berlin,Germany
+ORD_01554,CUST_0062,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-01-27,Berlin,Germany
+ORD_01555,CUST_0113,Python Cookbook,Books,1,44.99,44.99,2024-10-05,Los Angeles,USA
+ORD_01556,CUST_0289,Yoga Mat,Sports,4,29.99,119.96,2024-06-08,Chicago,USA
+ORD_01557,CUST_0221,Socks Pack,Clothing,3,14.99,44.97,2024-07-19,London,UK
+ORD_01558,CUST_0173,Plant Pot,Home & Garden,1,18.99,18.99,2024-07-21,New York,USA
+ORD_01559,CUST_0185,Yoga Mat,Sports,5,29.99,149.95,2024-07-05,Mumbai,India
+ORD_01560,CUST_0058,Wireless Headphones,Electronics,4,59.99,239.96,2024-02-02,Berlin,Germany
+ORD_01561,CUST_0013,History Book,Books,4,24.99,99.96,2024-02-22,Los Angeles,USA
+ORD_01562,CUST_0243,Data Science Handbook,Books,1,39.99,39.99,2024-02-23,London,UK
+ORD_01563,CUST_0202,Plant Pot,Home & Garden,5,18.99,94.95,2024-02-11,Paris,France
+ORD_01564,CUST_0284,History Book,Books,1,24.99,24.99,2024-10-06,Tokyo,Japan
+ORD_01565,CUST_0277,Running Shoes,Sports,1,109.99,109.99,2024-03-03,Los Angeles,USA
+ORD_01566,CUST_0300,Throw Pillow,Home & Garden,3,29.99,89.97,2024-10-01,Tokyo,Japan
+ORD_01567,CUST_0281,Wireless Headphones,Electronics,2,59.99,119.98,2024-05-01,London,UK
+ORD_01568,CUST_0265,Resistance Bands,Sports,5,19.99,99.95,2024-10-05,Sydney,Australia
+ORD_01569,CUST_0151,Fiction Novel,Books,4,14.99,59.96,2024-04-26,Sydney,Australia
+ORD_01570,CUST_0098,Self-Help Guide,Books,2,19.99,39.98,2024-06-25,Toronto,Canada
+ORD_01571,CUST_0094,Jeans,Clothing,5,49.99,249.95,2024-04-07,Mumbai,India
+ORD_01572,CUST_0052,Bluetooth Speaker,Electronics,2,79.99,159.98,2024-08-15,Toronto,Canada
+ORD_01573,CUST_0103,Python Cookbook,Books,3,44.99,134.97,2024-11-15,Tokyo,Japan
+ORD_01574,CUST_0121,T-Shirt,Clothing,1,24.99,24.99,2024-11-23,Berlin,Germany
+ORD_01575,CUST_0200,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-07-03,Los Angeles,USA
+ORD_01576,CUST_0034,Garden Hose,Home & Garden,2,39.99,79.98,2024-03-28,London,UK
+ORD_01577,CUST_0133,Python Cookbook,Books,3,44.99,134.97,2024-02-18,Los Angeles,USA
+ORD_01578,CUST_0075,Garden Hose,Home & Garden,3,39.99,119.97,2024-03-13,Chicago,USA
+ORD_01579,CUST_0256,Garden Hose,Home & Garden,1,39.99,39.99,2024-11-27,Chicago,USA
+ORD_01580,CUST_0287,T-Shirt,Clothing,1,24.99,24.99,2024-11-23,Los Angeles,USA
+ORD_01581,CUST_0245,Data Science Handbook,Books,3,39.99,119.97,2024-07-24,Toronto,Canada
+ORD_01582,CUST_0226,Sneakers,Clothing,5,89.99,449.95,2024-06-09,London,UK
+ORD_01583,CUST_0223,Jacket,Clothing,3,119.99,359.97,2024-01-03,London,UK
+ORD_01584,CUST_0180,Running Shoes,Sports,3,109.99,329.97,2024-06-17,New York,USA
+ORD_01585,CUST_0017,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-12-20,Chicago,USA
+ORD_01586,CUST_0137,History Book,Books,4,24.99,99.96,2024-11-09,Los Angeles,USA
+ORD_01587,CUST_0186,Yoga Mat,Sports,2,29.99,59.98,2024-03-07,London,UK
+ORD_01588,CUST_0091,Data Science Handbook,Books,5,39.99,199.95,2024-07-10,Toronto,Canada
+ORD_01589,CUST_0078,Jacket,Clothing,2,119.99,239.98,2024-12-08,Los Angeles,USA
+ORD_01590,CUST_0053,Jacket,Clothing,1,119.99,119.99,2024-12-27,Chicago,USA
+ORD_01591,CUST_0261,Data Science Handbook,Books,4,39.99,159.96,2024-02-21,Tokyo,Japan
+ORD_01592,CUST_0045,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-10-01,New York,USA
+ORD_01593,CUST_0255,Fiction Novel,Books,2,14.99,29.98,2024-04-01,Toronto,Canada
+ORD_01594,CUST_0204,Wireless Headphones,Electronics,5,59.99,299.95,2024-03-24,Paris,France
+ORD_01595,CUST_0164,History Book,Books,3,24.99,74.97,2024-05-17,Tokyo,Japan
+ORD_01596,CUST_0216,Socks Pack,Clothing,4,14.99,59.96,2024-06-27,Sydney,Australia
+ORD_01597,CUST_0173,Sneakers,Clothing,1,89.99,89.99,2024-06-27,Chicago,USA
+ORD_01598,CUST_0238,Fiction Novel,Books,3,14.99,44.97,2024-04-17,Tokyo,Japan
+ORD_01599,CUST_0073,Plant Pot,Home & Garden,5,18.99,94.95,2024-08-19,Paris,France
+ORD_01600,CUST_0173,Yoga Mat,Sports,3,29.99,89.97,2024-07-14,Los Angeles,USA
+ORD_01601,CUST_0087,Water Bottle,Sports,3,14.99,44.97,2024-11-13,New York,USA
+ORD_01602,CUST_0167,Water Bottle,Sports,3,14.99,44.97,2024-01-02,Berlin,Germany
+ORD_01603,CUST_0089,Throw Pillow,Home & Garden,3,29.99,89.97,2024-09-17,Berlin,Germany
+ORD_01604,CUST_0087,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-12-19,Sydney,Australia
+ORD_01605,CUST_0046,Garden Hose,Home & Garden,5,39.99,199.95,2024-06-03,Chicago,USA
+ORD_01606,CUST_0021,Dumbbell Set,Sports,4,59.99,239.96,2024-08-13,Mumbai,India
+ORD_01607,CUST_0050,Jeans,Clothing,3,49.99,149.97,2024-08-26,Tokyo,Japan
+ORD_01608,CUST_0221,Power Bank,Electronics,4,34.99,139.96,2024-08-22,London,UK
+ORD_01609,CUST_0072,Wireless Headphones,Electronics,4,59.99,239.96,2024-06-21,London,UK
+ORD_01610,CUST_0022,Power Bank,Electronics,3,34.99,104.97,2024-11-04,Los Angeles,USA
+ORD_01611,CUST_0033,Garden Hose,Home & Garden,3,39.99,119.97,2024-09-14,Chicago,USA
+ORD_01612,CUST_0118,Wireless Headphones,Electronics,3,59.99,179.97,2024-02-23,Los Angeles,USA
+ORD_01613,CUST_0081,History Book,Books,1,24.99,24.99,2024-08-24,London,UK
+ORD_01614,CUST_0025,Jacket,Clothing,3,119.99,359.97,2024-12-13,Toronto,Canada
+ORD_01615,CUST_0040,T-Shirt,Clothing,5,24.99,124.95,2024-06-21,Toronto,Canada
+ORD_01616,CUST_0087,Plant Pot,Home & Garden,2,18.99,37.98,2024-12-06,London,UK
+ORD_01617,CUST_0048,Self-Help Guide,Books,4,19.99,79.96,2024-02-22,Sydney,Australia
+ORD_01618,CUST_0005,History Book,Books,3,24.99,74.97,2024-04-15,Paris,France
+ORD_01619,CUST_0298,Wireless Headphones,Electronics,1,59.99,59.99,2024-09-27,Chicago,USA
+ORD_01620,CUST_0198,Sneakers,Clothing,5,89.99,449.95,2024-09-24,London,UK
+ORD_01621,CUST_0206,Running Shoes,Sports,3,109.99,329.97,2024-05-18,Toronto,Canada
+ORD_01622,CUST_0272,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-07-05,Tokyo,Japan
+ORD_01623,CUST_0116,Water Bottle,Sports,2,14.99,29.98,2024-05-24,Sydney,Australia
+ORD_01624,CUST_0052,Water Bottle,Sports,2,14.99,29.98,2024-09-17,Toronto,Canada
+ORD_01625,CUST_0228,Water Bottle,Sports,5,14.99,74.95,2024-01-18,New York,USA
+ORD_01626,CUST_0268,Power Bank,Electronics,4,34.99,139.96,2024-04-16,Los Angeles,USA
+ORD_01627,CUST_0163,Wireless Headphones,Electronics,2,59.99,119.98,2024-11-05,Paris,France
+ORD_01628,CUST_0038,Python Cookbook,Books,2,44.99,89.98,2024-08-26,Los Angeles,USA
+ORD_01629,CUST_0104,Self-Help Guide,Books,3,19.99,59.97,2024-10-02,New York,USA
+ORD_01630,CUST_0228,Power Bank,Electronics,1,34.99,34.99,2024-08-16,Mumbai,India
+ORD_01631,CUST_0135,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-11-22,Mumbai,India
+ORD_01632,CUST_0232,Phone Case,Electronics,4,19.99,79.96,2024-11-16,Paris,France
+ORD_01633,CUST_0193,Socks Pack,Clothing,5,14.99,74.95,2024-02-12,Tokyo,Japan
+ORD_01634,CUST_0300,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-02-03,Chicago,USA
+ORD_01635,CUST_0100,Yoga Mat,Sports,4,29.99,119.96,2024-01-09,Sydney,Australia
+ORD_01636,CUST_0241,Phone Case,Electronics,5,19.99,99.95,2024-10-25,Mumbai,India
+ORD_01637,CUST_0124,History Book,Books,5,24.99,124.95,2024-11-09,London,UK
+ORD_01638,CUST_0266,T-Shirt,Clothing,2,24.99,49.98,2024-02-20,Paris,France
+ORD_01639,CUST_0147,Self-Help Guide,Books,4,19.99,79.96,2024-12-26,Los Angeles,USA
+ORD_01640,CUST_0275,Self-Help Guide,Books,4,19.99,79.96,2024-03-11,New York,USA
+ORD_01641,CUST_0260,Jacket,Clothing,1,119.99,119.99,2024-10-09,Tokyo,Japan
+ORD_01642,CUST_0021,Resistance Bands,Sports,4,19.99,79.96,2024-01-06,Paris,France
+ORD_01643,CUST_0015,Dumbbell Set,Sports,3,59.99,179.97,2024-12-07,Mumbai,India
+ORD_01644,CUST_0228,Phone Case,Electronics,2,19.99,39.98,2024-04-22,Chicago,USA
+ORD_01645,CUST_0068,Wireless Headphones,Electronics,2,59.99,119.98,2024-02-21,Tokyo,Japan
+ORD_01646,CUST_0016,Throw Pillow,Home & Garden,2,29.99,59.98,2024-09-03,New York,USA
+ORD_01647,CUST_0103,Socks Pack,Clothing,2,14.99,29.98,2024-12-24,Sydney,Australia
+ORD_01648,CUST_0108,Garden Hose,Home & Garden,3,39.99,119.97,2024-11-18,Mumbai,India
+ORD_01649,CUST_0245,Data Science Handbook,Books,5,39.99,199.95,2024-10-05,Sydney,Australia
+ORD_01650,CUST_0159,Dumbbell Set,Sports,2,59.99,119.98,2024-04-07,Mumbai,India
+ORD_01651,CUST_0201,T-Shirt,Clothing,4,24.99,99.96,2024-07-11,Sydney,Australia
+ORD_01652,CUST_0299,Self-Help Guide,Books,1,19.99,19.99,2024-11-28,London,UK
+ORD_01653,CUST_0156,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-03-03,Toronto,Canada
+ORD_01654,CUST_0245,Self-Help Guide,Books,5,19.99,99.95,2024-10-23,Mumbai,India
+ORD_01655,CUST_0035,Water Bottle,Sports,4,14.99,59.96,2024-09-10,Toronto,Canada
+ORD_01656,CUST_0232,Wireless Headphones,Electronics,1,59.99,59.99,2024-02-18,Toronto,Canada
+ORD_01657,CUST_0156,Fiction Novel,Books,4,14.99,59.96,2024-08-16,Mumbai,India
+ORD_01658,CUST_0182,Socks Pack,Clothing,3,14.99,44.97,2024-09-22,Sydney,Australia
+ORD_01659,CUST_0102,Fiction Novel,Books,4,14.99,59.96,2024-09-25,Paris,France
+ORD_01660,CUST_0019,History Book,Books,5,24.99,124.95,2024-05-22,London,UK
+ORD_01661,CUST_0194,Water Bottle,Sports,4,14.99,59.96,2024-09-15,New York,USA
+ORD_01662,CUST_0239,Fiction Novel,Books,3,14.99,44.97,2024-03-09,Tokyo,Japan
+ORD_01663,CUST_0095,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-05-15,London,UK
+ORD_01664,CUST_0217,Data Science Handbook,Books,5,39.99,199.95,2024-02-05,Berlin,Germany
+ORD_01665,CUST_0143,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-09-21,Los Angeles,USA
+ORD_01666,CUST_0238,Jeans,Clothing,3,49.99,149.97,2024-05-19,Paris,France
+ORD_01667,CUST_0101,Resistance Bands,Sports,5,19.99,99.95,2024-08-18,London,UK
+ORD_01668,CUST_0263,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-11-15,Mumbai,India
+ORD_01669,CUST_0082,Water Bottle,Sports,1,14.99,14.99,2024-05-27,Los Angeles,USA
+ORD_01670,CUST_0171,Jacket,Clothing,2,119.99,239.98,2024-02-13,Tokyo,Japan
+ORD_01671,CUST_0263,Power Bank,Electronics,4,34.99,139.96,2024-03-20,Mumbai,India
+ORD_01672,CUST_0299,Power Bank,Electronics,4,34.99,139.96,2024-11-25,Tokyo,Japan
+ORD_01673,CUST_0128,Wireless Headphones,Electronics,5,59.99,299.95,2024-01-18,Chicago,USA
+ORD_01674,CUST_0155,Dumbbell Set,Sports,3,59.99,179.97,2024-06-16,Tokyo,Japan
+ORD_01675,CUST_0172,Resistance Bands,Sports,3,19.99,59.97,2024-01-09,Tokyo,Japan
+ORD_01676,CUST_0202,History Book,Books,4,24.99,99.96,2024-07-10,Mumbai,India
+ORD_01677,CUST_0038,Socks Pack,Clothing,3,14.99,44.97,2024-02-07,Sydney,Australia
+ORD_01678,CUST_0087,Phone Case,Electronics,4,19.99,79.96,2024-07-04,Paris,France
+ORD_01679,CUST_0034,Plant Pot,Home & Garden,1,18.99,18.99,2024-06-16,Los Angeles,USA
+ORD_01680,CUST_0214,Fiction Novel,Books,1,14.99,14.99,2024-12-08,New York,USA
+ORD_01681,CUST_0149,Jeans,Clothing,2,49.99,99.98,2024-10-20,Chicago,USA
+ORD_01682,CUST_0013,Resistance Bands,Sports,3,19.99,59.97,2024-05-08,London,UK
+ORD_01683,CUST_0289,Plant Pot,Home & Garden,4,18.99,75.96,2024-02-04,Toronto,Canada
+ORD_01684,CUST_0156,Dumbbell Set,Sports,3,59.99,179.97,2024-07-24,London,UK
+ORD_01685,CUST_0090,Plant Pot,Home & Garden,4,18.99,75.96,2024-02-04,Sydney,Australia
+ORD_01686,CUST_0019,Water Bottle,Sports,3,14.99,44.97,2024-03-24,Mumbai,India
+ORD_01687,CUST_0235,Plant Pot,Home & Garden,4,18.99,75.96,2024-10-24,Los Angeles,USA
+ORD_01688,CUST_0191,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-02-18,Paris,France
+ORD_01689,CUST_0216,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-12-16,Los Angeles,USA
+ORD_01690,CUST_0082,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-08-08,Paris,France
+ORD_01691,CUST_0265,Throw Pillow,Home & Garden,4,29.99,119.96,2024-10-23,Sydney,Australia
+ORD_01692,CUST_0140,Resistance Bands,Sports,2,19.99,39.98,2024-09-01,Paris,France
+ORD_01693,CUST_0094,Phone Case,Electronics,5,19.99,99.95,2024-07-14,London,UK
+ORD_01694,CUST_0246,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-08-25,Sydney,Australia
+ORD_01695,CUST_0193,T-Shirt,Clothing,1,24.99,24.99,2024-03-24,Mumbai,India
+ORD_01696,CUST_0081,Sneakers,Clothing,2,89.99,179.98,2024-03-16,New York,USA
+ORD_01697,CUST_0191,USB-C Cable,Electronics,3,12.99,38.97,2024-08-28,London,UK
+ORD_01698,CUST_0179,Resistance Bands,Sports,4,19.99,79.96,2024-10-05,Tokyo,Japan
+ORD_01699,CUST_0142,Socks Pack,Clothing,5,14.99,74.95,2024-04-05,New York,USA
+ORD_01700,CUST_0111,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-10-19,Paris,France
+ORD_01701,CUST_0153,Resistance Bands,Sports,2,19.99,39.98,2024-06-24,Berlin,Germany
+ORD_01702,CUST_0193,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-10-16,Chicago,USA
+ORD_01703,CUST_0095,Wireless Headphones,Electronics,3,59.99,179.97,2024-04-25,Tokyo,Japan
+ORD_01704,CUST_0150,Wireless Headphones,Electronics,1,59.99,59.99,2024-02-09,Mumbai,India
+ORD_01705,CUST_0023,Running Shoes,Sports,2,109.99,219.98,2024-10-04,Chicago,USA
+ORD_01706,CUST_0240,Jeans,Clothing,4,49.99,199.96,2024-04-11,Tokyo,Japan
+ORD_01707,CUST_0143,T-Shirt,Clothing,4,24.99,99.96,2024-12-06,Paris,France
+ORD_01708,CUST_0227,Running Shoes,Sports,2,109.99,219.98,2024-05-10,Tokyo,Japan
+ORD_01709,CUST_0272,Yoga Mat,Sports,1,29.99,29.99,2024-07-04,Tokyo,Japan
+ORD_01710,CUST_0101,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-08-19,Tokyo,Japan
+ORD_01711,CUST_0122,Data Science Handbook,Books,3,39.99,119.97,2024-05-15,New York,USA
+ORD_01712,CUST_0033,Dumbbell Set,Sports,3,59.99,179.97,2024-06-20,Tokyo,Japan
+ORD_01713,CUST_0294,Self-Help Guide,Books,3,19.99,59.97,2024-07-03,Mumbai,India
+ORD_01714,CUST_0245,Jacket,Clothing,3,119.99,359.97,2024-01-25,Mumbai,India
+ORD_01715,CUST_0022,Socks Pack,Clothing,3,14.99,44.97,2024-02-17,Berlin,Germany
+ORD_01716,CUST_0019,Throw Pillow,Home & Garden,1,29.99,29.99,2024-02-14,Paris,France
+ORD_01717,CUST_0114,History Book,Books,5,24.99,124.95,2024-10-03,Toronto,Canada
+ORD_01718,CUST_0211,Resistance Bands,Sports,4,19.99,79.96,2024-12-01,Mumbai,India
+ORD_01719,CUST_0216,Phone Case,Electronics,3,19.99,59.97,2024-01-28,Los Angeles,USA
+ORD_01720,CUST_0224,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-09-27,Paris,France
+ORD_01721,CUST_0220,Wall Clock,Home & Garden,3,34.99,104.97,2024-02-19,Toronto,Canada
+ORD_01722,CUST_0262,Yoga Mat,Sports,5,29.99,149.95,2024-10-05,Los Angeles,USA
+ORD_01723,CUST_0062,Python Cookbook,Books,3,44.99,134.97,2024-03-12,Mumbai,India
+ORD_01724,CUST_0038,T-Shirt,Clothing,3,24.99,74.97,2024-04-01,Chicago,USA
+ORD_01725,CUST_0139,Dumbbell Set,Sports,2,59.99,119.98,2024-11-05,Toronto,Canada
+ORD_01726,CUST_0128,Jacket,Clothing,2,119.99,239.98,2024-05-13,Toronto,Canada
+ORD_01727,CUST_0247,Python Cookbook,Books,4,44.99,179.96,2024-12-22,Sydney,Australia
+ORD_01728,CUST_0118,Throw Pillow,Home & Garden,2,29.99,59.98,2024-07-03,Toronto,Canada
+ORD_01729,CUST_0215,Jeans,Clothing,3,49.99,149.97,2024-06-05,Paris,France
+ORD_01730,CUST_0068,Plant Pot,Home & Garden,5,18.99,94.95,2024-04-01,Sydney,Australia
+ORD_01731,CUST_0198,T-Shirt,Clothing,5,24.99,124.95,2024-07-07,Los Angeles,USA
+ORD_01732,CUST_0191,Yoga Mat,Sports,5,29.99,149.95,2024-11-12,Sydney,Australia
+ORD_01733,CUST_0249,T-Shirt,Clothing,5,24.99,124.95,2024-04-27,Berlin,Germany
+ORD_01734,CUST_0068,Resistance Bands,Sports,3,19.99,59.97,2024-01-09,Sydney,Australia
+ORD_01735,CUST_0023,Plant Pot,Home & Garden,2,18.99,37.98,2024-01-12,Mumbai,India
+ORD_01736,CUST_0244,Wireless Headphones,Electronics,1,59.99,59.99,2024-02-15,Los Angeles,USA
+ORD_01737,CUST_0267,History Book,Books,4,24.99,99.96,2024-01-04,London,UK
+ORD_01738,CUST_0010,Yoga Mat,Sports,1,29.99,29.99,2024-02-17,Los Angeles,USA
+ORD_01739,CUST_0207,Python Cookbook,Books,5,44.99,224.95,2024-10-15,New York,USA
+ORD_01740,CUST_0105,Plant Pot,Home & Garden,2,18.99,37.98,2024-01-21,Toronto,Canada
+ORD_01741,CUST_0016,Python Cookbook,Books,1,44.99,44.99,2024-08-04,Los Angeles,USA
+ORD_01742,CUST_0113,Python Cookbook,Books,5,44.99,224.95,2024-06-02,Sydney,Australia
+ORD_01743,CUST_0115,Bluetooth Speaker,Electronics,1,79.99,79.99,2024-02-15,Tokyo,Japan
+ORD_01744,CUST_0254,Garden Hose,Home & Garden,1,39.99,39.99,2024-04-24,Paris,France
+ORD_01745,CUST_0072,Fiction Novel,Books,5,14.99,74.95,2024-12-01,Mumbai,India
+ORD_01746,CUST_0181,Wireless Headphones,Electronics,2,59.99,119.98,2024-08-03,Mumbai,India
+ORD_01747,CUST_0061,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-12-16,Chicago,USA
+ORD_01748,CUST_0117,Plant Pot,Home & Garden,4,18.99,75.96,2024-09-04,Berlin,Germany
+ORD_01749,CUST_0069,Wall Clock,Home & Garden,3,34.99,104.97,2024-01-15,New York,USA
+ORD_01750,CUST_0103,T-Shirt,Clothing,4,24.99,99.96,2024-12-02,Los Angeles,USA
+ORD_01751,CUST_0292,Jeans,Clothing,3,49.99,149.97,2024-01-27,Chicago,USA
+ORD_01752,CUST_0087,Plant Pot,Home & Garden,1,18.99,18.99,2024-04-18,Los Angeles,USA
+ORD_01753,CUST_0083,Jacket,Clothing,2,119.99,239.98,2024-04-24,Chicago,USA
+ORD_01754,CUST_0058,Jeans,Clothing,5,49.99,249.95,2024-11-06,Tokyo,Japan
+ORD_01755,CUST_0226,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-02-22,Los Angeles,USA
+ORD_01756,CUST_0184,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-09-19,Chicago,USA
+ORD_01757,CUST_0221,Jacket,Clothing,4,119.99,479.96,2024-12-23,London,UK
+ORD_01758,CUST_0217,History Book,Books,5,24.99,124.95,2024-03-11,Chicago,USA
+ORD_01759,CUST_0063,Resistance Bands,Sports,5,19.99,99.95,2024-02-16,Berlin,Germany
+ORD_01760,CUST_0002,Throw Pillow,Home & Garden,1,29.99,29.99,2024-04-27,Chicago,USA
+ORD_01761,CUST_0277,Phone Case,Electronics,1,19.99,19.99,2024-05-06,Paris,France
+ORD_01762,CUST_0196,LED Bulb Pack,Home & Garden,5,22.99,114.95,2024-08-17,Toronto,Canada
+ORD_01763,CUST_0003,Fiction Novel,Books,5,14.99,74.95,2024-09-19,London,UK
+ORD_01764,CUST_0118,Resistance Bands,Sports,3,19.99,59.97,2024-10-12,Paris,France
+ORD_01765,CUST_0158,Fiction Novel,Books,2,14.99,29.98,2024-09-17,Mumbai,India
+ORD_01766,CUST_0130,Socks Pack,Clothing,2,14.99,29.98,2024-01-02,Mumbai,India
+ORD_01767,CUST_0186,Water Bottle,Sports,2,14.99,29.98,2024-08-20,Toronto,Canada
+ORD_01768,CUST_0216,Wireless Headphones,Electronics,4,59.99,239.96,2024-02-08,New York,USA
+ORD_01769,CUST_0015,History Book,Books,4,24.99,99.96,2024-11-07,Tokyo,Japan
+ORD_01770,CUST_0146,Power Bank,Electronics,1,34.99,34.99,2024-10-02,Paris,France
+ORD_01771,CUST_0182,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-02-28,Sydney,Australia
+ORD_01772,CUST_0152,Wall Clock,Home & Garden,5,34.99,174.95,2024-06-14,New York,USA
+ORD_01773,CUST_0087,Sneakers,Clothing,3,89.99,269.97,2024-02-24,Los Angeles,USA
+ORD_01774,CUST_0087,Data Science Handbook,Books,2,39.99,79.98,2024-12-01,New York,USA
+ORD_01775,CUST_0147,Power Bank,Electronics,3,34.99,104.97,2024-09-10,New York,USA
+ORD_01776,CUST_0075,Jacket,Clothing,3,119.99,359.97,2024-04-05,Mumbai,India
+ORD_01777,CUST_0114,Fiction Novel,Books,2,14.99,29.98,2024-03-16,Tokyo,Japan
+ORD_01778,CUST_0065,Throw Pillow,Home & Garden,3,29.99,89.97,2024-04-16,Mumbai,India
+ORD_01779,CUST_0196,Wireless Headphones,Electronics,3,59.99,179.97,2024-02-24,Paris,France
+ORD_01780,CUST_0136,Plant Pot,Home & Garden,2,18.99,37.98,2024-06-13,Chicago,USA
+ORD_01781,CUST_0289,Wall Clock,Home & Garden,5,34.99,174.95,2024-10-23,Berlin,Germany
+ORD_01782,CUST_0023,Sneakers,Clothing,2,89.99,179.98,2024-08-12,New York,USA
+ORD_01783,CUST_0149,Running Shoes,Sports,1,109.99,109.99,2024-07-28,Toronto,Canada
+ORD_01784,CUST_0012,Python Cookbook,Books,1,44.99,44.99,2024-03-23,Berlin,Germany
+ORD_01785,CUST_0077,Wireless Headphones,Electronics,3,59.99,179.97,2024-12-18,New York,USA
+ORD_01786,CUST_0114,Resistance Bands,Sports,4,19.99,79.96,2024-03-24,Chicago,USA
+ORD_01787,CUST_0095,USB-C Cable,Electronics,3,12.99,38.97,2024-05-09,Berlin,Germany
+ORD_01788,CUST_0196,Water Bottle,Sports,5,14.99,74.95,2024-10-04,Mumbai,India
+ORD_01789,CUST_0029,Water Bottle,Sports,4,14.99,59.96,2024-11-13,Chicago,USA
+ORD_01790,CUST_0212,Phone Case,Electronics,1,19.99,19.99,2024-09-13,Berlin,Germany
+ORD_01791,CUST_0048,Socks Pack,Clothing,1,14.99,14.99,2024-10-14,New York,USA
+ORD_01792,CUST_0139,Wireless Headphones,Electronics,1,59.99,59.99,2024-01-07,Toronto,Canada
+ORD_01793,CUST_0021,Fiction Novel,Books,5,14.99,74.95,2024-01-12,New York,USA
+ORD_01794,CUST_0197,History Book,Books,2,24.99,49.98,2024-03-21,Tokyo,Japan
+ORD_01795,CUST_0209,Plant Pot,Home & Garden,2,18.99,37.98,2024-04-22,Sydney,Australia
+ORD_01796,CUST_0252,Sneakers,Clothing,1,89.99,89.99,2024-03-16,Mumbai,India
+ORD_01797,CUST_0081,Fiction Novel,Books,2,14.99,29.98,2024-05-11,Mumbai,India
+ORD_01798,CUST_0279,Water Bottle,Sports,4,14.99,59.96,2024-11-26,Mumbai,India
+ORD_01799,CUST_0034,Dumbbell Set,Sports,4,59.99,239.96,2024-10-09,Los Angeles,USA
+ORD_01800,CUST_0084,Dumbbell Set,Sports,4,59.99,239.96,2024-06-28,Sydney,Australia
+ORD_01801,CUST_0254,Resistance Bands,Sports,5,19.99,99.95,2024-07-17,Berlin,Germany
+ORD_01802,CUST_0027,USB-C Cable,Electronics,4,12.99,51.96,2024-01-20,Toronto,Canada
+ORD_01803,CUST_0011,Wall Clock,Home & Garden,1,34.99,34.99,2024-09-25,London,UK
+ORD_01804,CUST_0286,USB-C Cable,Electronics,5,12.99,64.95,2024-11-05,New York,USA
+ORD_01805,CUST_0020,Phone Case,Electronics,1,19.99,19.99,2024-07-10,Paris,France
+ORD_01806,CUST_0181,Self-Help Guide,Books,3,19.99,59.97,2024-12-07,Tokyo,Japan
+ORD_01807,CUST_0084,Jeans,Clothing,4,49.99,199.96,2024-02-18,Toronto,Canada
+ORD_01808,CUST_0254,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-09-17,Toronto,Canada
+ORD_01809,CUST_0136,Sneakers,Clothing,1,89.99,89.99,2024-06-03,Chicago,USA
+ORD_01810,CUST_0141,Resistance Bands,Sports,3,19.99,59.97,2024-11-21,Berlin,Germany
+ORD_01811,CUST_0169,Resistance Bands,Sports,2,19.99,39.98,2024-05-13,Berlin,Germany
+ORD_01812,CUST_0262,Bluetooth Speaker,Electronics,4,79.99,319.96,2024-12-26,Paris,France
+ORD_01813,CUST_0124,Power Bank,Electronics,2,34.99,69.98,2024-04-25,Berlin,Germany
+ORD_01814,CUST_0219,Self-Help Guide,Books,5,19.99,99.95,2024-07-14,Berlin,Germany
+ORD_01815,CUST_0187,History Book,Books,5,24.99,124.95,2024-12-03,Sydney,Australia
+ORD_01816,CUST_0083,Data Science Handbook,Books,3,39.99,119.97,2024-11-14,Sydney,Australia
+ORD_01817,CUST_0031,Jeans,Clothing,3,49.99,149.97,2024-07-24,Mumbai,India
+ORD_01818,CUST_0192,Throw Pillow,Home & Garden,2,29.99,59.98,2024-12-15,Los Angeles,USA
+ORD_01819,CUST_0271,Plant Pot,Home & Garden,5,18.99,94.95,2024-05-18,Toronto,Canada
+ORD_01820,CUST_0167,LED Bulb Pack,Home & Garden,2,22.99,45.98,2024-02-20,London,UK
+ORD_01821,CUST_0094,Wall Clock,Home & Garden,2,34.99,69.98,2024-12-10,New York,USA
+ORD_01822,CUST_0062,Self-Help Guide,Books,2,19.99,39.98,2024-05-09,Tokyo,Japan
+ORD_01823,CUST_0247,Self-Help Guide,Books,2,19.99,39.98,2024-06-15,Chicago,USA
+ORD_01824,CUST_0198,Python Cookbook,Books,5,44.99,224.95,2024-06-22,London,UK
+ORD_01825,CUST_0156,Python Cookbook,Books,1,44.99,44.99,2024-04-05,Toronto,Canada
+ORD_01826,CUST_0061,Power Bank,Electronics,5,34.99,174.95,2024-06-04,London,UK
+ORD_01827,CUST_0060,Garden Hose,Home & Garden,5,39.99,199.95,2024-02-11,London,UK
+ORD_01828,CUST_0238,Python Cookbook,Books,4,44.99,179.96,2024-06-05,Berlin,Germany
+ORD_01829,CUST_0264,Bluetooth Speaker,Electronics,3,79.99,239.97,2024-02-09,Toronto,Canada
+ORD_01830,CUST_0158,T-Shirt,Clothing,1,24.99,24.99,2024-02-06,New York,USA
+ORD_01831,CUST_0034,Phone Case,Electronics,4,19.99,79.96,2024-03-13,Mumbai,India
+ORD_01832,CUST_0006,Python Cookbook,Books,2,44.99,89.98,2024-05-22,Berlin,Germany
+ORD_01833,CUST_0157,Throw Pillow,Home & Garden,3,29.99,89.97,2024-07-27,Mumbai,India
+ORD_01834,CUST_0061,Wireless Headphones,Electronics,3,59.99,179.97,2024-02-25,London,UK
+ORD_01835,CUST_0187,History Book,Books,1,24.99,24.99,2024-07-20,London,UK
+ORD_01836,CUST_0025,Fiction Novel,Books,4,14.99,59.96,2024-11-01,Chicago,USA
+ORD_01837,CUST_0039,T-Shirt,Clothing,2,24.99,49.98,2024-06-26,London,UK
+ORD_01838,CUST_0133,Power Bank,Electronics,3,34.99,104.97,2024-04-04,Paris,France
+ORD_01839,CUST_0194,Wall Clock,Home & Garden,3,34.99,104.97,2024-05-04,Paris,France
+ORD_01840,CUST_0257,Wall Clock,Home & Garden,2,34.99,69.98,2024-03-17,Toronto,Canada
+ORD_01841,CUST_0189,Fiction Novel,Books,4,14.99,59.96,2024-11-23,Mumbai,India
+ORD_01842,CUST_0046,Dumbbell Set,Sports,2,59.99,119.98,2024-03-20,New York,USA
+ORD_01843,CUST_0110,Throw Pillow,Home & Garden,1,29.99,29.99,2024-10-04,Tokyo,Japan
+ORD_01844,CUST_0148,T-Shirt,Clothing,2,24.99,49.98,2024-06-08,Mumbai,India
+ORD_01845,CUST_0222,Jacket,Clothing,5,119.99,599.95,2024-06-03,Sydney,Australia
+ORD_01846,CUST_0214,Self-Help Guide,Books,3,19.99,59.97,2024-12-07,New York,USA
+ORD_01847,CUST_0211,Phone Case,Electronics,2,19.99,39.98,2024-04-02,Sydney,Australia
+ORD_01848,CUST_0075,Throw Pillow,Home & Garden,5,29.99,149.95,2024-11-21,London,UK
+ORD_01849,CUST_0240,Self-Help Guide,Books,4,19.99,79.96,2024-05-02,Toronto,Canada
+ORD_01850,CUST_0171,History Book,Books,5,24.99,124.95,2024-07-04,Tokyo,Japan
+ORD_01851,CUST_0079,Wireless Headphones,Electronics,5,59.99,299.95,2024-06-14,Sydney,Australia
+ORD_01852,CUST_0228,Sneakers,Clothing,2,89.99,179.98,2024-02-14,Tokyo,Japan
+ORD_01853,CUST_0002,Dumbbell Set,Sports,4,59.99,239.96,2024-12-21,Sydney,Australia
+ORD_01854,CUST_0198,Dumbbell Set,Sports,2,59.99,119.98,2024-06-01,New York,USA
+ORD_01855,CUST_0197,Socks Pack,Clothing,2,14.99,29.98,2024-08-10,Chicago,USA
+ORD_01856,CUST_0255,Water Bottle,Sports,1,14.99,14.99,2024-02-01,London,UK
+ORD_01857,CUST_0056,Fiction Novel,Books,2,14.99,29.98,2024-05-07,Berlin,Germany
+ORD_01858,CUST_0099,Garden Hose,Home & Garden,5,39.99,199.95,2024-04-17,New York,USA
+ORD_01859,CUST_0060,Wall Clock,Home & Garden,5,34.99,174.95,2024-01-26,Sydney,Australia
+ORD_01860,CUST_0177,Resistance Bands,Sports,1,19.99,19.99,2024-11-17,Tokyo,Japan
+ORD_01861,CUST_0235,History Book,Books,1,24.99,24.99,2024-03-06,Los Angeles,USA
+ORD_01862,CUST_0141,Data Science Handbook,Books,1,39.99,39.99,2024-08-21,New York,USA
+ORD_01863,CUST_0103,Running Shoes,Sports,4,109.99,439.96,2024-04-02,Chicago,USA
+ORD_01864,CUST_0014,Resistance Bands,Sports,3,19.99,59.97,2024-11-07,London,UK
+ORD_01865,CUST_0057,USB-C Cable,Electronics,1,12.99,12.99,2024-04-08,Mumbai,India
+ORD_01866,CUST_0026,Wireless Headphones,Electronics,3,59.99,179.97,2024-04-08,Chicago,USA
+ORD_01867,CUST_0231,Wall Clock,Home & Garden,2,34.99,69.98,2024-01-15,Sydney,Australia
+ORD_01868,CUST_0037,Throw Pillow,Home & Garden,1,29.99,29.99,2024-12-17,Berlin,Germany
+ORD_01869,CUST_0082,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-11-06,Sydney,Australia
+ORD_01870,CUST_0156,T-Shirt,Clothing,5,24.99,124.95,2024-09-08,Sydney,Australia
+ORD_01871,CUST_0016,Power Bank,Electronics,5,34.99,174.95,2024-07-02,New York,USA
+ORD_01872,CUST_0260,Self-Help Guide,Books,2,19.99,39.98,2024-05-07,Chicago,USA
+ORD_01873,CUST_0241,Power Bank,Electronics,5,34.99,174.95,2024-02-04,New York,USA
+ORD_01874,CUST_0044,Sneakers,Clothing,5,89.99,449.95,2024-08-25,Tokyo,Japan
+ORD_01875,CUST_0142,Data Science Handbook,Books,1,39.99,39.99,2024-05-04,Berlin,Germany
+ORD_01876,CUST_0132,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-12-20,Paris,France
+ORD_01877,CUST_0187,Fiction Novel,Books,4,14.99,59.96,2024-08-22,Paris,France
+ORD_01878,CUST_0160,Resistance Bands,Sports,4,19.99,79.96,2024-11-19,New York,USA
+ORD_01879,CUST_0069,Jacket,Clothing,2,119.99,239.98,2024-08-06,Berlin,Germany
+ORD_01880,CUST_0291,Wall Clock,Home & Garden,4,34.99,139.96,2024-01-27,Berlin,Germany
+ORD_01881,CUST_0184,Socks Pack,Clothing,5,14.99,74.95,2024-09-07,Tokyo,Japan
+ORD_01882,CUST_0078,USB-C Cable,Electronics,3,12.99,38.97,2024-07-01,Sydney,Australia
+ORD_01883,CUST_0099,Power Bank,Electronics,5,34.99,174.95,2024-07-19,Toronto,Canada
+ORD_01884,CUST_0131,Jacket,Clothing,4,119.99,479.96,2024-04-23,Berlin,Germany
+ORD_01885,CUST_0235,Dumbbell Set,Sports,4,59.99,239.96,2024-03-26,London,UK
+ORD_01886,CUST_0119,Sneakers,Clothing,1,89.99,89.99,2024-07-01,New York,USA
+ORD_01887,CUST_0114,Yoga Mat,Sports,5,29.99,149.95,2024-02-24,Chicago,USA
+ORD_01888,CUST_0260,Python Cookbook,Books,1,44.99,44.99,2024-02-07,Tokyo,Japan
+ORD_01889,CUST_0150,Plant Pot,Home & Garden,2,18.99,37.98,2024-09-12,New York,USA
+ORD_01890,CUST_0034,Sneakers,Clothing,3,89.99,269.97,2024-03-28,Los Angeles,USA
+ORD_01891,CUST_0055,Python Cookbook,Books,2,44.99,89.98,2024-11-27,Berlin,Germany
+ORD_01892,CUST_0243,T-Shirt,Clothing,2,24.99,49.98,2024-05-08,Paris,France
+ORD_01893,CUST_0186,T-Shirt,Clothing,1,24.99,24.99,2024-01-06,Berlin,Germany
+ORD_01894,CUST_0175,Dumbbell Set,Sports,4,59.99,239.96,2024-05-06,Paris,France
+ORD_01895,CUST_0183,Jacket,Clothing,4,119.99,479.96,2024-01-18,Tokyo,Japan
+ORD_01896,CUST_0238,Running Shoes,Sports,3,109.99,329.97,2024-06-08,Chicago,USA
+ORD_01897,CUST_0098,Plant Pot,Home & Garden,5,18.99,94.95,2024-10-02,Sydney,Australia
+ORD_01898,CUST_0246,Jacket,Clothing,1,119.99,119.99,2024-08-06,Sydney,Australia
+ORD_01899,CUST_0029,Data Science Handbook,Books,4,39.99,159.96,2024-02-01,Tokyo,Japan
+ORD_01900,CUST_0275,USB-C Cable,Electronics,1,12.99,12.99,2024-03-09,Mumbai,India
+ORD_01901,CUST_0189,History Book,Books,3,24.99,74.97,2024-09-15,Mumbai,India
+ORD_01902,CUST_0114,LED Bulb Pack,Home & Garden,3,22.99,68.97,2024-02-17,Mumbai,India
+ORD_01903,CUST_0076,Self-Help Guide,Books,3,19.99,59.97,2024-06-12,Sydney,Australia
+ORD_01904,CUST_0041,Jacket,Clothing,5,119.99,599.95,2024-10-24,London,UK
+ORD_01905,CUST_0238,Resistance Bands,Sports,4,19.99,79.96,2024-10-27,Sydney,Australia
+ORD_01906,CUST_0254,Plant Pot,Home & Garden,1,18.99,18.99,2024-01-11,Toronto,Canada
+ORD_01907,CUST_0145,Jeans,Clothing,4,49.99,199.96,2024-06-18,Paris,France
+ORD_01908,CUST_0131,Python Cookbook,Books,1,44.99,44.99,2024-12-25,London,UK
+ORD_01909,CUST_0177,Python Cookbook,Books,1,44.99,44.99,2024-08-04,Berlin,Germany
+ORD_01910,CUST_0248,Water Bottle,Sports,3,14.99,44.97,2024-07-07,New York,USA
+ORD_01911,CUST_0241,Jeans,Clothing,1,49.99,49.99,2024-11-10,Mumbai,India
+ORD_01912,CUST_0136,Throw Pillow,Home & Garden,3,29.99,89.97,2024-10-02,Paris,France
+ORD_01913,CUST_0111,Power Bank,Electronics,5,34.99,174.95,2024-06-01,Toronto,Canada
+ORD_01914,CUST_0037,Jacket,Clothing,2,119.99,239.98,2024-06-21,Berlin,Germany
+ORD_01915,CUST_0090,Throw Pillow,Home & Garden,5,29.99,149.95,2024-08-14,Chicago,USA
+ORD_01916,CUST_0138,Yoga Mat,Sports,1,29.99,29.99,2024-11-14,London,UK
+ORD_01917,CUST_0176,Plant Pot,Home & Garden,3,18.99,56.97,2024-08-13,Paris,France
+ORD_01918,CUST_0257,Wireless Headphones,Electronics,1,59.99,59.99,2024-11-09,Tokyo,Japan
+ORD_01919,CUST_0115,Phone Case,Electronics,1,19.99,19.99,2024-11-18,Tokyo,Japan
+ORD_01920,CUST_0188,Fiction Novel,Books,5,14.99,74.95,2024-05-13,Paris,France
+ORD_01921,CUST_0118,Resistance Bands,Sports,1,19.99,19.99,2024-06-02,London,UK
+ORD_01922,CUST_0117,USB-C Cable,Electronics,3,12.99,38.97,2024-04-01,New York,USA
+ORD_01923,CUST_0022,Jeans,Clothing,1,49.99,49.99,2024-07-19,Sydney,Australia
+ORD_01924,CUST_0257,Water Bottle,Sports,3,14.99,44.97,2024-03-23,Sydney,Australia
+ORD_01925,CUST_0043,Plant Pot,Home & Garden,4,18.99,75.96,2024-01-26,Mumbai,India
+ORD_01926,CUST_0100,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-04-17,London,UK
+ORD_01927,CUST_0229,USB-C Cable,Electronics,2,12.99,25.98,2024-01-27,New York,USA
+ORD_01928,CUST_0184,USB-C Cable,Electronics,1,12.99,12.99,2024-02-15,London,UK
+ORD_01929,CUST_0056,Fiction Novel,Books,1,14.99,14.99,2024-01-13,Tokyo,Japan
+ORD_01930,CUST_0273,T-Shirt,Clothing,4,24.99,99.96,2024-06-13,Paris,France
+ORD_01931,CUST_0088,Yoga Mat,Sports,2,29.99,59.98,2024-11-08,Sydney,Australia
+ORD_01932,CUST_0014,Wall Clock,Home & Garden,2,34.99,69.98,2024-04-17,Mumbai,India
+ORD_01933,CUST_0198,Wall Clock,Home & Garden,5,34.99,174.95,2024-04-23,Tokyo,Japan
+ORD_01934,CUST_0143,Python Cookbook,Books,5,44.99,224.95,2024-06-23,London,UK
+ORD_01935,CUST_0027,Jeans,Clothing,1,49.99,49.99,2024-07-26,London,UK
+ORD_01936,CUST_0155,Wall Clock,Home & Garden,5,34.99,174.95,2024-07-11,New York,USA
+ORD_01937,CUST_0061,Resistance Bands,Sports,1,19.99,19.99,2024-05-15,Paris,France
+ORD_01938,CUST_0116,Data Science Handbook,Books,2,39.99,79.98,2024-07-18,New York,USA
+ORD_01939,CUST_0026,T-Shirt,Clothing,3,24.99,74.97,2024-07-03,Tokyo,Japan
+ORD_01940,CUST_0228,Garden Hose,Home & Garden,4,39.99,159.96,2024-03-24,Sydney,Australia
+ORD_01941,CUST_0023,Jeans,Clothing,4,49.99,199.96,2024-09-19,London,UK
+ORD_01942,CUST_0167,Plant Pot,Home & Garden,4,18.99,75.96,2024-07-22,Los Angeles,USA
+ORD_01943,CUST_0286,Yoga Mat,Sports,1,29.99,29.99,2024-02-14,Paris,France
+ORD_01944,CUST_0148,LED Bulb Pack,Home & Garden,4,22.99,91.96,2024-11-11,Chicago,USA
+ORD_01945,CUST_0229,Power Bank,Electronics,2,34.99,69.98,2024-07-03,Sydney,Australia
+ORD_01946,CUST_0237,Running Shoes,Sports,3,109.99,329.97,2024-10-05,Toronto,Canada
+ORD_01947,CUST_0032,Data Science Handbook,Books,1,39.99,39.99,2024-02-21,London,UK
+ORD_01948,CUST_0191,LED Bulb Pack,Home & Garden,1,22.99,22.99,2024-08-06,Sydney,Australia
+ORD_01949,CUST_0111,Wireless Headphones,Electronics,1,59.99,59.99,2024-08-28,Mumbai,India
+ORD_01950,CUST_0011,Resistance Bands,Sports,3,19.99,59.97,2024-10-17,Berlin,Germany
+ORD_01951,CUST_0194,Sneakers,Clothing,4,89.99,359.96,2024-11-21,New York,USA
+ORD_01952,CUST_0149,Python Cookbook,Books,4,44.99,179.96,2024-07-18,Sydney,Australia
+ORD_01953,CUST_0082,USB-C Cable,Electronics,4,12.99,51.96,2024-05-26,Mumbai,India
+ORD_01954,CUST_0191,USB-C Cable,Electronics,1,12.99,12.99,2024-05-28,Chicago,USA
+ORD_01955,CUST_0153,Dumbbell Set,Sports,4,59.99,239.96,2024-12-03,Sydney,Australia
+ORD_01956,CUST_0181,Python Cookbook,Books,2,44.99,89.98,2024-10-03,Chicago,USA
+ORD_01957,CUST_0175,Data Science Handbook,Books,1,39.99,39.99,2024-03-11,Berlin,Germany
+ORD_01958,CUST_0112,Resistance Bands,Sports,5,19.99,99.95,2024-07-20,Toronto,Canada
+ORD_01959,CUST_0008,Throw Pillow,Home & Garden,2,29.99,59.98,2024-05-23,Los Angeles,USA
+ORD_01960,CUST_0065,T-Shirt,Clothing,2,24.99,49.98,2024-03-04,Paris,France
+ORD_01961,CUST_0112,Jeans,Clothing,5,49.99,249.95,2024-02-03,Mumbai,India
+ORD_01962,CUST_0107,Sneakers,Clothing,3,89.99,269.97,2024-04-15,London,UK
+ORD_01963,CUST_0202,Python Cookbook,Books,3,44.99,134.97,2024-07-15,Tokyo,Japan
+ORD_01964,CUST_0132,Data Science Handbook,Books,3,39.99,119.97,2024-02-10,London,UK
+ORD_01965,CUST_0283,USB-C Cable,Electronics,3,12.99,38.97,2024-01-26,Paris,France
+ORD_01966,CUST_0033,Jacket,Clothing,4,119.99,479.96,2024-12-02,Mumbai,India
+ORD_01967,CUST_0029,Running Shoes,Sports,3,109.99,329.97,2024-10-21,London,UK
+ORD_01968,CUST_0128,Running Shoes,Sports,5,109.99,549.95,2024-09-08,Toronto,Canada
+ORD_01969,CUST_0084,History Book,Books,3,24.99,74.97,2024-08-14,Tokyo,Japan
+ORD_01970,CUST_0064,Socks Pack,Clothing,1,14.99,14.99,2024-03-05,Sydney,Australia
+ORD_01971,CUST_0176,Wireless Headphones,Electronics,5,59.99,299.95,2024-01-25,Mumbai,India
+ORD_01972,CUST_0109,Fiction Novel,Books,5,14.99,74.95,2024-10-15,Berlin,Germany
+ORD_01973,CUST_0022,History Book,Books,5,24.99,124.95,2024-06-19,London,UK
+ORD_01974,CUST_0243,Resistance Bands,Sports,4,19.99,79.96,2024-10-28,Toronto,Canada
+ORD_01975,CUST_0071,Data Science Handbook,Books,3,39.99,119.97,2024-08-17,Sydney,Australia
+ORD_01976,CUST_0225,Fiction Novel,Books,4,14.99,59.96,2024-10-25,New York,USA
+ORD_01977,CUST_0028,Resistance Bands,Sports,1,19.99,19.99,2024-04-20,Tokyo,Japan
+ORD_01978,CUST_0238,Garden Hose,Home & Garden,4,39.99,159.96,2024-08-12,Los Angeles,USA
+ORD_01979,CUST_0067,Throw Pillow,Home & Garden,3,29.99,89.97,2024-03-10,London,UK
+ORD_01980,CUST_0093,Sneakers,Clothing,5,89.99,449.95,2024-01-28,Los Angeles,USA
+ORD_01981,CUST_0288,Data Science Handbook,Books,3,39.99,119.97,2024-07-08,Sydney,Australia
+ORD_01982,CUST_0213,History Book,Books,4,24.99,99.96,2024-01-26,New York,USA
+ORD_01983,CUST_0263,Water Bottle,Sports,4,14.99,59.96,2024-04-08,New York,USA
+ORD_01984,CUST_0165,Self-Help Guide,Books,3,19.99,59.97,2024-04-17,Paris,France
+ORD_01985,CUST_0256,Resistance Bands,Sports,4,19.99,79.96,2024-09-26,Sydney,Australia
+ORD_01986,CUST_0268,Self-Help Guide,Books,4,19.99,79.96,2024-12-17,Toronto,Canada
+ORD_01987,CUST_0266,Self-Help Guide,Books,2,19.99,39.98,2024-08-12,Los Angeles,USA
+ORD_01988,CUST_0087,Python Cookbook,Books,3,44.99,134.97,2024-12-16,Chicago,USA
+ORD_01989,CUST_0088,USB-C Cable,Electronics,2,12.99,25.98,2024-05-10,Mumbai,India
+ORD_01990,CUST_0119,Phone Case,Electronics,3,19.99,59.97,2024-09-03,Berlin,Germany
+ORD_01991,CUST_0256,Water Bottle,Sports,2,14.99,29.98,2024-03-15,Paris,France
+ORD_01992,CUST_0233,Wall Clock,Home & Garden,3,34.99,104.97,2024-11-11,Sydney,Australia
+ORD_01993,CUST_0089,Data Science Handbook,Books,5,39.99,199.95,2024-07-24,Mumbai,India
+ORD_01994,CUST_0060,Phone Case,Electronics,5,19.99,99.95,2024-10-23,Toronto,Canada
+ORD_01995,CUST_0013,Phone Case,Electronics,4,19.99,79.96,2024-12-16,Mumbai,India
+ORD_01996,CUST_0096,Jeans,Clothing,4,49.99,199.96,2024-12-18,Mumbai,India
+ORD_01997,CUST_0024,Bluetooth Speaker,Electronics,5,79.99,399.95,2024-01-16,New York,USA
+ORD_01998,CUST_0078,Power Bank,Electronics,1,34.99,34.99,2024-10-26,New York,USA
+ORD_01999,CUST_0046,Sneakers,Clothing,4,89.99,359.96,2024-11-25,Sydney,Australia
+ORD_02000,CUST_0260,Fiction Novel,Books,2,14.99,29.98,2024-07-21,Toronto,Canada

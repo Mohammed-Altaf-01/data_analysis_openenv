@@ -1,0 +1,8 @@
+spec_version: 1
+name: data_analysis_env
+version: "0.1.0"
+description: "RL environment for training data analysis agents on business datasets"
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
