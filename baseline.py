@@ -18,10 +18,11 @@ import os
 import sys
 
 from openai import OpenAI
+
 from client import DataAnalysisClient
 from models import DataAction
 
-SYSTEM_PROMPT = """Y
+SYSTEM_PROMPT = """
 <ROLE>
 You are a data analyst. You are given a dataset loaded as a pandas DataFrame called `df`.
 You can execute Python/pandas code to explore the dataset and answer the question.

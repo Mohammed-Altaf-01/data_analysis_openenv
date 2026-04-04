@@ -1,25 +1,5 @@
-"""Inference script for the Data Analysis Agent environment.
-
-Runs a language model agent against all 3 tasks and reports scores.
-Uses the OpenAI-compatible client pointed at API_BASE_URL.
-
-Required environment variables (set in .env or shell):
-    API_BASE_URL   OpenAI-compatible LLM API endpoint
-    MODEL_NAME     Model identifier to use for inference
-    HF_TOKEN       API key (Hugging Face token or other provider key)
-
-Optional:
-    ENV_SERVER_URL  Environment server URL (default: http://localhost:7860)
-
-Usage:
-    uv run python inference.py
-    uv run python inference.py --env-url http://localhost:8000
-"""
-
-import argparse
 import json
 import os
-import sys
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -27,27 +7,38 @@ from openai import OpenAI
 from client import DataAnalysisClient
 from models import DataAction
 
-# Load .env file if present (safe — does not override already-set shell vars)
 load_dotenv()
-
 TEMPERATURE = 0.0
 MAX_TOKENS = 1024
-MAX_STEPS = 15  # Per task — keeps total runtime well under 20 min
+MAX_STEPS = 15
+API_BASE_URL = os.getenv("API_BASE_URL") or "https://router.huggingface.co/v1"
+MODEL_NAME = os.getenv("MODEL_NAME") or "Qwen/Qwen3.5-9B"
+API_KEY = os.getenv("HF_TOKEN") or os.getenv("API_KEY")
+ENV_SERVER_URL = os.getenv("ENV_SERVER_URL") or "https://mohammed-altaf-dataanalysis-env.hf.space"
 
-SYSTEM_PROMPT = """You are a data analyst. You are given a dataset loaded as a pandas DataFrame called `df`.
+SYSTEM_PROMPT = """
+<ROLE>
+You are a data analyst. You are given a dataset loaded as a pandas DataFrame called `df`.
 You can execute Python/pandas code to explore the dataset and answer the question.
+</ROLE>
 
-Rules:
+<RULES>
 - Use `print()` to see results of your code
 - The DataFrame `df` is pre-loaded with pandas as `pd` and numpy as `np`
 - When you have the answer, submit it in the exact format requested
 - Be precise with numbers and formatting
+</RULES>
 
+<RESPONSE>
 Respond with JSON in one of these formats:
-1. To execute code: {"action": "execute_code", "code": "your python code here"}
-2. To submit answer: {"action": "submit_answer", "answer": "your answer here"}
+1. To execute code: {{"action": "execute_code", "code": "your python code here"}}
+2. To submit answer: {{"action": "submit_answer", "answer": "your answer here"}}
+</RESPONSE>
 
-Respond with ONLY the JSON, no other text."""
+<NOTE>
+Respond with ONLY the JSON, no other text.
+</NOTE>
+"""
 
 FALLBACK_ACTION = json.dumps({"action": "submit_answer", "answer": "unknown"})
 
@@ -126,9 +117,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
         print(f"  Step {step + 1}: model suggested -> {action_type}")
 
         if action_type == "execute_code":
-            step_result = env_client.step(
-                DataAction(action_type="execute_code", code=action.get("code", ""))
-            )
+            step_result = env_client.step(DataAction(action_type="execute_code", code=action.get("code", "")))
             step_obs = step_result.observation
             result_text = f"Output: {step_obs.output}" if not step_obs.error else f"Error: {step_obs.error}"
             print(f"    -> {result_text[:120]}")
@@ -137,9 +126,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
             messages.append({"role": "user", "content": [{"type": "text", "text": result_text}]})
 
         elif action_type == "submit_answer":
-            step_result = env_client.step(
-                DataAction(action_type="submit_answer", answer=action.get("answer", ""))
-            )
+            step_result = env_client.step(DataAction(action_type="submit_answer", answer=action.get("answer", "")))
             step_obs = step_result.observation
             score = step_obs.metadata.get("score", 0.0) if step_obs.metadata else step_result.reward
             print(f"    -> submitted: '{action.get('answer', '')}' | score: {score:.2f}")
@@ -147,50 +134,30 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
 
         else:
             messages.append({"role": "assistant", "content": response_text})
-            messages.append({
-                "role": "user",
-                "content": [{"type": "text", "text": f"Unknown action '{action_type}'. Use 'execute_code' or 'submit_answer'."}],
-            })
+            messages.append(
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"Unknown action '{action_type}'. Use 'execute_code' or 'submit_answer'.",
+                        }
+                    ],
+                }
+            )
 
     print(f"  Reached max steps ({MAX_STEPS}). No answer submitted.")
     return 0.0
 
 
 def main():
-    """Run inference across all 3 tasks and print final scores."""
-    parser = argparse.ArgumentParser(description="Data Analysis Agent inference script")
-    parser.add_argument(
-        "--env-url",
-        default=os.environ.get("ENV_SERVER_URL", "http://localhost:7860"),
-        help="Environment server URL (default: http://localhost:7860)",
-    )
-    args = parser.parse_args()
-
-    # Validate required environment variables
-    missing = [v for v in ("API_BASE_URL", "MODEL_NAME", "HF_TOKEN") if not os.environ.get(v)]
-    if missing:
-        print(f"Error: Missing required environment variables: {', '.join(missing)}")
-        print("Set them in your shell or create a .env file (see .env.example).")
-        sys.exit(1)
-
-    openai_client = OpenAI(
-        base_url=os.environ["API_BASE_URL"],
-        api_key=os.environ["HF_TOKEN"],
-    )
-
-    print("=" * 55)
-    print("Data Analysis Agent — Inference")
-    print(f"Server : {args.env_url}")
-    print(f"Model  : {os.environ['MODEL_NAME']}")
-    print(f"API    : {os.environ['API_BASE_URL']}")
-    print("=" * 55)
-
+    print("Executing Data Analysis Environment")
+    openai_client = OpenAI(api_key=API_KEY, base_url=API_BASE_URL)
     scores = {}
     difficulties = {1: "Easy", 2: "Medium", 3: "Hard"}
 
-    # Each task gets its own isolated WebSocket session
     for task_id in [1, 2, 3]:
-        with DataAnalysisClient(base_url=args.env_url).sync() as env_client:
+        with DataAnalysisClient(base_url=ENV_SERVER_URL).sync() as env_client:
             score = run_task(openai_client, env_client, task_id)
             scores[task_id] = score
 
