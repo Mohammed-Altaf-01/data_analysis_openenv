@@ -79,8 +79,10 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
     Returns:
         Final score for this task between 0.0 and 1.0.
     """
+    difficulties = {1: "Easy", 2: "Medium", 3: "Hard"}
     result = env_client.reset(task_id=task_id)
     obs = result.observation
+    history = []
 
     messages = [
         {"role": "system", "content": [{"type": "text", "text": SYSTEM_PROMPT}]},
@@ -95,13 +97,15 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
         },
     ]
 
-    print(f"\n--- Task {task_id} ---")
+    print(f"\n{'=' * 55}")
+    print(f"Episode Start — Task {task_id} ({difficulties.get(task_id, 'Unknown')})")
     print(f"Question: {obs.task_description}")
+    print(f"{'=' * 55}")
 
     for step in range(MAX_STEPS):
         try:
             completion = openai_client.chat.completions.create(
-                model=os.environ["MODEL_NAME"],
+                model=MODEL_NAME,
                 messages=messages,
                 temperature=TEMPERATURE,
                 max_tokens=MAX_TOKENS,
@@ -109,7 +113,8 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
             )
             response_text = completion.choices[0].message.content or ""
         except Exception as exc:
-            print(f"  Model request failed ({exc}). Using fallback action.")
+            failure_msg = f"Model request failed ({exc}). Using fallback action."
+            print(f"  {failure_msg}")
             response_text = FALLBACK_ACTION
 
         action = parse_model_action(response_text)
@@ -119,8 +124,11 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
         if action_type == "execute_code":
             step_result = env_client.step(DataAction(action_type="execute_code", code=action.get("code", "")))
             step_obs = step_result.observation
+            reward = step_result.reward or 0.0
             result_text = f"Output: {step_obs.output}" if not step_obs.error else f"Error: {step_obs.error}"
-            print(f"    -> {result_text[:120]}")
+            history_line = f"Step {step + 1}: execute_code -> reward {reward:+.2f}"
+            history.append(history_line)
+            print(f"    Reward: {reward:+.2f} | {result_text[:100]}")
 
             messages.append({"role": "assistant", "content": response_text})
             messages.append({"role": "user", "content": [{"type": "text", "text": result_text}]})
@@ -129,10 +137,16 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
             step_result = env_client.step(DataAction(action_type="submit_answer", answer=action.get("answer", "")))
             step_obs = step_result.observation
             score = step_obs.metadata.get("score", 0.0) if step_obs.metadata else step_result.reward
-            print(f"    -> submitted: '{action.get('answer', '')}' | score: {score:.2f}")
+            history_line = f"Step {step + 1}: submit_answer '{action.get('answer', '')}' -> score {score:.2f}"
+            history.append(history_line)
+            print(f"    Reward: {score:+.2f} | Done: {step_result.done}")
+            print("  Episode complete.")
+            _log_episode_end(task_id, step + 1, float(score), history)
             return float(score)
 
         else:
+            history_line = f"Step {step + 1}: unknown action '{action_type}'"
+            history.append(history_line)
             messages.append({"role": "assistant", "content": response_text})
             messages.append(
                 {
@@ -146,8 +160,26 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
                 }
             )
 
-    print(f"  Reached max steps ({MAX_STEPS}). No answer submitted.")
+    print(f"  Reached max steps ({MAX_STEPS}).")
+    _log_episode_end(task_id, MAX_STEPS, 0.0, history)
     return 0.0
+
+
+def _log_episode_end(task_id: int, steps_taken: int, final_score: float, history: list) -> None:
+    """Print a structured end-of-episode summary.
+
+    Args:
+        task_id: The task that just finished.
+        steps_taken: Total steps taken in the episode.
+        final_score: Final graded score (0.0 to 1.0).
+        history: List of history_line strings logged during the episode.
+    """
+    print(f"\n--- Episode End — Task {task_id} ---")
+    print(f"  Steps taken  : {steps_taken}")
+    print(f"  Final score  : {final_score:.2f}")
+    print("  Step history :")
+    for line in history:
+        print(f"    {line}")
 
 
 def main():
