@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -12,7 +13,7 @@ TEMPERATURE = 0.0
 MAX_TOKENS = 1024
 MAX_STEPS = 15
 API_BASE_URL = os.getenv("API_BASE_URL") or "https://router.huggingface.co/v1"
-MODEL_NAME = os.getenv("MODEL_NAME") or "Qwen/Qwen3.5-9B"
+MODEL_NAME = os.getenv("MODEL_NAME") or "Qwen/Qwen2.5-72B-Instruct"
 API_KEY = os.getenv("HF_TOKEN") or os.getenv("API_KEY")
 ENV_SERVER_URL = os.getenv("ENV_SERVER_URL") or "https://mohammed-altaf-dataanalysis-env.hf.space"
 
@@ -31,8 +32,8 @@ You can execute Python/pandas code to explore the dataset and answer the questio
 
 <RESPONSE>
 Respond with JSON in one of these formats:
-1. To execute code: {{"action": "execute_code", "code": "your python code here"}}
-2. To submit answer: {{"action": "submit_answer", "answer": "your answer here"}}
+1. To execute code: {"action": "execute_code", "code": "your python code here"}
+2. To submit answer: {"action": "submit_answer", "answer": "your answer here"}
 </RESPONSE>
 
 <NOTE>
@@ -46,7 +47,15 @@ FALLBACK_ACTION = json.dumps({"action": "submit_answer", "answer": "unknown"})
 def parse_model_action(response_text: str) -> dict:
     """Parse the model's raw text response into an action dict.
 
-    Handles plain JSON and markdown code block wrapping.
+    Handles multiple LLM response edge cases:
+    - Markdown code blocks (```json ... ``` or ``` ... ```)
+    - Double curly braces e.g. {{"key": "value"}}
+    - Single quotes instead of double quotes e.g. {'key': 'value'}
+    - Python literals: True/False/None → true/false/null
+    - Trailing commas in objects/arrays e.g. {"key": "value",}
+    - Extra text/prose before or after the JSON blob
+    - Escaped single quotes inside single-quoted strings
+    - Whitespace and newline noise
 
     Args:
         response_text: Raw string returned by the model.
@@ -54,18 +63,84 @@ def parse_model_action(response_text: str) -> dict:
     Returns:
         Parsed action dict, or a fallback submit_answer on failure.
     """
-    text = response_text.strip()
-    if text.startswith("```"):
-        parts = text.split("```")
-        if len(parts) >= 2:
-            text = parts[1]
-            if text.startswith("json"):
-                text = text[4:]
-            text = text.strip()
-    try:
+
+    def attempt_parse(text: str) -> dict:
         return json.loads(text)
+
+    def apply_fixes(text: str) -> str:
+        # Strip markdown code blocks
+        if text.startswith("```"):
+            parts = text.split("```")
+            if len(parts) >= 2:
+                text = parts[1]
+                if text.startswith("json"):
+                    text = text[4:]
+                text = text.strip()
+
+        # Double curly braces → single
+        text = text.replace("{{", "{").replace("}}", "}")
+
+        # Python literals → JSON literals
+        text = re.sub(r"\bTrue\b", "true", text)
+        text = re.sub(r"\bFalse\b", "false", text)
+        text = re.sub(r"\bNone\b", "null", text)
+
+        # Trailing commas before } or ]
+        text = re.sub(r",\s*([}\]])", r"\1", text)
+
+        # Single quote handling — two distinct cases:
+        #
+        # Case 1: Entire JSON is wrapped in outer single quotes
+        #   e.g. '{"action": "x", "code": "df[\'col\']"}'
+        #   → strip the outer quotes and unescape internal \'
+        if text.startswith("'") and text.endswith("'"):
+            text = text[1:-1].replace("\\'", "'")
+
+        # Case 2: JSON itself uses single quotes as delimiters
+        #   e.g. {'action': 'execute_code', 'code': 'print()'}
+        #   → only apply when structure looks single-quote delimited
+        #   → avoids corrupting double-quoted values that contain bracket notation
+        elif text.startswith("{'") or ("': " in text and '": ' not in text):
+            text = re.sub(
+                r"'((?:\\'|[^'])*)'", lambda m: '"' + m.group(1).replace("\\'", "'").replace('"', '\\"') + '"', text
+            )
+
+        return text
+
+    def extract_json_blob(text: str) -> str:
+        """Extract the first {...} or [...] blob from text with surrounding prose."""
+        match = re.search(r"(\{.*\}|\[.*\])", text, re.DOTALL)
+        if match:
+            return match.group(1)
+        return text
+
+    text = response_text.strip()
+
+    try:
+        return attempt_parse(text)
     except json.JSONDecodeError:
-        return json.loads(FALLBACK_ACTION)
+        pass
+
+    try:
+        return attempt_parse(apply_fixes(text))
+    except json.JSONDecodeError:
+        pass
+
+    try:
+        blob = extract_json_blob(text)
+        return attempt_parse(apply_fixes(blob))
+    except json.JSONDecodeError:
+        pass
+
+    try:
+        fixed = apply_fixes(text)
+        blob = extract_json_blob(fixed)
+        return attempt_parse(blob)
+    except json.JSONDecodeError:
+        pass
+
+    print(f"JSON Decoding Error while parsing action in response text: {response_text}")
+    return json.loads(FALLBACK_ACTION)
 
 
 def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int) -> float:
@@ -111,6 +186,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
                 max_tokens=MAX_TOKENS,
                 stream=False,
             )
+
             response_text = completion.choices[0].message.content or ""
         except Exception as exc:
             failure_msg = f"Model request failed ({exc}). Using fallback action."
@@ -188,9 +264,9 @@ def main():
     scores = {}
     difficulties = {1: "Easy", 2: "Medium", 3: "Hard"}
 
-    for task_id in [1, 2, 3]:
-        with DataAnalysisClient(base_url=ENV_SERVER_URL).sync() as env_client:
-            score = run_task(openai_client, env_client, task_id)
+    with DataAnalysisClient(base_url=ENV_SERVER_URL).sync() as env_client:
+        for task_id in [1, 2, 3]:
+            score = run_task(openai_client=openai_client, env_client=env_client, task_id=task_id)
             scores[task_id] = score
 
     print("\n" + "=" * 55)
