@@ -42,14 +42,18 @@ class TopRevenueCategoryTask(BaseTask):
         return self.df.groupby("category")["total_price"].sum().idxmax()
 
     def grade(self, answer: str) -> float:
-        """Grade the answer by case-insensitive string match.
+        """Grade the answer by case-insensitive containment check.
+
+        Accepts the answer if the expected category name appears anywhere in
+        the submitted string, so responses like 'The top category is Clothing'
+        or 'Clothing ($74,792.74)' still receive full credit.
 
         Args:
             answer: The agent's submitted category name.
 
         Returns:
-            1.0 if the answer matches the expected category, 0.0 otherwise.
+            1.0 if the expected category appears in the answer, 0.0 otherwise.
         """
         expected = self.expected_answer().strip().lower()
         submitted = answer.strip().lower()
-        return 1.0 if submitted == expected else 0.0
+        return 1.0 if expected in submitted else 0.0
