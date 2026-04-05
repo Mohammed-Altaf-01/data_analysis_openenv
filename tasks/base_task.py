@@ -1,9 +1,3 @@
-"""Abstract base class for data analysis tasks.
-
-Each task defines a question, computes the expected answer from the dataset,
-and provides a grader that scores agent responses from 0.0 to 1.0.
-"""
-
 from abc import ABC, abstractmethod
 
 import pandas as pd
@@ -20,11 +14,6 @@ class BaseTask(ABC):
     """
 
     def __init__(self, df: pd.DataFrame):
-        """Initialize the task with a dataset.
-
-        Args:
-            df: The pandas DataFrame to analyze.
-        """
         self.df = df
 
     @property

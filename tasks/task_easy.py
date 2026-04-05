@@ -1,10 +1,3 @@
-"""Task 1 (Easy): Identify the top-selling product category by total revenue.
-
-Requires a single groupby + sum + idxmax operation.
-"""
-
-import pandas as pd
-
 from tasks.base_task import BaseTask
 
 

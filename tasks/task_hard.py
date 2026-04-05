@@ -1,8 +1,3 @@
-"""Task 3 (Hard): Analyze repeat customers who ordered in both January and December.
-
-Requires temporal filtering, set intersection, and conditional aggregation.
-"""
-
 import re
 
 import pandas as pd
@@ -19,17 +14,14 @@ class RepeatCustomerCohortTask(BaseTask):
 
     @property
     def task_id(self) -> int:
-        """Return the task identifier."""
         return 3
 
     @property
     def difficulty(self) -> str:
-        """Return the difficulty level."""
         return "hard"
 
     @property
     def description(self) -> str:
-        """Return the task question."""
         return (
             "How many unique customers placed orders in BOTH January and December? "
             "What is their average order value compared to all other customers? "

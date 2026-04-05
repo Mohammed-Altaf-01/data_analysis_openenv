@@ -3,18 +3,17 @@ import re
 from typing import Any
 
 FALLBACK_ACTION = json.dumps({"action": "submit_answer", "answer": "unknown"})
-# ── Layer 1: Sanitize special characters inside string values ──────────────────
 
 
 def _sanitize_string_value(match: re.Match) -> str:
     """
     Receives a regex match of ("key": "value") and cleans only the value part.
     Escapes unescaped newlines, tabs, carriage returns, and inner double quotes.
-    This is the core trick LangChain uses in _replace_new_line / _custom_parser.
+    NOTE: This is the core trick LangChain uses in _replace_new_line / _custom_parser.
     """
-    opening = match.group(1)  # e.g.  "code": "
-    value = match.group(2)  # raw value content (may span multiple lines)
-    closing = match.group(3)  # closing "
+    opening = match.group(1)
+    value = match.group(2)
+    closing = match.group(3)
 
     value = re.sub(r"\n", r"\\n", value)
     value = re.sub(r"\r", r"\\r", value)
@@ -28,37 +27,29 @@ def _sanitize_all_string_values(text: str) -> str:
     """
     Apply _sanitize_string_value to every JSON string value in the text.
     Uses re.DOTALL so values that span multiple lines are handled correctly.
-    Generalised version of LangChain's _custom_parser (which only targeted action_input).
+    NOTE: Generalised version of LangChain's _custom_parser (which only targeted action_input).
     """
     return re.sub(
-        r'("[\w]+"\s*:\s*")(.*?)(")',  # ("key": ")  VALUE  (")
+        r'("[\w]+"\s*:\s*")(.*?)(")',
         _sanitize_string_value,
         text,
         flags=re.DOTALL,
     )
 
 
-# ── Layer 2: Pre-parse text fixes ─────────────────────────────────────────────
-
-
 def _preprocess(text: str) -> str:
     """Fix common LLM response quirks before attempting JSON parsing."""
 
     # Strip markdown code fences  (```json ... ``` or ``` ... ```)
-    # LangChain uses a regex for this: _json_markdown_re
     match = re.search(r"```(?:json)?\s*(.*?)```", text, re.DOTALL)
     if match:
         text = match.group(1).strip()
 
     # Double curly braces  {{"k": "v"}}  →  {"k": "v"}
     text = text.replace("{{", "{").replace("}}", "}")
-
-    # Python literals  →  JSON literals
     text = re.sub(r"\bTrue\b", "true", text)
     text = re.sub(r"\bFalse\b", "false", text)
     text = re.sub(r"\bNone\b", "null", text)
-
-    # Trailing commas before } or ]
     text = re.sub(r",\s*([}\]])", r"\1", text)
 
     # Outer single-quote wrap  '{"k": "v"}'  →  {"k": "v"}
@@ -66,9 +57,6 @@ def _preprocess(text: str) -> str:
         text = text[1:-1].replace("\\'", "'")
 
     return text.strip()
-
-
-# ── Layer 3: Extract first JSON blob from surrounding prose ───────────────────
 
 
 def _extract_json_blob(text: str) -> str:
@@ -80,9 +68,6 @@ def _extract_json_blob(text: str) -> str:
     return match.group(1) if match else text
 
 
-# ── Layer 4: parse_partial_json — LangChain's stack-based closer ──────────────
-
-
 def _parse_partial_json(s: str) -> Any:
     """
     Parse JSON that may be truncated / missing closing brackets.
@@ -90,16 +75,13 @@ def _parse_partial_json(s: str) -> Any:
     Uses a stack to track open containers and closes them before parsing.
     """
     s = s.strip()
-
-    # Try the string as-is first
     try:
         return json.loads(s)
     except json.JSONDecodeError:
         pass
 
-    # Walk through and auto-close any unclosed {, [, or "
     stack = []
-    is_inside = False  # inside a string?
+    is_inside = False
     position = 0
 
     for i, char in enumerate(s):
@@ -117,7 +99,6 @@ def _parse_partial_json(s: str) -> Any:
                     stack.pop()
         position = i
 
-    # Close open containers in reverse order
     completed = s[: position + 1]
     for bracket in reversed(stack):
         if bracket == '"':
@@ -128,9 +109,6 @@ def _parse_partial_json(s: str) -> Any:
             completed += "]"
 
     return json.loads(completed)
-
-
-# ── Layer 5: Direct greedy extraction — last resort for unescaped inner quotes ──
 
 
 def _extract_fields_direct(text: str) -> dict:
@@ -169,9 +147,6 @@ def _extract_fields_direct(text: str) -> dict:
     raise ValueError(f"Could not extract value for action_type={action_type!r}")
 
 
-# ── Public API ─────────────────────────────────────────────────────────────────
-
-
 def parse_model_action(response_text: str) -> dict:
     """
     Parse a raw LLM response into an action dict.
@@ -188,15 +163,10 @@ def parse_model_action(response_text: str) -> dict:
 
     strategies = [
         lambda t: _parse_partial_json(t),
-        # (preprocessed, sanitized, as-is)
         lambda t: _parse_partial_json(_sanitize_all_string_values(_preprocess(t))),
-        # (extract blob first, then preprocess + sanitize)
         lambda t: _parse_partial_json(_sanitize_all_string_values(_preprocess(_extract_json_blob(t)))),
-        # (preprocess + extract blob, then sanitize)
         lambda t: _parse_partial_json(_sanitize_all_string_values(_extract_json_blob(_preprocess(t)))),
-        # (sanitize raw text, skip preprocess — rare fallback)
         lambda t: _parse_partial_json(_sanitize_all_string_values(t)),
-        # greedy extraction — handles unescaped inner quotes in code/answer values
         lambda t: _extract_fields_direct(_preprocess(_extract_json_blob(t))),
         lambda t: _extract_fields_direct(_extract_json_blob(t)),
     ]

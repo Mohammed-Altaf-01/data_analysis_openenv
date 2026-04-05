@@ -1,8 +1,3 @@
-"""Task 4 (Medium): Identify the best and worst revenue months and their ratio.
-
-Requires time-series groupby, idxmax/idxmin, and division.
-"""
-
 import re
 
 import pandas as pd
@@ -19,17 +14,14 @@ class MonthlyRevenueRatioTask(BaseTask):
 
     @property
     def task_id(self) -> int:
-        """Return the task identifier."""
         return 4
 
     @property
     def difficulty(self) -> str:
-        """Return the difficulty level."""
         return "medium"
 
     @property
     def description(self) -> str:
-        """Return the task question."""
         return (
             "What is the best and worst performing month by total revenue in 2024? "
             "What is the ratio of best to worst month revenue? Round ratio to 2 decimal places. "

@@ -1,10 +1,3 @@
-"""Data Analysis Agent environment implementation.
-
-Provides an RL environment where an agent executes pandas code against
-a business dataset to answer analytical questions. Each episode presents
-a task with a programmatic grader that scores performance 0.0-1.0.
-"""
-
 import io
 import sqlite3
 import sys
@@ -38,7 +31,6 @@ class DataAnalysisEnv(Environment):
     SUPPORTS_CONCURRENT_SESSIONS = True
 
     def __init__(self):
-        """Initialize the environment with default state."""
         super().__init__()
         self._source_df = pd.read_csv(DATASET_PATH)
         self._df = self._source_df.copy()
@@ -124,7 +116,7 @@ class DataAnalysisEnv(Environment):
         Args:
             seed: Optional random seed (unused, kept for interface compliance).
             episode_id: Optional episode identifier; generated if not provided.
-            **kwargs: Additional keyword arguments. Supports 'task_id' (int, 1-3).
+            **kwargs: Additional keyword arguments. Supports 'task_id' (int, 1-6).
 
         Returns:
             An initial observation with the task description and dataset info.

@@ -1,9 +1,3 @@
-"""Task 5 (Hard): Customer loyalty tier revenue analysis using a cross-source SQLite join.
-
-Requires: sqlite3 query on customer_profiles table, merge with sales DataFrame,
-groupby loyalty_tier, and percentage calculation.
-"""
-
 import re
 import sqlite3
 from pathlib import Path
@@ -25,17 +19,14 @@ class CustomerLoyaltyRevenueTask(BaseTask):
 
     @property
     def task_id(self) -> int:
-        """Return the task identifier."""
         return 5
 
     @property
     def difficulty(self) -> str:
-        """Return the difficulty level."""
         return "hard"
 
     @property
     def description(self) -> str:
-        """Return the task question."""
         return (
             "Using the customer profiles database (connect with sqlite3.connect(db_path)), "
             "which customer loyalty tier generates the highest total revenue? "

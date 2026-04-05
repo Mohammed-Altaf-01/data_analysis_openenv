@@ -1,8 +1,3 @@
-"""Task 2 (Medium): Find the top revenue city and its share of total revenue.
-
-Requires groupby + aggregation + percentage calculation + formatting.
-"""
-
 import re
 
 import pandas as pd
@@ -19,17 +14,14 @@ class CityRevenueShareTask(BaseTask):
 
     @property
     def task_id(self) -> int:
-        """Return the task identifier."""
         return 2
 
     @property
     def difficulty(self) -> str:
-        """Return the difficulty level."""
         return "medium"
 
     @property
     def description(self) -> str:
-        """Return the task question."""
         return (
             "Which city generates the most revenue? What percentage of total revenue "
             "does it represent? Round to 2 decimal places. "

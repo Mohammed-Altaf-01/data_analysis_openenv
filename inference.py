@@ -1,93 +1,16 @@
-import json
-import os
-import re
-from typing import Any, List, Optional, Union
+from typing import Any, List
 
 from dotenv import load_dotenv
 from openai import OpenAI
 
 from client import DataAnalysisClient
+from helpers.constants import *
+from helpers.logging import log_end, log_start, log_step
+from helpers.prompts import SYSTEM_PROMPT
 from helpers.response_parser import FALLBACK_ACTION, parse_model_action
 from models import DataAction
 
 load_dotenv()
-TEMPERATURE = 0.0
-MAX_TOKENS = 1024
-MAX_STEPS = 15
-API_BASE_URL = os.getenv("API_BASE_URL") or "https://router.huggingface.co/v1"
-MODEL_NAME = os.getenv("MODEL_NAME") or "Qwen/Qwen2.5-72B-Instruct"
-API_KEY = os.getenv("HF_TOKEN") or os.getenv("API_KEY")
-ENV_SERVER_URL = os.getenv("ENV_SERVER_URL") or "https://mohammed-altaf-dataanalysis-env.hf.space"
-
-SYSTEM_PROMPT = """
-<ROLE>
-You are a data analyst. You have two data sources available:
-1. `df` — a pandas DataFrame (sales CSV, pre-loaded)
-2. A SQLite database at `db_path` — contains additional tables (e.g. customer_profiles, product_catalog)
-</ROLE>
-
-<RULES>
-- Use `print()` to output results
-- `pd`, `np`, `sqlite3`, and `db_path` are already in scope — NEVER use import statements (they will fail)
-- `df` is a pandas DataFrame — use pandas operations on it, NEVER SQL
-- To query the SQLite database use: `conn = sqlite3.connect(db_path)` then `pd.read_sql(query, conn)`
-- For cross-source tasks: query SQLite for the extra data, then merge with `df` using pandas
-- When you have the answer, submit it in the exact format requested
-- Be precise with numbers and formatting
-</RULES>
-
-<RESPONSE>
-Respond with JSON in one of these formats:
-1. To execute code: {"action": "execute_code", "code": "your python code here"}
-2. To submit answer: {"action": "submit_answer", "answer": "your answer here"}
-</RESPONSE>
-
-<NOTE>
-Respond with ONLY the JSON, no other text.
-</NOTE>
-"""
-
-
-def log_start(task: str, env: str, model: str) -> None:
-    """Log the start of a task episode.
-
-    Args:
-        task: Task identifier string.
-        env: Environment name or URL.
-        model: Model name used for inference.
-    """
-    print(f"[START] task={task} env={env} model={model}", flush=True)
-
-
-def log_step(step: int, action: Union[dict, str], reward: float, done: bool, error: Optional[str]) -> None:
-    """Log a single environment step.
-
-    Args:
-        step: Current step number.
-        action: Action type executed.
-        reward: Reward received from the environment.
-        done: Whether the episode is complete.
-        error: Error message if the step failed, else None.
-    """
-    error_val = error if error else "null"
-    done_val = str(done).lower()
-    print(
-        f"[STEP] step={step} action={action} reward={reward:.2f} done={done_val} error={error_val}",
-        flush=True,
-    )
-
-
-def log_end(success: bool, steps: int, score: float, rewards: List[float]) -> None:
-    """Log the end of a task episode.
-
-    Args:
-        success: Whether the agent submitted a correct answer.
-        steps: Total number of steps taken.
-        score: Final graded score (0.0 to 1.0).
-        rewards: List of per-step rewards collected during the episode.
-    """
-    rewards_str = ",".join(f"{r:.2f}" for r in rewards)
-    print(f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}\n", flush=True)
 
 
 def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:

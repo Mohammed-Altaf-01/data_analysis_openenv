@@ -1,9 +1,3 @@
-"""Task 6 (Hard): Supplier profitability analysis using a cross-source SQLite join.
-
-Requires: sqlite3 query on product_catalog table, merge with sales DataFrame,
-per-order profit calculation, and grouped margin averaging.
-"""
-
 import re
 import sqlite3
 from pathlib import Path
@@ -26,17 +20,14 @@ class SupplierProfitabilityTask(BaseTask):
 
     @property
     def task_id(self) -> int:
-        """Return the task identifier."""
         return 6
 
     @property
     def difficulty(self) -> str:
-        """Return the difficulty level."""
         return "hard"
 
     @property
     def description(self) -> str:
-        """Return the task question."""
         return (
             "Using the product catalog database (connect with sqlite3.connect(db_path)), "
             "which supplier has the highest total profit from orders? "

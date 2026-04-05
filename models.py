@@ -1,9 +1,3 @@
-"""Pydantic models for the Data Analysis Agent environment.
-
-Defines the action, observation, and state types used for communication
-between the RL agent and the environment server.
-"""
-
 from typing import Literal, Optional
 
 from openenv.core.env_server import Action, Observation, State

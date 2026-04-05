@@ -1,9 +1,3 @@
-"""Client for the Data Analysis Agent environment.
-
-Provides a typed async/sync client for interacting with the
-data analysis environment server over HTTP/WebSocket.
-"""
-
 from models import DataAction, DataObservation, DataState
 from openenv.core.client_types import StepResult
 from openenv.core.env_client import EnvClient
