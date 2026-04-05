@@ -1,11 +1,14 @@
 """Baseline inference script for the Data Analysis Agent environment.
 
-Uses the OpenAI API to run a model (gpt-4o-mini) against all 3 tasks
+Uses the OpenAI API to run a model (gpt-4o-mini) against all 6 tasks
 and produces reproducible baseline scores.
 
 The script uses DataAnalysisClient (WebSocket) because the HTTP endpoints
 are stateless — each request gets a fresh env instance. State (namespace,
 task, dataset) only persists within a WebSocket session.
+
+Tasks 1-3 use only the pandas DataFrame (df). Tasks 4-6 are cross-source:
+they also require querying a SQLite database via sqlite3.connect(db_path).
 
 Usage:
     OPENAI_API_KEY=sk-... uv run python baseline.py
@@ -24,13 +27,17 @@ from models import DataAction
 
 SYSTEM_PROMPT = """
 <ROLE>
-You are a data analyst. You are given a dataset loaded as a pandas DataFrame called `df`.
-You can execute Python/pandas code to explore the dataset and answer the question.
+You are a data analyst. You have two data sources available:
+1. `df` — a pandas DataFrame (sales CSV, pre-loaded)
+2. A SQLite database at `db_path` — contains additional tables (e.g. customer_profiles, product_catalog)
 </ROLE>
 
 <RULES>
-- Use `print()` to see results of your code
-- The DataFrame `df` is pre-loaded with pandas as `pd` and numpy as `np`
+- Use `print()` to output results
+- `pd`, `np`, `sqlite3`, and `db_path` are already in scope — NEVER use import statements (they will fail)
+- `df` is a pandas DataFrame — use pandas operations on it, NEVER SQL
+- To query the SQLite database use: `conn = sqlite3.connect(db_path)` then `pd.read_sql(query, conn)`
+- For cross-source tasks: query SQLite for the extra data, then merge with `df` using pandas
 - When you have the answer, submit it in the exact format requested
 - Be precise with numbers and formatting
 </RULES>
@@ -53,7 +60,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
     Args:
         openai_client: The OpenAI client instance.
         env_client: The connected DataAnalysisClient (sync wrapper).
-        task_id: Which task to run (1, 2, or 3).
+        task_id: Which task to run (1–6).
         max_steps: Maximum agent steps before giving up.
 
     Returns:
@@ -75,7 +82,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
 
     for step in range(max_steps):
         response = openai_client.chat.completions.create(
-            model="gpt-5.4-mini",
+            model="gpt-4o-mini",
             messages=messages,
             temperature=0.0,
         )
@@ -132,7 +139,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
 
 
 def main():
-    """Run baseline inference across all 3 tasks and report scores."""
+    """Run baseline inference across all 6 tasks and report scores."""
     parser = argparse.ArgumentParser(description="Baseline inference for Data Analysis Env")
     parser.add_argument(
         "--base-url",
@@ -148,28 +155,35 @@ def main():
 
     openai_client = OpenAI(api_key=api_key)
 
-    print("=" * 50)
+    print("=" * 55)
     print("Data Analysis Agent - Baseline Inference")
     print(f"Server: {args.base_url}")
     print("Model: gpt-4o-mini")
-    print("=" * 50)
+    print("=" * 55)
 
     scores = {}
-    difficulties = {1: "Easy", 2: "Medium", 3: "Hard"}
+    difficulties = {
+        1: "Easy",
+        2: "Medium",
+        3: "Medium",
+        4: "Hard",
+        5: "Hard",
+        6: "Hard",
+    }
 
-    for task_id in [1, 2, 3]:
-        with DataAnalysisClient(base_url=args.base_url).sync() as env_client:
+    with DataAnalysisClient(base_url=args.base_url).sync() as env_client:
+        for task_id in [1, 2, 3, 4, 5, 6]:
             score = run_task(openai_client, env_client, task_id)
             scores[task_id] = score
 
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 55)
     print("RESULTS")
-    print("=" * 50)
+    print("=" * 55)
     for task_id, score in scores.items():
-        print(f"  Task {task_id} ({difficulties[task_id]}): {score:.2f}")
+        print(f"  Task {task_id} ({difficulties[task_id]:6s}): {score:.2f}")
     avg = sum(scores.values()) / len(scores)
     print(f"\n  Average Score: {avg:.2f}")
-    print("=" * 50)
+    print("=" * 55)
 
 
 if __name__ == "__main__":
