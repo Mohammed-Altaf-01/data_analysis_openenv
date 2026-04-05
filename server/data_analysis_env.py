@@ -6,6 +6,7 @@ a task with a programmatic grader that scores performance 0.0-1.0.
 """
 
 import io
+import sqlite3
 import sys
 import uuid
 from pathlib import Path
@@ -19,6 +20,7 @@ from openenv.core.env_server import Environment
 from tasks import TASKS
 
 DATASET_PATH = Path(__file__).resolve().parent.parent / "datasets" / "sales.csv"
+DB_PATH = Path(__file__).resolve().parent.parent / "datasets" / "store_data.db"
 
 
 class DataAnalysisEnv(Environment):
@@ -70,6 +72,8 @@ class DataAnalysisEnv(Environment):
             "df": self._df.copy(),
             "pd": pd,
             "np": np,
+            "sqlite3": sqlite3,
+            "db_path": str(DB_PATH),
         }
 
     def _dataset_info(self) -> str:
@@ -113,7 +117,7 @@ class DataAnalysisEnv(Environment):
                 done=True,
                 reward=0.0,
                 success=False,
-                error=f"Invalid task_id: {task_id}. Must be 1, 2, or 3.",
+                error=f"Invalid task_id: {task_id}. Must be 1–6.",
             )
         self._task = task_cls(self._df)
 

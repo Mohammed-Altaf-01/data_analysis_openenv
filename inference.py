@@ -192,7 +192,7 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
     Args:
         openai_client: Configured OpenAI-compatible client.
         env_client: Connected DataAnalysisClient (sync wrapper).
-        task_id: Task to evaluate (1 = easy, 2 = medium, 3 = hard).
+        task_id: Task to evaluate (1 - 6)
 
     Returns:
         Final score for this task between 0.0 and 1.0.
@@ -277,7 +277,13 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
             return score
 
         else:
-            log_step(step=step + 1, action=action_type or "unknown", reward=0.0, done=False, error=f"unknown action '{action_type}'")
+            log_step(
+                step=step + 1,
+                action=action_type or "unknown",
+                reward=0.0,
+                done=False,
+                error=f"unknown action '{action_type}'",
+            )
             messages.append({"role": "assistant", "content": response_text})
             messages.append(
                 {
@@ -299,10 +305,17 @@ def main():
     print("Executing Data Analysis Environment")
     openai_client = OpenAI(api_key=API_KEY, base_url=API_BASE_URL)
     scores = {}
-    difficulties = {1: "Easy", 2: "Medium", 3: "Hard"}
+    difficulties = {
+        1: "Easy_TopRevenueCategoryTask",
+        2: "Medium_CityRevenueShareTask",
+        3: "Medium_RepeatCustomerCohortTask",
+        4: "Hard_MonthlyRevenueRatioTask",
+        5: "Hard_CustomerLoyaltyRevenueTask",
+        6: "Hard_SupplierProfitabilityTask",
+    }
 
     with DataAnalysisClient(base_url=ENV_SERVER_URL).sync() as env_client:
-        for task_id in [1, 2, 3]:
+        for task_id in difficulties.keys():
             score = run_task(openai_client=openai_client, env_client=env_client, task_id=task_id)
             scores[task_id] = score
 
