@@ -1,6 +1,7 @@
 import json
 import os
 import re
+from typing import Any, List, Optional
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -42,6 +43,48 @@ Respond with ONLY the JSON, no other text.
 """
 
 FALLBACK_ACTION = json.dumps({"action": "submit_answer", "answer": "unknown"})
+
+
+def log_start(task: str, env: str, model: str) -> None:
+    """Log the start of a task episode.
+
+    Args:
+        task: Task identifier string.
+        env: Environment name or URL.
+        model: Model name used for inference.
+    """
+    print(f"[START] task={task} env={env} model={model}", flush=True)
+
+
+def log_step(step: int, action: str, reward: float, done: bool, error: Optional[str]) -> None:
+    """Log a single environment step.
+
+    Args:
+        step: Current step number.
+        action: Action type executed.
+        reward: Reward received from the environment.
+        done: Whether the episode is complete.
+        error: Error message if the step failed, else None.
+    """
+    error_val = error if error else "null"
+    done_val = str(done).lower()
+    print(
+        f"[STEP] step={step} action={action} reward={reward:.2f} done={done_val} error={error_val}",
+        flush=True,
+    )
+
+
+def log_end(success: bool, steps: int, score: float, rewards: List[float]) -> None:
+    """Log the end of a task episode.
+
+    Args:
+        success: Whether the agent submitted a correct answer.
+        steps: Total number of steps taken.
+        score: Final graded score (0.0 to 1.0).
+        rewards: List of per-step rewards collected during the episode.
+    """
+    rewards_str = ",".join(f"{r:.2f}" for r in rewards)
+    print(f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}", flush=True)
 
 
 def parse_model_action(response_text: str) -> dict:
@@ -143,7 +186,7 @@ def parse_model_action(response_text: str) -> dict:
     return json.loads(FALLBACK_ACTION)
 
 
-def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int) -> float:
+def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
     """Run a single task episode using the language model as the agent.
 
     Args:
@@ -154,10 +197,14 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
     Returns:
         Final score for this task between 0.0 and 1.0.
     """
-    difficulties = {1: "Easy", 2: "Medium", 3: "Hard"}
-    result = env_client.reset(task_id=task_id)
+    try:
+        result = env_client.reset(task_id=task_id)
+    except Exception as exc:
+        print(f"[DEBUG] env reset failed: {exc}", flush=True)
+        return 0.0
+
     obs = result.observation
-    history = []
+    rewards: List[float] = []
 
     messages = [
         {"role": "system", "content": [{"type": "text", "text": SYSTEM_PROMPT}]},
@@ -172,10 +219,7 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
         },
     ]
 
-    print(f"\n{'=' * 55}")
-    print(f"Episode Start — Task {task_id} ({difficulties.get(task_id, 'Unknown')})")
-    print(f"Question: {obs.task_description}")
-    print(f"{'=' * 55}")
+    log_start(task=str(task_id), env=ENV_SERVER_URL, model=MODEL_NAME)
 
     for step in range(MAX_STEPS):
         try:
@@ -186,43 +230,54 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
                 max_tokens=MAX_TOKENS,
                 stream=False,
             )
-
             response_text = completion.choices[0].message.content or ""
         except Exception as exc:
-            failure_msg = f"Model request failed ({exc}). Using fallback action."
-            print(f"  {failure_msg}")
+            print(f"[DEBUG] Model request failed: {exc}", flush=True)
             response_text = FALLBACK_ACTION
 
         action = parse_model_action(response_text)
         action_type = action.get("action", "")
-        print(f"  Step {step + 1}: model suggested -> {action_type}")
 
         if action_type == "execute_code":
-            step_result = env_client.step(DataAction(action_type="execute_code", code=action.get("code", "")))
-            step_obs = step_result.observation
-            reward = step_result.reward or 0.0
-            result_text = f"Output: {step_obs.output}" if not step_obs.error else f"Error: {step_obs.error}"
-            history_line = f"Step {step + 1}: execute_code -> reward {reward:+.2f}"
-            history.append(history_line)
-            print(f"    Reward: {reward:+.2f} | {result_text[:100]}")
+            try:
+                exec_result = env_client.step(DataAction(action_type="execute_code", code=action.get("code", "")))
+                exec_obs = exec_result.observation
+                reward = exec_result.reward or 0.0
+                done = exec_result.done
+            except Exception as exc:
+                print(f"[DEBUG] env step failed: {exc}", flush=True)
+                log_step(step=step + 1, action=action_type, reward=0.0, done=False, error=str(exc))
+                rewards.append(0.0)
+                continue
+
+            rewards.append(reward)
+            error = exec_obs.error if not exec_obs.success else None
+            result_text = f"Output: {exec_obs.output}" if not exec_obs.error else f"Error: {exec_obs.error}"
+            log_step(step=step + 1, action=action_type, reward=reward, done=done, error=error)
 
             messages.append({"role": "assistant", "content": response_text})
             messages.append({"role": "user", "content": [{"type": "text", "text": result_text}]})
 
         elif action_type == "submit_answer":
-            step_result = env_client.step(DataAction(action_type="submit_answer", answer=action.get("answer", "")))
-            step_obs = step_result.observation
-            score = step_obs.metadata.get("score", 0.0) if step_obs.metadata else step_result.reward
-            history_line = f"Step {step + 1}: submit_answer '{action.get('answer', '')}' -> score {score:.2f}"
-            history.append(history_line)
-            print(f"    Reward: {score:+.2f} | Done: {step_result.done}")
-            print("  Episode complete.")
-            _log_episode_end(task_id, step + 1, float(score), history)
-            return float(score)
+            try:
+                submit_result = env_client.step(
+                    DataAction(action_type="submit_answer", answer=action.get("answer", ""))
+                )
+                submit_obs = submit_result.observation
+                score = float(submit_obs.metadata.get("score", 0.0) if submit_obs.metadata else submit_result.reward)
+            except Exception as exc:
+                print(f"[DEBUG] env step failed: {exc}", flush=True)
+                log_step(step=step + 1, action=action_type, reward=0.0, done=True, error=str(exc))
+                log_end(success=False, steps=step + 1, score=0.0, rewards=rewards)
+                return 0.0
+
+            rewards.append(score)
+            log_step(step=step + 1, action=action_type, reward=score, done=True, error=None)
+            log_end(success=score > 0.0, steps=step + 1, score=score, rewards=rewards)
+            return score
 
         else:
-            history_line = f"Step {step + 1}: unknown action '{action_type}'"
-            history.append(history_line)
+            log_step(step=step + 1, action=action_type or "unknown", reward=0.0, done=False, error=f"unknown action '{action_type}'")
             messages.append({"role": "assistant", "content": response_text})
             messages.append(
                 {
@@ -236,26 +291,8 @@ def run_task(openai_client: OpenAI, env_client: DataAnalysisClient, task_id: int
                 }
             )
 
-    print(f"  Reached max steps ({MAX_STEPS}).")
-    _log_episode_end(task_id, MAX_STEPS, 0.0, history)
+    log_end(success=False, steps=MAX_STEPS, score=0.0, rewards=rewards)
     return 0.0
-
-
-def _log_episode_end(task_id: int, steps_taken: int, final_score: float, history: list) -> None:
-    """Print a structured end-of-episode summary.
-
-    Args:
-        task_id: The task that just finished.
-        steps_taken: Total steps taken in the episode.
-        final_score: Final graded score (0.0 to 1.0).
-        history: List of history_line strings logged during the episode.
-    """
-    print(f"\n--- Episode End — Task {task_id} ---")
-    print(f"  Steps taken  : {steps_taken}")
-    print(f"  Final score  : {final_score:.2f}")
-    print("  Step history :")
-    for line in history:
-        print(f"    {line}")
 
 
 def main():
