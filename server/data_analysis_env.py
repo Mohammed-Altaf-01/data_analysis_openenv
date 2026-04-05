@@ -35,6 +35,7 @@ class DataAnalysisEnv(Environment):
     """
 
     MAX_STEPS = 20
+    SUPPORTS_CONCURRENT_SESSIONS = True
 
     def __init__(self):
         """Initialize the environment with default state."""
@@ -79,14 +80,38 @@ class DataAnalysisEnv(Environment):
     def _dataset_info(self) -> str:
         """Generate a summary of the dataset schema for the agent.
 
+        Includes the sales DataFrame schema plus the SQLite database table schemas
+        so the agent knows what data is available and where to find it.
+
         Returns:
-            A string describing column names, dtypes, row count, and a sample.
+            A string describing column names, dtypes, row count, a sample for df,
+            and table schemas for the SQLite database.
         """
         buf = io.StringIO()
         self._df.info(buf=buf)
         info_str = buf.getvalue()
         sample = self._df.head(3).to_string()
-        return f"Dataset shape: {self._df.shape}\n\n{info_str}\nSample rows:\n{sample}"
+        df_section = f"=== df (pandas DataFrame, pre-loaded from sales CSV) ===\nShape: {self._df.shape}\n{info_str}\nSample rows:\n{sample}"
+
+        try:
+            conn = sqlite3.connect(DB_PATH)
+            cursor = conn.cursor()
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            tables = [row[0] for row in cursor.fetchall()]
+            db_lines = ["\n=== SQLite database (accessible via sqlite3.connect(db_path)) ==="]
+            for table in tables:
+                cursor.execute(f"PRAGMA table_info({table})")
+                cols = [(row[1], row[2]) for row in cursor.fetchall()]
+                cursor.execute(f"SELECT COUNT(*) FROM {table}")
+                count = cursor.fetchone()[0]
+                col_str = ", ".join(f"{c} ({t})" for c, t in cols)
+                db_lines.append(f"  Table '{table}' ({count} rows): {col_str}")
+            conn.close()
+            db_section = "\n".join(db_lines)
+        except Exception:
+            db_section = "\n=== SQLite database: schema unavailable ==="
+
+        return f"{df_section}\n{db_section}"
 
     def reset(
         self,

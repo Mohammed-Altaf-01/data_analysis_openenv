@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from client import DataAnalysisClient
+from helpers.response_parser import FALLBACK_ACTION, parse_model_action
 from models import DataAction
 
 load_dotenv()
@@ -20,13 +21,17 @@ ENV_SERVER_URL = os.getenv("ENV_SERVER_URL") or "https://mohammed-altaf-dataanal
 
 SYSTEM_PROMPT = """
 <ROLE>
-You are a data analyst. You are given a dataset loaded as a pandas DataFrame called `df`.
-You can execute Python/pandas code to explore the dataset and answer the question.
+You are a data analyst. You have two data sources available:
+1. `df` — a pandas DataFrame (sales CSV, pre-loaded)
+2. A SQLite database at `db_path` — contains additional tables (e.g. customer_profiles, product_catalog)
 </ROLE>
 
 <RULES>
-- Use `print()` to see results of your code
-- The DataFrame `df` is pre-loaded with pandas as `pd` and numpy as `np`
+- Use `print()` to output results
+- `pd`, `np`, `sqlite3`, and `db_path` are already in scope — NEVER use import statements (they will fail)
+- `df` is a pandas DataFrame — use pandas operations on it, NEVER SQL
+- To query the SQLite database use: `conn = sqlite3.connect(db_path)` then `pd.read_sql(query, conn)`
+- For cross-source tasks: query SQLite for the extra data, then merge with `df` using pandas
 - When you have the answer, submit it in the exact format requested
 - Be precise with numbers and formatting
 </RULES>
@@ -41,8 +46,6 @@ Respond with JSON in one of these formats:
 Respond with ONLY the JSON, no other text.
 </NOTE>
 """
-
-FALLBACK_ACTION = json.dumps({"action": "submit_answer", "answer": "unknown"})
 
 
 def log_start(task: str, env: str, model: str) -> None:
@@ -85,105 +88,6 @@ def log_end(success: bool, steps: int, score: float, rewards: List[float]) -> No
     """
     rewards_str = ",".join(f"{r:.2f}" for r in rewards)
     print(f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}", flush=True)
-
-
-def parse_model_action(response_text: str) -> dict:
-    """Parse the model's raw text response into an action dict.
-
-    Handles multiple LLM response edge cases:
-    - Markdown code blocks (```json ... ``` or ``` ... ```)
-    - Double curly braces e.g. {{"key": "value"}}
-    - Single quotes instead of double quotes e.g. {'key': 'value'}
-    - Python literals: True/False/None → true/false/null
-    - Trailing commas in objects/arrays e.g. {"key": "value",}
-    - Extra text/prose before or after the JSON blob
-    - Escaped single quotes inside single-quoted strings
-    - Whitespace and newline noise
-
-    Args:
-        response_text: Raw string returned by the model.
-
-    Returns:
-        Parsed action dict, or a fallback submit_answer on failure.
-    """
-
-    def attempt_parse(text: str) -> dict:
-        return json.loads(text)
-
-    def apply_fixes(text: str) -> str:
-        # Strip markdown code blocks
-        if text.startswith("```"):
-            parts = text.split("```")
-            if len(parts) >= 2:
-                text = parts[1]
-                if text.startswith("json"):
-                    text = text[4:]
-                text = text.strip()
-
-        # Double curly braces → single
-        text = text.replace("{{", "{").replace("}}", "}")
-
-        # Python literals → JSON literals
-        text = re.sub(r"\bTrue\b", "true", text)
-        text = re.sub(r"\bFalse\b", "false", text)
-        text = re.sub(r"\bNone\b", "null", text)
-
-        # Trailing commas before } or ]
-        text = re.sub(r",\s*([}\]])", r"\1", text)
-
-        # Single quote handling — two distinct cases:
-        #
-        # Case 1: Entire JSON is wrapped in outer single quotes
-        #   e.g. '{"action": "x", "code": "df[\'col\']"}'
-        #   → strip the outer quotes and unescape internal \'
-        if text.startswith("'") and text.endswith("'"):
-            text = text[1:-1].replace("\\'", "'")
-
-        # Case 2: JSON itself uses single quotes as delimiters
-        #   e.g. {'action': 'execute_code', 'code': 'print()'}
-        #   → only apply when structure looks single-quote delimited
-        #   → avoids corrupting double-quoted values that contain bracket notation
-        elif text.startswith("{'") or ("': " in text and '": ' not in text):
-            text = re.sub(
-                r"'((?:\\'|[^'])*)'", lambda m: '"' + m.group(1).replace("\\'", "'").replace('"', '\\"') + '"', text
-            )
-
-        return text
-
-    def extract_json_blob(text: str) -> str:
-        """Extract the first {...} or [...] blob from text with surrounding prose."""
-        match = re.search(r"(\{.*\}|\[.*\])", text, re.DOTALL)
-        if match:
-            return match.group(1)
-        return text
-
-    text = response_text.strip()
-
-    try:
-        return attempt_parse(text)
-    except json.JSONDecodeError:
-        pass
-
-    try:
-        return attempt_parse(apply_fixes(text))
-    except json.JSONDecodeError:
-        pass
-
-    try:
-        blob = extract_json_blob(text)
-        return attempt_parse(apply_fixes(blob))
-    except json.JSONDecodeError:
-        pass
-
-    try:
-        fixed = apply_fixes(text)
-        blob = extract_json_blob(fixed)
-        return attempt_parse(blob)
-    except json.JSONDecodeError:
-        pass
-
-    print(f"JSON Decoding Error while parsing action in response text: {response_text}")
-    return json.loads(FALLBACK_ACTION)
 
 
 def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
@@ -234,7 +138,6 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
         except Exception as exc:
             print(f"[DEBUG] Model request failed: {exc}", flush=True)
             response_text = FALLBACK_ACTION
-
         action = parse_model_action(response_text)
         action_type = action.get("action", "")
 
