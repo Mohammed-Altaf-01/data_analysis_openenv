@@ -1,7 +1,7 @@
 import json
 import os
 import re
-from typing import Any, List, Optional
+from typing import Any, List, Optional, Union
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -59,7 +59,7 @@ def log_start(task: str, env: str, model: str) -> None:
     print(f"[START] task={task} env={env} model={model}", flush=True)
 
 
-def log_step(step: int, action: str, reward: float, done: bool, error: Optional[str]) -> None:
+def log_step(step: int, action: Union[dict, str], reward: float, done: bool, error: Optional[str]) -> None:
     """Log a single environment step.
 
     Args:
@@ -87,7 +87,7 @@ def log_end(success: bool, steps: int, score: float, rewards: List[float]) -> No
         rewards: List of per-step rewards collected during the episode.
     """
     rewards_str = ",".join(f"{r:.2f}" for r in rewards)
-    print(f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}", flush=True)
+    print(f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}\n", flush=True)
 
 
 def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
@@ -149,14 +149,14 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
                 done = exec_result.done
             except Exception as exc:
                 print(f"[DEBUG] env step failed: {exc}", flush=True)
-                log_step(step=step + 1, action=action_type, reward=0.0, done=False, error=str(exc))
+                log_step(step=step + 1, action=action, reward=0.0, done=False, error=str(exc))
                 rewards.append(0.0)
                 continue
 
             rewards.append(reward)
             error = exec_obs.error if not exec_obs.success else None
             result_text = f"Output: {exec_obs.output}" if not exec_obs.error else f"Error: {exec_obs.error}"
-            log_step(step=step + 1, action=action_type, reward=reward, done=done, error=error)
+            log_step(step=step + 1, action=action, reward=reward, done=done, error=error)
 
             messages.append({"role": "assistant", "content": response_text})
             messages.append({"role": "user", "content": [{"type": "text", "text": result_text}]})
@@ -170,12 +170,12 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
                 score = float(submit_obs.metadata.get("score", 0.0) if submit_obs.metadata else submit_result.reward)
             except Exception as exc:
                 print(f"[DEBUG] env step failed: {exc}", flush=True)
-                log_step(step=step + 1, action=action_type, reward=0.0, done=True, error=str(exc))
+                log_step(step=step + 1, action=action, reward=0.0, done=True, error=str(exc))
                 log_end(success=False, steps=step + 1, score=0.0, rewards=rewards)
                 return 0.0
 
             rewards.append(score)
-            log_step(step=step + 1, action=action_type, reward=score, done=True, error=None)
+            log_step(step=step + 1, action=action, reward=score, done=True, error=None)
             log_end(success=score > 0.0, steps=step + 1, score=score, rewards=rewards)
             return score
 
