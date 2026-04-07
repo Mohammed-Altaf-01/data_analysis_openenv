@@ -85,4 +85,4 @@ class MonthlyRevenueRatioTask(BaseTask):
             except ValueError:
                 pass
 
-        return score
+        return max(0.01, min(0.99, score))

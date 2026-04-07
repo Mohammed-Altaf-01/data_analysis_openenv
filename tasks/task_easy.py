@@ -49,4 +49,5 @@ class TopRevenueCategoryTask(BaseTask):
         """
         expected = self.expected_answer().strip().lower()
         submitted = answer.strip().lower()
-        return 1.0 if expected in submitted else 0.0
+        raw = 1.0 if expected in submitted else 0.0
+        return max(0.01, min(0.99, raw))
