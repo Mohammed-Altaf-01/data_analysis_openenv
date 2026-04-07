@@ -271,7 +271,7 @@ class DataAnalysisEnv(Environment):
 
         self._state.answer_submitted = True
         raw_score = self._task.grade(action.answer)
-        score = max(0.01, min(0.99, raw_score))
+        score = max(0.05, min(0.95, raw_score))
         self._state.final_score = score
 
         return DataObservation(

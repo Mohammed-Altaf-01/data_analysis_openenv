@@ -11,7 +11,7 @@ from openai import OpenAI
 
 from client import DataAnalysisClient
 from helpers.constants import *
-from helpers.logging import log_end, log_start, log_step
+from helpers.logging import log_end, log_start, log_step, safe_score
 from helpers.prompts import SYSTEM_PROMPT
 from helpers.response_parser import FALLBACK_ACTION, parse_model_action
 from models import DataAction
@@ -26,13 +26,15 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
         task_id: Task to evaluate (1 - 6)
 
     Returns:
-        Final score for this task between 0.0 and 1.0.
+        Final clamped score for this task in [0.05, 0.95].
     """
     try:
         result = env_client.reset(task_id=task_id)
     except Exception as exc:
         print(f"[DEBUG] env reset failed: {exc}", flush=True)
-        return 0.0
+        log_start(task=str(task_id), env=ENV_SERVER_URL, model=MODEL_NAME)
+        log_end(task_id=task_id, score=safe_score(0.0), steps=0)
+        return safe_score(0.0)
 
     obs = result.observation
     rewards: List[float] = []
@@ -65,6 +67,7 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
         except Exception as exc:
             print(f"[DEBUG] Model request failed: {exc}", flush=True)
             response_text = FALLBACK_ACTION
+
         action = parse_model_action(response_text)
         action_type = action.get("action", "")
 
@@ -94,18 +97,20 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
                     DataAction(action_type="submit_answer", answer=action.get("answer", ""))
                 )
                 submit_obs = submit_result.observation
-                score = float(submit_obs.metadata.get("score", 0.0) if submit_obs.metadata else submit_result.reward)
+                raw_score = float(submit_obs.metadata.get("score", 0.0) if submit_obs.metadata else submit_result.reward)
             except Exception as exc:
                 print(f"[DEBUG] env step failed: {exc}", flush=True)
                 log_step(step=step + 1, action=action_type, reward=0.0, done=True, error=str(exc))
-                log_end(success=False, steps=step + 1, rewards=rewards)
-                return 0.0
+                final_score = safe_score(sum(rewards) / len(rewards)) if rewards else safe_score(0.0)
+                log_end(task_id=task_id, score=final_score, steps=step + 1)
+                return final_score
 
-            score = max(0.01, min(0.99, score))
-            rewards.append(score)
-            log_step(step=step + 1, action=action_type, reward=score, done=True, error=None)
-            log_end(success=score > 0.01, steps=step + 1, rewards=rewards)
-            return score
+            clamped = safe_score(raw_score)
+            rewards.append(clamped)
+            log_step(step=step + 1, action=action_type, reward=clamped, done=True, error=None)
+            final_score = safe_score(sum(rewards) / len(rewards))
+            log_end(task_id=task_id, score=final_score, steps=step + 1)
+            return final_score
 
         else:
             log_step(
@@ -128,11 +133,14 @@ def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
                 }
             )
 
-    log_end(success=False, steps=MAX_STEPS, rewards=rewards)
-    return 0.0
+    # Max steps reached without submission
+    final_score = safe_score(sum(rewards) / len(rewards)) if rewards else safe_score(0.0)
+    log_end(task_id=task_id, score=final_score, steps=MAX_STEPS)
+    return final_score
 
 
 def main():
+    """Run inference across all 6 tasks and report scores."""
     print("Executing Data Analysis Environment")
     openai_client = OpenAI(api_key=API_KEY, base_url=API_BASE_URL)
     scores = {}
@@ -150,14 +158,14 @@ def main():
             score = run_task(openai_client=openai_client, env_client=env_client, task_id=task_id)
             scores[task_id] = score
 
-    # print("\n" + "=" * 55)
-    # print("RESULTS")
-    # print("=" * 55)
-    # for task_id, score in scores.items():
-    #     print(f"  Task {task_id} ({difficulties[task_id]:6s}): {score:.2f}")
-    # avg = sum(scores.values()) / len(scores)
-    # print(f"\n  Average Score : {avg:.2f}")
-    # print("=" * 55)
+    print("\n" + "=" * 55)
+    print("RESULTS")
+    print("=" * 55)
+    for task_id, score in scores.items():
+        print(f"  Task {task_id} ({difficulties[task_id]:6s}): {score:.2f}")
+    avg = sum(scores.values()) / len(scores)
+    print(f"\n  Average Score : {avg:.2f}")
+    print("=" * 55)
 
 
 if __name__ == "__main__":
