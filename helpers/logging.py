@@ -16,4 +16,4 @@ def log_step(step: int, action: Union[dict, str], reward: float, done: bool, err
 
 def log_end(success: bool, steps: int, score: float, rewards: List[float]) -> None:
     rewards_str = ",".join(f"{r:.2f}" for r in rewards)
-    print(f"[END] success={str(success).lower()} steps={steps} score={score:.3f} rewards={rewards_str}\n", flush=True)
+    print(f"[END] success={str(success).lower()} steps={steps} score={int(score)} rewards={rewards_str}\n", flush=True)
