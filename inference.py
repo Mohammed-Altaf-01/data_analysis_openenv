@@ -150,14 +150,14 @@ def main():
             score = run_task(openai_client=openai_client, env_client=env_client, task_id=task_id)
             scores[task_id] = score
 
-    print("\n" + "=" * 55)
-    print("RESULTS")
-    print("=" * 55)
-    for task_id, score in scores.items():
-        print(f"  Task {task_id} ({difficulties[task_id]:6s}): {score:.2f}")
-    avg = sum(scores.values()) / len(scores)
-    print(f"\n  Average Score : {avg:.2f}")
-    print("=" * 55)
+    # print("\n" + "=" * 55)
+    # print("RESULTS")
+    # print("=" * 55)
+    # for task_id, score in scores.items():
+    #     print(f"  Task {task_id} ({difficulties[task_id]:6s}): {score:.2f}")
+    # avg = sum(scores.values()) / len(scores)
+    # print(f"\n  Average Score : {avg:.2f}")
+    # print("=" * 55)
 
 
 if __name__ == "__main__":
