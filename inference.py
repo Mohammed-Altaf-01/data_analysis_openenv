@@ -1,6 +1,12 @@
 from typing import Any, List
 
-from dotenv import load_dotenv
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except ImportError:
+    pass
+
 from openai import OpenAI
 
 from client import DataAnalysisClient
@@ -9,8 +15,6 @@ from helpers.logging import log_end, log_start, log_step
 from helpers.prompts import SYSTEM_PROMPT
 from helpers.response_parser import FALLBACK_ACTION, parse_model_action
 from models import DataAction
-
-load_dotenv()
 
 
 def run_task(openai_client: OpenAI, env_client: Any, task_id: int) -> float:
